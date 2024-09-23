@@ -36,6 +36,7 @@ erDiagram
     ORDER ||--o{ PRODUCT : "contains"
     BILL ||--|| ORDER : "corresponds to"
     PRODUCT }o--o{ BILL : "include in"
+```
 
 ## Some others details
 
