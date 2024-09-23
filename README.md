@@ -1,6 +1,7 @@
 # Example #1 Online Orders Data Base
 
 ## Entity/Relation Diagram
+
 This is a Spring Boot project to initialize a database with the following Entity-Relationship model design:
 
 ```mermaid
