@@ -1,8 +1,8 @@
 package com.example.orders.repository;
-import com.example.orders.entity.Client;
+import com.example.orders.entity.Pedidos;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ClientRepository extends JpaRepository<Client,String> {
+public interface PedidosRepository extends JpaRepository<Pedidos,String> {
 }

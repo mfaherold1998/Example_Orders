@@ -5,16 +5,16 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Product {
+public class Pedidos {
 
     @Column
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
-    private String productId;
+    private String pedidosID;
 
     @Column
-    private String name;
+    private String date;
 
     @Column
-    private Float price;
+    private Float total;
 }
