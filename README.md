@@ -54,7 +54,7 @@ erDiagram
 - Jakarta Persistence => https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api/3.2.0
 - Hibernate Validation
 
-**Aplication Properties** template for PostgreSQL databases
+**Aplication Properties** template for PostgreSQL databases:
 
 - spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 - spring.jpa.hibernate.ddl-auto=create
