@@ -56,6 +56,7 @@ erDiagram
 
 **Aplication Properties** template for PostgeSQL databases
 
+> The name of entity ORDER has been changed in the code by PEDIDO due to name conflicts in the database.
 - spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
 - spring.jpa.hibernate.ddl-auto=create
 - spring.jpa.hibernate.show-sql=true
