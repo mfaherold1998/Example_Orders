@@ -52,6 +52,7 @@ erDiagram
 - Spring Boot Started Test => https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test/3.3.4
 - PostgreSQL Driver
 - Jakarta Persistence => https://mvnrepository.com/artifact/jakarta.persistence/jakarta.persistence-api/3.2.0
+- Hibernate Validation
 
 **Aplication Properties** template for PostgeSQL databases
 
