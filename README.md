@@ -37,6 +37,15 @@ erDiagram
     BILL ||--|| ORDER : "corresponds to"
     PRODUCT }o--o{ BILL : "include in"
 ```
+**Relations:**
+
+||--o{ => One to Many
+
+}o--|| => Many to One
+
+||--|| => One to One
+
+}o--o{ => Many to Many
 
 ## Some others details
 
