@@ -1,6 +1,8 @@
 package com.example.orders.service;
 
+import com.example.orders.dto.BillDto;
 import com.example.orders.entity.Bill;
+import com.example.orders.mappers.BillMapper;
 import com.example.orders.repository.BillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,9 +14,11 @@ public class BillService {
 
     @Autowired
     private BillRepository billRepository;
+    @Autowired
+    private BillMapper billMapper;
 
-    public List<Bill> getAllBills(){
-        return billRepository.findAll();
+    public List<BillDto> getAllBills(){
+        return billRepository.findAll().stream().map((bill)->billMapper.toDto(bill)).toList();
     }
 
     public Bill getBillById(String id){

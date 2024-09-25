@@ -1,5 +1,6 @@
 package com.example.orders.controller;
 
+import com.example.orders.dto.BillDto;
 import com.example.orders.entity.Bill;
 import com.example.orders.service.BillService;
 import jakarta.validation.Valid;
@@ -16,7 +17,7 @@ public class BillController {
     private BillService billService;
 
     @GetMapping("/findall")
-    public List<Bill> getAllBills(){
+    public List<BillDto> getAllBills(){
         return billService.getAllBills();
     }
 
@@ -26,8 +27,8 @@ public class BillController {
     }
 
     @PostMapping("/insert")
-    public void saveBill (@RequestBody @Valid Bill bill){//TODO usar un DTO como argumento
-        billService.saveBill(bill);//TODO return el objeto salvado DTO
+    public BillDto saveBill (@RequestBody @Valid BillDto billDto){//TODO usar un DTO como argumento
+        billService.saveBill(billDto);//TODO return el objeto salvado DTO
     }
 
     @DeleteMapping("/delete/{id}")
