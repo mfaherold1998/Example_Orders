@@ -10,15 +10,12 @@ import java.util.List;
 @Data
 public class Product {
 
-    @Column
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String productId;
 
-    @Column
     private String name;
 
-    @Column
     private Float price;
 
     @ManyToOne

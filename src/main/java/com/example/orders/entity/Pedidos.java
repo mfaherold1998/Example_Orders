@@ -9,15 +9,12 @@ import java.util.List;
 @Data
 public class Pedidos {
 
-    @Column
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String pedidosID;
 
-    @Column
     private String date;
 
-    @Column
     private Float total;
 
     @OneToOne(mappedBy = "ped")

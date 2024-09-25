@@ -19,10 +19,10 @@ public class BillService {
 
     public Bill getBillById(String id){
         return billRepository.findById(id).orElse(null);
-    }
+    }//TODO return the DTO object para save, delete, update
 
     public void saveBill (Bill bill){
-        billRepository.save(bill);
+        billRepository.save(bill);//return BillDTo
     }
 
     public void deleteBill(String id){
@@ -31,5 +31,9 @@ public class BillService {
 
     public boolean existsById(String id){
         return billRepository.existsById(id);
+    }
+
+    public void updateBill (Bill bill){
+        billRepository.save(bill);
     }
 }

@@ -32,4 +32,8 @@ public class PedidosService {
     public boolean existsById(String id){
         return pedidosRepository.existsById(id);
     }
+
+    public void updatePedido (Pedidos pedido){
+        pedidosRepository.save(pedido);
+    }
 }

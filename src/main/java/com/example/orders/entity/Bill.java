@@ -11,15 +11,13 @@ import java.util.List;
 @Data
 public class Bill {
 
-    @Column
+    //@Column //redundante si no se especifica ningun parametro
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String billId;
 
-    @Column
     private String date;
 
-    @Column
     private Float totalAmount;
 
     @OneToOne

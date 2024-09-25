@@ -32,4 +32,8 @@ public class ProductService {
     public boolean existsById(String id){
         return productRepository.existsById(id);
     }
+
+    public void updateProduct (Product product){
+        productRepository.save(product);
+    }
 }

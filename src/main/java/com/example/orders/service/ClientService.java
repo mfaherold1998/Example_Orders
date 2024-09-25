@@ -32,4 +32,8 @@ public class ClientService {
     public boolean existsById(String id){
         return clientRepository.existsById(id);
     }
+
+    public void updateClient (Client client){
+        clientRepository.save(client);
+    }
 }
