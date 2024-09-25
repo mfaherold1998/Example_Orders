@@ -19,25 +19,25 @@ public class BillController {
     @GetMapping("/findall")
     public List<BillDto> getAllBills(){
         return billService.getAllBills();
-    }
+    }//DONE
 
     @GetMapping("/getbill/{id}")
-    public Bill getBillById(@RequestBody String id){
+    public BillDto getBillById(@RequestBody String id){
         return billService.getBillById(id);
-    }
+    }//DONE
 
     @PostMapping("/insert")
-    public BillDto saveBill (@RequestBody @Valid BillDto billDto){//TODO usar un DTO como argumento
-        billService.saveBill(billDto);//TODO return el objeto salvado DTO
-    }
+    public BillDto saveBill (@RequestBody @Valid BillDto billDto){
+        return billService.saveBill(billDto);
+    }//DONE
 
     @DeleteMapping("/delete/{id}")
-    public void deleteBill(@PathVariable String id){
-        billService.deleteBill(id);
-    }
+    public BillDto deleteBill(@PathVariable String id){
+        return billService.deleteBill(id);
+    }//DONE
 
     @PutMapping("/update/{id}")
-    public void updateBill (@RequestBody @Valid Bill bill){
-        billService.updateBill(bill);
-    }
+    public BillDto updateBill (@RequestBody @Valid BillDto billDto){
+        return billService.updateBill(billDto);
+    }//DONE
 }

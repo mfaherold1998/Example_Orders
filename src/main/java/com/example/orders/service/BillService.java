@@ -1,7 +1,6 @@
 package com.example.orders.service;
 
 import com.example.orders.dto.BillDto;
-import com.example.orders.entity.Bill;
 import com.example.orders.mappers.BillMapper;
 import com.example.orders.repository.BillRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,25 +18,29 @@ public class BillService {
 
     public List<BillDto> getAllBills(){
         return billRepository.findAll().stream().map((bill)->billMapper.toDto(bill)).toList();
-    }
+    }//DONE
 
-    public Bill getBillById(String id){
-        return billRepository.findById(id).orElse(null);
-    }//TODO return the DTO object para save, delete, update
+    public BillDto getBillById(String id){
+        return billMapper.toDto(billRepository.findById(id).orElse(null));
+    }//DONE
 
-    public void saveBill (Bill bill){
-        billRepository.save(bill);//return BillDTo
-    }
+    public BillDto saveBill (BillDto billDto){
+        billRepository.save(billMapper.toEntity(billDto));
+        return billDto;
+    }//DONE
 
-    public void deleteBill(String id){
+    public BillDto deleteBill(String id){
+        BillDto billDto= getBillById(id);
         billRepository.deleteById(id);
-    }
+        return billDto;
+    }//DONE
 
     public boolean existsById(String id){
         return billRepository.existsById(id);
     }
 
-    public void updateBill (Bill bill){
-        billRepository.save(bill);
-    }
+    public BillDto updateBill (BillDto billDto){
+        billRepository.save(billMapper.toEntity(billDto));
+        return billDto;
+    }//DONE
 }
