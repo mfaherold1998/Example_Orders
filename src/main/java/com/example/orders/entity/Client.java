@@ -14,8 +14,8 @@ import java.util.Collections;
 public class Client {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String clientId;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long clientId;
 
     @NotEmpty(message = "Name cannot be empty...")
     @NotNull

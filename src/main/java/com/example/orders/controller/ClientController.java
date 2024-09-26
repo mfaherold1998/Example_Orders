@@ -21,7 +21,7 @@ public class ClientController {
     }//DONE
 
     @GetMapping("/getclient/{id}")
-    public ClientDto getClientById(@RequestBody String id){
+    public ClientDto getClientById(@RequestBody Long id){
         return clientService.getClientById(id);
     }//DONE
 
@@ -31,7 +31,7 @@ public class ClientController {
     }//DONE
 
     @DeleteMapping("/delete/{id}")
-    public ClientDto deleteClient(@PathVariable String id){
+    public ClientDto deleteClient(@PathVariable Long id){
         return clientService.deleteClient(id);
     }//DONE
 

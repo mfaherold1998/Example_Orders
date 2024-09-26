@@ -14,7 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 public class BillDto {
 
-    private String billId;
+    private Long billId;
     private String date;
     private Float totalAmount;
     private PedidosDtoMini ped;

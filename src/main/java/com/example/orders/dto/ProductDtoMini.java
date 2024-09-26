@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ProductDtoMini {
 
-    private String productId;
+    private Long productId;
     private String name;
     private Float price;
 }

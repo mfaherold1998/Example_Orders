@@ -10,8 +10,8 @@ import java.util.List;
 public class Pedidos {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    private String pedidosID;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long pedidosID;
 
     private String date;
 

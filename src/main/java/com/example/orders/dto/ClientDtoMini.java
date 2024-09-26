@@ -11,6 +11,6 @@ import lombok.Setter;
 @AllArgsConstructor
 public class ClientDtoMini {
 
-    private String clientId;
+    private Long clientId;
     private String name;
 }

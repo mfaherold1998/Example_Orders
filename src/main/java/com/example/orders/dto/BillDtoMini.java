@@ -11,7 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class BillDtoMini {
 
-    private String billId;
+    private Long billId;
     private String date;
 
 }

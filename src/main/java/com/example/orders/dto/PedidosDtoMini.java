@@ -11,6 +11,6 @@ import lombok.Setter;
 @AllArgsConstructor
 public class PedidosDtoMini {
 
-    private String pedidosID;
+    private Long pedidosID;
     private String date;
 }

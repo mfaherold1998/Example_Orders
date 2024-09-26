@@ -19,7 +19,7 @@ public class PedidosService {
         return pedidosRepository.findAll().stream().map(pedidosMapper::toDto).toList();
     }//DONE
 
-    public PedidosDto getPedidoById(String id){
+    public PedidosDto getPedidoById(Long id){
         return pedidosMapper.toDto(pedidosRepository.findById(id).orElse(null));
     }//DONE
 
@@ -27,13 +27,13 @@ public class PedidosService {
         return pedidosMapper.toDto(pedidosRepository.saveAndFlush(pedidosMapper.toEntity(pedidosDto)));
     }//DONE
 
-    public PedidosDto deletePedido(String id){
+    public PedidosDto deletePedido(Long id){
         PedidosDto pedDto = getPedidoById(id);
         pedidosRepository.deleteById(id);
         return pedDto;
     }//DONE
 
-    public boolean existsById(String id){
+    public boolean existsById(Long id){
         return pedidosRepository.existsById(id);
     }
 

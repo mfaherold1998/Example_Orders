@@ -15,7 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 public class ClientDto {
 
-    private String clientId;
+    private Long clientId;
     private String name;
     private String email;
     private List<PedidosDtoMini> peds = Collections.emptyList();

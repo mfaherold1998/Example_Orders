@@ -19,7 +19,7 @@ public class BillService {
         return billRepository.findAll().stream().map(billMapper::toDto).toList();
     }//DONE
 
-    public BillDto getBillById(String id){
+    public BillDto getBillById(Long id){
         return billMapper.toDto(billRepository.findById(id).orElse(null));
     }//DONE
 
@@ -27,13 +27,13 @@ public class BillService {
         return  billMapper.toDto(billRepository.saveAndFlush(billMapper.toEntity(billDto)));
     }//DONE
 
-    public BillDto deleteBill(String id){
+    public BillDto deleteBill(Long id){
         BillDto billDto= getBillById(id);
         billRepository.deleteById(id);
         return billDto;
     }//DONE
 
-    public boolean existsById(String id){
+    public boolean existsById(Long id){
         return billRepository.existsById(id);
     }
 

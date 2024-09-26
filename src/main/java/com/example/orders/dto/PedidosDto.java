@@ -13,7 +13,7 @@ import java.util.List;
 @AllArgsConstructor
 public class PedidosDto {
 
-    private String pedidosID;
+    private Long pedidosID;
     private String date;
     private Float total;
     private BillDtoMini billId;

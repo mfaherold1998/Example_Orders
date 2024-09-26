@@ -16,7 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 public class ProductDto {
 
-    private String productId;
+    private Long productId;
     private String name;
     private Float price;
     private PedidosDtoMini peds;

@@ -19,7 +19,7 @@ public class ClientService {
         return clientRepository.findAll().stream().map(clientMapper::toDto).toList();
     }//DONE
 
-    public ClientDto getClientById(String id){
+    public ClientDto getClientById(Long id){
         return clientMapper.toDto(clientRepository.findById(id).orElse(null));
     }//DONE
 
@@ -27,13 +27,13 @@ public class ClientService {
         return clientMapper.toDto(clientRepository.saveAndFlush(clientMapper.toEntity(clientDto)));
     }//DONE
 
-    public ClientDto deleteClient(String id){
+    public ClientDto deleteClient(Long id){
         ClientDto clientDto = getClientById(id);
         clientRepository.deleteById(id);
         return clientDto;
     }//DONE
 
-    public boolean existsById(String id){
+    public boolean existsById(Long id){
         return clientRepository.existsById(id);
     }
 

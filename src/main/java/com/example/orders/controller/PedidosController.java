@@ -21,7 +21,7 @@ public class PedidosController {
     }//DONE
 
     @GetMapping("/getpedidos/{id}")
-    public PedidosDto getPedidoById(@RequestBody String id){
+    public PedidosDto getPedidoById(@RequestBody Long id){
         return pedidosService.getPedidoById(id);
     }//DONE
 
@@ -31,7 +31,7 @@ public class PedidosController {
     }//DONE
 
     @DeleteMapping("/delete/{id}")
-    public PedidosDto deletePedido(@PathVariable String id){
+    public PedidosDto deletePedido(@PathVariable Long id){
         return pedidosService.deletePedido(id);
     }//DONE
 

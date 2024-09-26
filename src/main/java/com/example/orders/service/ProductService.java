@@ -19,7 +19,7 @@ public class ProductService {
         return productRepository.findAll().stream().map(productMapper::toDto).toList();
     }//DONE
 
-    public ProductDto getProductById(String id){
+    public ProductDto getProductById(Long id){
         return productMapper.toDto(productRepository.findById(id).orElse(null));
     }//DONE
 
@@ -27,13 +27,13 @@ public class ProductService {
         return productMapper.toDto(productRepository.saveAndFlush(productMapper.toEntity(productDto)));
     }//DONE
 
-    public ProductDto deleteProduct(String id){
+    public ProductDto deleteProduct(Long id){
         ProductDto prodDto = getProductById(id);
         productRepository.deleteById(id);
         return  prodDto;
     }//DONE
 
-    public boolean existsById(String id){
+    public boolean existsById(Long id){
         return productRepository.existsById(id);
     }
 

@@ -21,7 +21,7 @@ public class BillController {
     }//DONE
 
     @GetMapping("/getbill/{id}")
-    public BillDto getBillById(@RequestBody String id){
+    public BillDto getBillById(@RequestBody Long id){
         return billService.getBillById(id);
     }//DONE
 
@@ -31,7 +31,7 @@ public class BillController {
     }//DONE
 
     @DeleteMapping("/delete/{id}")
-    public BillDto deleteBill(@PathVariable String id){
+    public BillDto deleteBill(@PathVariable Long id){
         return billService.deleteBill(id);
     }//DONE
 
