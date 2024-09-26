@@ -13,7 +13,7 @@ public class Bill {
 
     //@Column //redundante si no se especifica ningun parametro
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long billId;
 
     private String date;
