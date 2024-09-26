@@ -1,39 +1,43 @@
 package com.example.orders.service;
 
-import com.example.orders.entity.Client;
+import com.example.orders.dto.ClientDto;
+import com.example.orders.mappers.ClientMapper;
 import com.example.orders.repository.ClientRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class ClientService {
 
-    @Autowired
-    private ClientRepository clientRepository;
+    private final ClientRepository clientRepository;
+    private final ClientMapper clientMapper;
 
-    public List<Client> getAllClients(){
-        return clientRepository.findAll();
-    }
+    public List<ClientDto> getAllClients(){
+        return clientRepository.findAll().stream().map(clientMapper::toDto).toList();
+    }//DONE
 
-    public Client getClientById(String id){
-        return clientRepository.findById(id).orElse(null);
-    }
+    public ClientDto getClientById(String id){
+        return clientMapper.toDto(clientRepository.findById(id).orElse(null));
+    }//DONE
 
-    public void saveClient (Client client){
-        clientRepository.save(client);
-    }
+    public ClientDto saveClient (ClientDto clientDto){
+        return clientMapper.toDto(clientRepository.saveAndFlush(clientMapper.toEntity(clientDto)));
+    }//DONE
 
-    public void deleteClient(String id){
+    public ClientDto deleteClient(String id){
+        ClientDto clientDto = getClientById(id);
         clientRepository.deleteById(id);
-    }
+        return clientDto;
+    }//DONE
 
     public boolean existsById(String id){
         return clientRepository.existsById(id);
     }
 
-    public void updateClient (Client client){
-        clientRepository.save(client);
-    }
+    public ClientDto updateClient (ClientDto clientDto){
+        return clientMapper.toDto(clientRepository.saveAndFlush(clientMapper.toEntity(clientDto)));
+    }//DONE
 }

@@ -1,7 +1,6 @@
 package com.example.orders.controller;
 
 import com.example.orders.dto.BillDto;
-import com.example.orders.entity.Bill;
 import com.example.orders.service.BillService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,39 +1,43 @@
 package com.example.orders.service;
 
-import com.example.orders.entity.Pedidos;
+import com.example.orders.dto.PedidosDto;
+import com.example.orders.mappers.PedidosMapper;
 import com.example.orders.repository.PedidosRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public class PedidosService {
 
-    @Autowired
-    private PedidosRepository pedidosRepository;
+    private final PedidosRepository pedidosRepository;
+    private final PedidosMapper pedidosMapper;
 
-    public List<Pedidos> getAllPedidos(){
-        return pedidosRepository.findAll();
-    }
+    public List<PedidosDto> getAllPedidos(){
+        return pedidosRepository.findAll().stream().map(pedidosMapper::toDto).toList();
+    }//DONE
 
-    public Pedidos getPedidoById(String id){
-        return pedidosRepository.findById(id).orElse(null);
-    }
+    public PedidosDto getPedidoById(String id){
+        return pedidosMapper.toDto(pedidosRepository.findById(id).orElse(null));
+    }//DONE
 
-    public void savePedido (Pedidos pedido){
-        pedidosRepository.save(pedido);
-    }
+    public PedidosDto savePedido (PedidosDto pedidosDto){
+        return pedidosMapper.toDto(pedidosRepository.saveAndFlush(pedidosMapper.toEntity(pedidosDto)));
+    }//DONE
 
-    public void deletePedido(String id){
+    public PedidosDto deletePedido(String id){
+        PedidosDto pedDto = getPedidoById(id);
         pedidosRepository.deleteById(id);
-    }
+        return pedDto;
+    }//DONE
 
     public boolean existsById(String id){
         return pedidosRepository.existsById(id);
     }
 
-    public void updatePedido (Pedidos pedido){
-        pedidosRepository.save(pedido);
-    }
+    public PedidosDto updatePedido (PedidosDto pedidosDto){
+        return pedidosMapper.toDto(pedidosRepository.saveAndFlush(pedidosMapper.toEntity(pedidosDto)));
+    }//DONE
 }
