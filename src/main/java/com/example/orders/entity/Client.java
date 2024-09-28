@@ -17,11 +17,10 @@ public class Client {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long clientId;
 
-    @NotEmpty(message = "Name cannot be empty...")
-    @NotNull
+    @Column(nullable = false, length = 100)
     private String name;
 
-    @Email
+    @Column
     private String email;
 
     @OneToMany(mappedBy = "cli")

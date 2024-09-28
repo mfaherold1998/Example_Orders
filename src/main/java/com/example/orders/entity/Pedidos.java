@@ -3,6 +3,7 @@ package com.example.orders.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -13,14 +14,16 @@ public class Pedidos {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long pedidosID;
 
-    private String date;
+    @Column(nullable = false)
+    private Date date;
 
-    private Float total;
+    @Column(nullable = false, precision = 10)
+    private Double total;
 
-    @OneToOne(mappedBy = "ped")
+    @OneToOne(mappedBy = "ped", optional = false)
     private Bill billId;
 
-    @ManyToOne
+    @ManyToOne(optional = false)
     @JoinColumn(name="client_id")
     private Client cli;
 

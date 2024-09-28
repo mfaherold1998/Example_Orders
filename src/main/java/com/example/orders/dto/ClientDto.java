@@ -1,6 +1,8 @@
 package com.example.orders.dto;
 
 import com.example.orders.entity.Pedidos;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,8 +17,16 @@ import java.util.List;
 @AllArgsConstructor
 public class ClientDto {
 
+    @NotNull
     private Long clientId;
+    @NotNull
+    @Pattern(regexp = "^[a-zA-Z\\s]+$")
+    @Size(min=1,max=100)
     private String name;
+    @Email
     private String email;
-    private List<PedidosDtoMini> peds = Collections.emptyList();
+    @Size(min=1)
+    @NotNull
+    @Valid
+    private List<PedidosDtoMini> peds;
 }

@@ -1,11 +1,11 @@
 package com.example.orders.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
+import lombok.*;
 
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 @Setter
@@ -14,10 +14,20 @@ import java.util.List;
 @AllArgsConstructor
 public class BillDto {
 
+    @NotNull
     private Long billId;
-    private String date;
-    private Float totalAmount;
+    @PastOrPresent
+    private Date date;
+    @NotNull
+    @Min(0)
+    @Digits(integer = 10, fraction = 2)
+    private Double totalAmount;
+    @Valid
+    @NotNull
     private PedidosDtoMini ped;
-    private List<ProductDtoMini> prods = Collections.emptyList();
+    @Size(min=1)
+    @NotNull
+    @Valid
+    private List<ProductDtoMini> prods;
 
 }

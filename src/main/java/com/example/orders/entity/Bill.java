@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 import lombok.Data;
 
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -16,12 +17,14 @@ public class Bill {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long billId;
 
-    private String date;
+    @Column(nullable = false)
+    private Date date;
 
-    private Float totalAmount;
+    @Column(nullable = false, precision = 10)
+    private Double totalAmount;
 
     @OneToOne
-    @JoinColumn(name="pedidoID")
+    @JoinColumn(name="pedidoID",nullable = true)
     private Pedidos ped;
 
     @ManyToMany(cascade = CascadeType.ALL)

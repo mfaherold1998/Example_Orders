@@ -14,9 +14,11 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long productId;
 
+    @Column(nullable = false, length = 100)
     private String name;
 
-    private Float price;
+    @Column(nullable = false, precision = 10)
+    private Double price;
 
     @ManyToOne
     @JoinColumn(name="pedidosID")

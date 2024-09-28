@@ -2,6 +2,8 @@ package com.example.orders.dto;
 
 import com.example.orders.entity.Bill;
 import com.example.orders.entity.Pedidos;
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -16,9 +18,20 @@ import java.util.List;
 @AllArgsConstructor
 public class ProductDto {
 
+    @NotNull
     private Long productId;
+    @NotNull
+    @Size(min=1,max=100)
     private String name;
-    private Float price;
+    @NotNull
+    @Min(0)
+    @Digits(integer = 10, fraction = 2)
+    private Double price;
+    @Valid
+    @NotNull
     private PedidosDtoMini peds;
-    private List<BillDtoMini> bills = Collections.emptyList();
+    @Size(min=1)
+    @NotNull
+    @Valid
+    private List<BillDtoMini> bills;
 }
