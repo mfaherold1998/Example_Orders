@@ -1,7 +1,7 @@
 package com.example.orders.service;
 
 import com.example.orders.dto.ClientDto;
-import com.example.orders.exceptions.InvalidClientException;
+import com.example.orders.exceptions.InvalidException;
 import com.example.orders.mappers.ClientMapper;
 import com.example.orders.repository.ClientRepository;
 import lombok.RequiredArgsConstructor;
@@ -18,33 +18,34 @@ public class ClientService {
 
     public List<ClientDto> getAllClients(){
         return clientRepository.findAll().stream().map(clientMapper::toDto).toList();
-    }//DONE
+    }//TODO Conexion a la base de datos
 
     public ClientDto getClientById(Long id){
         if (id <= 0) {
-            throw new InvalidClientException("Invalid Client Exception","Invalid client ID: " + id);
+            throw new InvalidException("Invalid Client Exception","Invalid client ID: " + id);
         }
         return clientMapper.toDto(clientRepository.findById(id).orElse(null));
-    }//DONE
+    }//TODO Que el id existe, que no es null (notfoundexception)
 
     public ClientDto saveClient (ClientDto clientDto){
         if (clientDto.getName() == null || clientDto.getEmail() == null) {
-            throw new InvalidClientException("Invalid Client Exception","User name and email are required");
+            throw new InvalidException("Invalid Client Exception","User name and email are required");
         }
         return clientMapper.toDto(clientRepository.saveAndFlush(clientMapper.toEntity(clientDto)));
-    }//DONE
+    }//TODO
 
     public ClientDto deleteClient(Long id){
         ClientDto clientDto = getClientById(id);
         clientRepository.deleteById(id);
         return clientDto;
-    }//DONE
+    }//TODO que exista el id
 
     public boolean existsById(Long id){
         return clientRepository.existsById(id);
     }
+    //TODO conexion a la base de datos
 
     public ClientDto updateClient (ClientDto clientDto){
         return clientMapper.toDto(clientRepository.saveAndFlush(clientMapper.toEntity(clientDto)));
-    }//DONE
+    }//TODO que el id exista y sea valido
 }

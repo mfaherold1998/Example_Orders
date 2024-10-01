@@ -9,7 +9,7 @@ import org.springframework.web.context.request.WebRequest;
 
 @Slf4j
 @ControllerAdvice
-public class ClientExceptionHandler {
+public class GlobalExceptionHandler {
 
 
     @ExceptionHandler(CustomException.class)

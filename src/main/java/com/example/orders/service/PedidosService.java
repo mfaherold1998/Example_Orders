@@ -1,6 +1,7 @@
 package com.example.orders.service;
 
 import com.example.orders.dto.PedidosDto;
+import com.example.orders.exceptions.InvalidException;
 import com.example.orders.mappers.PedidosMapper;
 import com.example.orders.repository.PedidosRepository;
 import lombok.RequiredArgsConstructor;
@@ -17,21 +18,24 @@ public class PedidosService {
 
     public List<PedidosDto> getAllPedidos(){
         return pedidosRepository.findAll().stream().map(pedidosMapper::toDto).toList();
-    }//DONE
+    }//TODO
 
     public PedidosDto getPedidoById(Long id){
+        if (id <= 0) {
+            throw new InvalidException("Invalid Order Exception","Invalid order ID: " + id);
+        }
         return pedidosMapper.toDto(pedidosRepository.findById(id).orElse(null));
-    }//DONE
+    }//TODO
 
     public PedidosDto savePedido (PedidosDto pedidosDto){
         return pedidosMapper.toDto(pedidosRepository.saveAndFlush(pedidosMapper.toEntity(pedidosDto)));
-    }//DONE
+    }//TODO
 
     public PedidosDto deletePedido(Long id){
         PedidosDto pedDto = getPedidoById(id);
         pedidosRepository.deleteById(id);
         return pedDto;
-    }//DONE
+    }//TODO
 
     public boolean existsById(Long id){
         return pedidosRepository.existsById(id);
@@ -39,5 +43,5 @@ public class PedidosService {
 
     public PedidosDto updatePedido (PedidosDto pedidosDto){
         return pedidosMapper.toDto(pedidosRepository.saveAndFlush(pedidosMapper.toEntity(pedidosDto)));
-    }//DONE
+    }//TODO
 }
