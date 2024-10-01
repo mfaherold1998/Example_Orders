@@ -21,7 +21,7 @@ public class BillController {
     }//DONE
 
     @GetMapping("/getbill/{id}")
-    public BillDto getBillById(@RequestBody Long id){
+    public BillDto getBillById(@PathVariable Long id){
         return billService.getBillById(id);
     }//DONE
 

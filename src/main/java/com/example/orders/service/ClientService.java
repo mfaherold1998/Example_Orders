@@ -1,6 +1,7 @@
 package com.example.orders.service;
 
 import com.example.orders.dto.ClientDto;
+import com.example.orders.exceptions.InvalidClientException;
 import com.example.orders.mappers.ClientMapper;
 import com.example.orders.repository.ClientRepository;
 import lombok.RequiredArgsConstructor;
@@ -20,10 +21,16 @@ public class ClientService {
     }//DONE
 
     public ClientDto getClientById(Long id){
+        if (id <= 0) {
+            throw new InvalidClientException("Invalid Client Exception","Invalid client ID: " + id);
+        }
         return clientMapper.toDto(clientRepository.findById(id).orElse(null));
     }//DONE
 
     public ClientDto saveClient (ClientDto clientDto){
+        if (clientDto.getName() == null || clientDto.getEmail() == null) {
+            throw new InvalidClientException("Invalid Client Exception","User name and email are required");
+        }
         return clientMapper.toDto(clientRepository.saveAndFlush(clientMapper.toEntity(clientDto)));
     }//DONE
 

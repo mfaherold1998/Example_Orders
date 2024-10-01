@@ -1,0 +1,11 @@
+#Token authentication
+sqp_35ec13b3b7983d1ea3b823c82eda7236c0bb7997
+
+#Generar reports
+mvn -B org.owasp:dependency-check-maven:aggregate -DfailBuildOnCVSS=11 -Dformats=XML,JSON,HTML
+
+#Upload reports to sonarqube
+mvn -B sonar:sonar -Dsonar.dependencyCheck.summarize=true -Dsonar.dependencyCheck.jsonReportPath=target\dependency-check-report.json -Dsonar.dependencyCheck.xmlReportPath=target/dependency-check-report.xml -Dsonar.dependencyCheck.htmlReportPath=target/dependency-check-report.html -Dsonar.projectKey=orders -Dsonar.projectName='orders' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_35ec13b3b7983d1ea3b823c82eda7236c0bb7997
+
+#Hacer el resto de analisis de errores
+mvn verify sonar:sonar -Dsonar.projectKey=orders -Dsonar.projectName='orders' -Dsonar.host.url=http://localhost:9000 -Dsonar.token=sqp_35ec13b3b7983d1ea3b823c82eda7236c0bb7997

@@ -21,7 +21,7 @@ public class PedidosController {
     }//DONE
 
     @GetMapping("/getpedidos/{id}")
-    public PedidosDto getPedidoById(@RequestBody Long id){
+    public PedidosDto getPedidoById(@PathVariable Long id){
         return pedidosService.getPedidoById(id);
     }//DONE
 
