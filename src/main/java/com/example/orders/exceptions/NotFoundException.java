@@ -1,7 +1,8 @@
 package com.example.orders.exceptions;
 
-public class NotFoundException extends RuntimeException {
-    public NotFoundException(String message) {
-        super(message);
-    }
+import org.springframework.http.HttpStatus;
+
+public class NotFoundException extends CustomException{
+
+    public NotFoundException (String message, String details){super(message,details, HttpStatus.NOT_FOUND);}
 }

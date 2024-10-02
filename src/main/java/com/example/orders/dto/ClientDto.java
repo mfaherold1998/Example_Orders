@@ -17,7 +17,7 @@ import java.util.List;
 @AllArgsConstructor
 public class ClientDto {
 
-    @NotNull
+    @NotNull//?
     private Long clientId;
     @NotNull
     @Pattern(regexp = "^[a-zA-Z\\s]+$")

@@ -1,7 +1,7 @@
 package com.example.orders.service;
 
 import com.example.orders.dto.PedidosDto;
-import com.example.orders.exceptions.InvalidException;
+import com.example.orders.exceptions.NotFoundException;
 import com.example.orders.mappers.PedidosMapper;
 import com.example.orders.repository.PedidosRepository;
 import lombok.RequiredArgsConstructor;
@@ -18,24 +18,21 @@ public class PedidosService {
 
     public List<PedidosDto> getAllPedidos(){
         return pedidosRepository.findAll().stream().map(pedidosMapper::toDto).toList();
-    }//TODO
+    }
 
     public PedidosDto getPedidoById(Long id){
-        if (id <= 0) {
-            throw new InvalidException("Invalid Order Exception","Invalid order ID: " + id);
-        }
-        return pedidosMapper.toDto(pedidosRepository.findById(id).orElse(null));
-    }//TODO
+        return pedidosMapper.toDto(pedidosRepository.findById(id).orElseThrow(() -> new NotFoundException("Not Found Exception","Order with id "+id+" does not exists")));
+    }
 
     public PedidosDto savePedido (PedidosDto pedidosDto){
         return pedidosMapper.toDto(pedidosRepository.saveAndFlush(pedidosMapper.toEntity(pedidosDto)));
-    }//TODO
+    }
 
     public PedidosDto deletePedido(Long id){
         PedidosDto pedDto = getPedidoById(id);
         pedidosRepository.deleteById(id);
         return pedDto;
-    }//TODO
+    }
 
     public boolean existsById(Long id){
         return pedidosRepository.existsById(id);
@@ -43,5 +40,5 @@ public class PedidosService {
 
     public PedidosDto updatePedido (PedidosDto pedidosDto){
         return pedidosMapper.toDto(pedidosRepository.saveAndFlush(pedidosMapper.toEntity(pedidosDto)));
-    }//TODO
+    }
 }
