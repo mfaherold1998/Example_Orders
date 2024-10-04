@@ -14,8 +14,8 @@ public class Bill {
 
     //@Column //redundante si no se especifica ningun parametro
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long billId;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
 
     @Column(nullable = false)
     private Date date;
@@ -24,8 +24,8 @@ public class Bill {
     private Double totalAmount;
 
     @OneToOne
-    @JoinColumn(name="pedidoID",nullable = true)
-    private Pedidos ped;
+    @JoinColumn(name="ordine_id",nullable = true)
+    private Ordine ord;
 
     @ManyToMany(cascade = CascadeType.ALL)
     @JoinTable(name="bill_product", joinColumns = @JoinColumn(name = "product_id"), inverseJoinColumns = @JoinColumn(name = "bill_id"))

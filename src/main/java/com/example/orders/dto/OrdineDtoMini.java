@@ -13,11 +13,10 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BillDtoMini {
+public class OrdineDtoMini {
 
     @NotNull
     private Long id;
     @PastOrPresent
     private Date date;
-
 }

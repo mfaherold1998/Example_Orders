@@ -2,7 +2,11 @@ package com.example.orders.dto;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.Date;
 import java.util.List;
 
@@ -10,22 +14,24 @@ import java.util.List;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BillDto {
+public class OrdineDto {
 
-    //@NotNull
     private Long id;
     @PastOrPresent
     private Date date;
     @NotNull
     @Min(0)
     @Digits(integer = 10, fraction = 2)
-    private Double totalAmount;
+    private Double total;
     @Valid
     //@NotNull
-    private OrdineDtoMini ord;
+    private BillDtoMini billId;
+    @Valid
+    //@NotNull
+    private ClientDtoMini cli;
     @Size(min=1)
-    //@NotNull
+    @NotNull
     @Valid
-    private List<ProductDtoMini> prods;
+    private List<ProductDtoMini> products;
 
 }

@@ -16,7 +16,7 @@ import lombok.Setter;
 public class ProductDtoMini {
 
     @NotNull
-    private Long productId;
+    private Long id;
     @NotNull
     @Size(min=1,max=100)
     private String name;

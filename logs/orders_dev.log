@@ -353,3 +353,641 @@ Caused by: org.postgresql.util.PSQLException: ERRORE: la relazione "client_clien
 2024-10-04 09:38:23 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-04 09:38:23 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-10-04 09:38:23 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-04 11:06:37 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 11416 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-04 11:06:37 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-10-04 11:06:38 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04 11:06:38 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 87 ms. Found 4 JPA repository interfaces.
+2024-10-04 11:06:39 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-04 11:06:39 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-04 11:06:39 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-04 11:06:39 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-04 11:06:39 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1721 ms
+2024-10-04 11:06:39 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-04 11:06:39 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5403799b
+2024-10-04 11:06:39 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-04 11:06:39 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04 11:06:39 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-04 11:06:39 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-04 11:06:40 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04 11:06:40 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-04 11:06:41 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill_product" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill_product" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "ordine" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "product" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "bill" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "bill_product" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "client" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "ordine" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "product" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "bill_seq" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "client_seq" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "ordine_seq" non esiste, saltata
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:06:41 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "product_seq" non esiste, saltata
+2024-10-04 11:06:41 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:06:41 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-04 11:06:41 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04 11:06:42 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-04 11:06:42 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 5.648 seconds (process running for 6.271)
+2024-10-04 11:06:42 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-10-04 11:07:51 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:07:51 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-04 11:07:51 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-04 11:11:20 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 9688 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-04 11:11:20 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-10-04 11:11:21 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04 11:11:21 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99 ms. Found 4 JPA repository interfaces.
+2024-10-04 11:11:22 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-04 11:11:22 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1747 ms
+2024-10-04 11:11:22 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-04 11:11:23 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@637791d
+2024-10-04 11:11:23 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-04 11:11:23 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04 11:11:23 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-04 11:11:23 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-04 11:11:23 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04 11:11:24 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-04 11:11:24 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill_product" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill_product" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "ordine" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "product" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "bill" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "bill_product" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "client" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "ordine" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "product" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "bill_seq" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "client_seq" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "ordine_seq" non esiste, saltata
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:11:24 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "product_seq" non esiste, saltata
+2024-10-04 11:11:24 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:11:25 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-04 11:11:25 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04 11:11:25 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-04 11:11:25 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 5.664 seconds (process running for 6.121)
+2024-10-04 11:11:25 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-10-04 11:11:25 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:11:25 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-04 11:11:25 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-04 11:12:55 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 8228 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-04 11:12:55 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-10-04 11:12:56 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04 11:12:56 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 91 ms. Found 4 JPA repository interfaces.
+2024-10-04 11:12:57 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-04 11:12:57 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-04 11:12:57 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-04 11:12:57 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-04 11:12:57 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1750 ms
+2024-10-04 11:12:57 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-04 11:12:57 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d13960e
+2024-10-04 11:12:57 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-04 11:12:58 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04 11:12:58 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-04 11:12:58 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-04 11:12:58 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04 11:12:58 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-04 11:12:59 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill_product" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill_product" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "ordine" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "product" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "bill" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "bill_product" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "client" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "ordine" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "product" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "bill_seq" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "client_seq" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "ordine_seq" non esiste, saltata
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:12:59 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "product_seq" non esiste, saltata
+2024-10-04 11:12:59 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:13:00 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-04 11:13:00 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04 11:13:00 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-04 11:13:00 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 5.853 seconds (process running for 6.349)
+2024-10-04 11:13:00 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-10-04 11:14:16 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:14:16 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-04 11:14:16 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-04 11:17:14 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 15920 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-04 11:17:14 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-10-04 11:17:15 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04 11:17:15 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 93 ms. Found 4 JPA repository interfaces.
+2024-10-04 11:17:16 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-04 11:17:16 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-04 11:17:16 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-04 11:17:16 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-04 11:17:16 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1764 ms
+2024-10-04 11:17:16 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-04 11:17:17 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4351ed61
+2024-10-04 11:17:17 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-04 11:17:17 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04 11:17:17 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-04 11:17:17 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-04 11:17:17 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04 11:17:18 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-04 11:17:18 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04 11:17:18 - o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "ALTER SEQUENCE bill_bill_id_seq RESTART WITH 5" via JDBC [ERRORE: la relazione "bill_bill_id_seq" non esiste]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "ALTER SEQUENCE bill_bill_id_seq RESTART WITH 5" via JDBC [ERRORE: la relazione "bill_bill_id_seq" non esiste]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
+	at org.hibernate.tool.schema.internal.Helper.applyScript(Helper.java:255)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportFiles(SchemaCreatorImpl.java:676)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportSources(SchemaCreatorImpl.java:595)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:184)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:250)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.orders.OnlineOrdersApplication.main(OnlineOrdersApplication.java:12)
+Caused by: org.postgresql.util.PSQLException: ERRORE: la relazione "bill_bill_id_seq" non esiste
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 38 common frames omitted
+2024-10-04 11:17:18 - o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "ALTER SEQUENCE client_client_id_seq RESTART WITH 5" via JDBC [ERRORE: la relazione "client_client_id_seq" non esiste]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "ALTER SEQUENCE client_client_id_seq RESTART WITH 5" via JDBC [ERRORE: la relazione "client_client_id_seq" non esiste]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
+	at org.hibernate.tool.schema.internal.Helper.applyScript(Helper.java:255)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportFiles(SchemaCreatorImpl.java:676)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportSources(SchemaCreatorImpl.java:595)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:184)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:250)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.orders.OnlineOrdersApplication.main(OnlineOrdersApplication.java:12)
+Caused by: org.postgresql.util.PSQLException: ERRORE: la relazione "client_client_id_seq" non esiste
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 38 common frames omitted
+2024-10-04 11:17:18 - o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "ALTER SEQUENCE pedidos_pedidos_id_seq RESTART WITH 6" via JDBC [ERRORE: la relazione "pedidos_pedidos_id_seq" non esiste]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "ALTER SEQUENCE pedidos_pedidos_id_seq RESTART WITH 6" via JDBC [ERRORE: la relazione "pedidos_pedidos_id_seq" non esiste]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
+	at org.hibernate.tool.schema.internal.Helper.applyScript(Helper.java:255)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportFiles(SchemaCreatorImpl.java:676)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportSources(SchemaCreatorImpl.java:595)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:184)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:250)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.orders.OnlineOrdersApplication.main(OnlineOrdersApplication.java:12)
+Caused by: org.postgresql.util.PSQLException: ERRORE: la relazione "pedidos_pedidos_id_seq" non esiste
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 38 common frames omitted
+2024-10-04 11:17:18 - o.h.t.s.i.ExceptionHandlerLoggedImpl - GenerationTarget encountered exception accepting command : Error executing DDL "ALTER SEQUENCE product_product_id_seq RESTART WITH 5" via JDBC [ERRORE: la relazione "product_product_id_seq" non esiste]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "ALTER SEQUENCE product_product_id_seq RESTART WITH 5" via JDBC [ERRORE: la relazione "product_product_id_seq" non esiste]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.Helper.applySqlString(Helper.java:233)
+	at org.hibernate.tool.schema.internal.Helper.applyScript(Helper.java:255)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportFiles(SchemaCreatorImpl.java:676)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.applyImportSources(SchemaCreatorImpl.java:595)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.performCreation(SchemaCreatorImpl.java:184)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:142)
+	at org.hibernate.tool.schema.internal.SchemaCreatorImpl.doCreation(SchemaCreatorImpl.java:118)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:250)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1429)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.example.orders.OnlineOrdersApplication.main(OnlineOrdersApplication.java:12)
+Caused by: org.postgresql.util.PSQLException: ERRORE: la relazione "product_product_id_seq" non esiste
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 38 common frames omitted
+2024-10-04 11:17:18 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:17:19 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-04 11:17:19 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04 11:17:20 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-04 11:17:20 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 6.007 seconds (process running for 6.512)
+2024-10-04 11:17:20 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-10-04 11:17:49 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:17:49 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-04 11:17:49 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-04 11:18:52 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 3100 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-04 11:18:52 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-10-04 11:18:53 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04 11:18:53 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 4 JPA repository interfaces.
+2024-10-04 11:18:54 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-04 11:18:54 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-04 11:18:54 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-04 11:18:54 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-04 11:18:54 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1675 ms
+2024-10-04 11:18:54 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-04 11:18:54 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3b0c3951
+2024-10-04 11:18:54 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-04 11:18:54 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04 11:18:54 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-04 11:18:55 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-04 11:18:55 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04 11:18:55 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-04 11:18:56 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04 11:18:56 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:18:56 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-04 11:18:57 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04 11:18:57 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-04 11:18:57 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 5.607 seconds (process running for 6.11)
+2024-10-04 11:18:57 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-10-04 11:20:18 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:20:18 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-04 11:20:18 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-04 11:20:20 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 8932 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-04 11:20:20 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-10-04 11:20:21 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04 11:20:21 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 4 JPA repository interfaces.
+2024-10-04 11:20:22 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-04 11:20:22 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-04 11:20:22 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-04 11:20:22 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-04 11:20:22 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1672 ms
+2024-10-04 11:20:22 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-04 11:20:22 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@d13960e
+2024-10-04 11:20:22 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-04 11:20:22 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04 11:20:22 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-04 11:20:22 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-04 11:20:23 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04 11:20:23 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-04 11:20:24 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04 11:20:24 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:20:24 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-04 11:20:24 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04 11:20:25 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-04 11:20:25 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 5.59 seconds (process running for 6.122)
+2024-10-04 11:20:25 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-10-04 11:22:05 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:22:05 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-04 11:22:05 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-04 11:23:49 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 16284 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-04 11:23:49 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-10-04 11:23:50 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04 11:23:50 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 103 ms. Found 4 JPA repository interfaces.
+2024-10-04 11:23:51 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-04 11:23:51 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-04 11:23:51 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-04 11:23:51 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-04 11:23:51 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1938 ms
+2024-10-04 11:23:51 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-04 11:23:52 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2574a9e3
+2024-10-04 11:23:52 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-04 11:23:52 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04 11:23:52 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-04 11:23:52 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-04 11:23:52 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04 11:23:53 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-04 11:23:53 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04 11:23:53 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
+2024-10-04 11:23:53 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
+2024-10-04 11:23:53 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:23:54 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-04 11:23:54 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04 11:23:55 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-04 11:23:55 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 6.108 seconds (process running for 6.633)
+2024-10-04 11:23:55 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-10-04 11:26:10 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:26:10 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-04 11:26:10 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-04 11:26:12 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 14060 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-04 11:26:12 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-10-04 11:26:12 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04 11:26:13 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 90 ms. Found 4 JPA repository interfaces.
+2024-10-04 11:26:13 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-04 11:26:13 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-04 11:26:13 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-04 11:26:13 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-04 11:26:13 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1746 ms
+2024-10-04 11:26:14 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-04 11:26:14 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7d4d8579
+2024-10-04 11:26:14 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-04 11:26:14 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04 11:26:14 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-04 11:26:14 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-04 11:26:15 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04 11:26:15 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-04 11:26:15 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill_product" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill_product" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "ordine" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "product" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "bill" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "bill_product" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "client" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "ordine" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "product" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "bill_seq" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "client_seq" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "ordine_seq" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "product_seq" non esiste, saltata
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
+2024-10-04 11:26:15 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
+2024-10-04 11:26:16 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:26:16 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-04 11:26:16 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04 11:26:17 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-04 11:26:17 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 5.541 seconds (process running for 6.035)
+2024-10-04 11:26:17 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-10-04 11:27:03 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:27:03 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-04 11:27:03 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-04 11:27:05 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 5464 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-04 11:27:05 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-10-04 11:27:06 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04 11:27:06 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 118 ms. Found 4 JPA repository interfaces.
+2024-10-04 11:27:07 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-04 11:27:07 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-04 11:27:07 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-04 11:27:08 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-04 11:27:08 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2204 ms
+2024-10-04 11:27:08 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-04 11:27:08 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@637791d
+2024-10-04 11:27:08 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-04 11:27:08 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04 11:27:08 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-04 11:27:08 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-04 11:27:09 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04 11:27:09 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-04 11:27:10 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04 11:27:10 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
+2024-10-04 11:27:10 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
+2024-10-04 11:27:10 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:27:11 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-04 11:27:11 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04 11:27:11 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-04 11:27:11 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 6.717 seconds (process running for 7.224)
+2024-10-04 11:27:11 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-10-04 11:28:06 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:28:06 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-04 11:28:06 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-04 11:28:09 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 13060 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-04 11:28:09 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-10-04 11:28:10 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-04 11:28:10 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 4 JPA repository interfaces.
+2024-10-04 11:28:10 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-10-04 11:28:10 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-10-04 11:28:10 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-10-04 11:28:10 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-10-04 11:28:10 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1644 ms
+2024-10-04 11:28:11 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-04 11:28:11 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@27f3f512
+2024-10-04 11:28:11 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-04 11:28:11 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-04 11:28:11 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-04 11:28:11 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-04 11:28:12 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-04 11:28:12 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-04 11:28:12 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill_product" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "bill_product" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "ordine" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la relazione "product" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "bill" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "bill_product" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "client" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "ordine" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la tabella "product" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "bill_seq" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "client_seq" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "ordine_seq" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 00000
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - la sequenza "product_seq" non esiste, saltata
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
+2024-10-04 11:28:12 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
+2024-10-04 11:28:12 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:28:13 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-04 11:28:13 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-04 11:28:14 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-10-04 11:28:14 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 5.516 seconds (process running for 6.0)
+2024-10-04 11:28:14 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-10-04 11:29:39 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-10-04 11:29:39 - c.e.o.e.GlobalExceptionHandler - Fri Oct 04 11:29:39 CEST 2024
+2024-10-04 11:29:58 - c.e.o.e.GlobalExceptionHandler - Fri Oct 04 11:29:58 CEST 2024
+2024-10-04 11:31:00 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-04 11:31:00 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-04 11:31:00 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

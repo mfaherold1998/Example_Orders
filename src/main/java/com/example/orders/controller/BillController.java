@@ -35,7 +35,7 @@ public class BillController {
         return billService.deleteBill(id);
     }//DONE
 
-    @PutMapping("/update/{id}")
+    @PutMapping("/update")
     public BillDto updateBill (@RequestBody @Valid BillDto billDto){
         return billService.updateBill(billDto);
     }//DONE

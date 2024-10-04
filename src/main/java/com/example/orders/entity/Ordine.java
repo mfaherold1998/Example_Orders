@@ -8,11 +8,11 @@ import java.util.List;
 
 @Entity
 @Data
-public class Pedidos {
+public class Ordine {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long pedidosID;
+    @GeneratedValue( strategy = GenerationType.SEQUENCE)
+    private Long id;
 
     @Column(nullable = false)
     private Date date;
@@ -20,13 +20,13 @@ public class Pedidos {
     @Column(nullable = false, precision = 10)
     private Double total;
 
-    @OneToOne(mappedBy = "ped", optional = false)
+    @OneToOne(mappedBy = "ord", optional = false)
     private Bill billId;
 
     @ManyToOne(optional = false)
-    @JoinColumn(name="client_id")
+    @JoinColumn(name = "client_id")
     private Client cli;
 
-    @OneToMany(mappedBy = "peds")
+    @OneToMany(mappedBy = "ords")
     private List<Product> products;
 }

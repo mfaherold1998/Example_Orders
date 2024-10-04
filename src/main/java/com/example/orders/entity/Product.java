@@ -11,8 +11,8 @@ import java.util.List;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long productId;
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    private Long id;
 
     @Column(nullable = false, length = 100)
     private String name;
@@ -21,8 +21,8 @@ public class Product {
     private Double price;
 
     @ManyToOne
-    @JoinColumn(name="pedidosID")
-    private Pedidos peds;
+    @JoinColumn(name="ordine_id")
+    private Ordine ords;
 
     @ManyToMany(mappedBy = "prods")
     private List<Bill> bills = Collections.emptyList();

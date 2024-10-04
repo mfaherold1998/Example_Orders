@@ -14,8 +14,8 @@ import java.util.List;
 @AllArgsConstructor
 public class ClientDto {
 
-    @NotNull//?
-    private Long clientId;
+    //@NotNull
+    private Long id;
     @NotNull
     @Pattern(regexp = "^[a-zA-Z\\s]+$")
     @Size(min=1,max=100)
@@ -23,7 +23,7 @@ public class ClientDto {
     @Email
     private String email;
     @Size(min=1)
-    @NotNull
+    //@NotNull
     @Valid
-    private List<PedidosDtoMini> peds;
+    private List<OrdineDtoMini> ords;
 }

@@ -15,7 +15,7 @@ import lombok.Setter;
 public class ClientDtoMini {
 
     @NotNull
-    private Long clientId;
+    private Long id;
     @NotNull
     @Pattern(regexp = "^[a-zA-Z\\s]+$")
     @Size(min=1,max=100)

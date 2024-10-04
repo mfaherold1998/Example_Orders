@@ -35,7 +35,7 @@ public class ProductController {
         return productService.deleteProduct(id);
     }//DONE
 
-    @PutMapping("/update/{id}")
+    @PutMapping("/update")
     public ProductDto updateProduct (@RequestBody @Valid ProductDto productDto){
         return productService.updateProduct(productDto);
     }//DONE

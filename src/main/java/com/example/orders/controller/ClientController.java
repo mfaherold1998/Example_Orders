@@ -35,7 +35,7 @@ public class ClientController {
         return clientService.deleteClient(id);
     }//DONE
 
-    @PutMapping("/update/{id}")
+    @PutMapping("/update")
     public ClientDto updateClient (@RequestBody @Valid ClientDto clientDto){
         return clientService.updateClient(clientDto);
     }//DONE
