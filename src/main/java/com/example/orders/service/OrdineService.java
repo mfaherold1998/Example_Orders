@@ -1,7 +1,6 @@
 package com.example.orders.service;
 
 import com.example.orders.dto.OrdineDto;
-import com.example.orders.entity.Ordine;
 import com.example.orders.exceptions.NotFoundException;
 import com.example.orders.mappers.OrdineMapper;
 import com.example.orders.repository.OrdineRepository;

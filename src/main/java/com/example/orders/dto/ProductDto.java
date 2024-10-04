@@ -23,11 +23,11 @@ public class ProductDto {
     @Min(0)
     @Digits(integer = 10, fraction = 2)
     private Double price;
-    @Valid
+    /*@Valid
     //@NotNull
     private OrdineDtoMini ords;
     @Size(min=1)
     //@NotNull
     @Valid
-    private List<BillDtoMini> bills;
+    private List<BillDtoMini> bills;*/
 }

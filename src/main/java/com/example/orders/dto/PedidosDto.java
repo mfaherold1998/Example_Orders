@@ -24,7 +24,7 @@ public class PedidosDto {
     @Min(0)
     @Digits(integer = 10, fraction = 2)
     private Double total;
-    @Valid
+    /*@Valid
     @NotNull
     private BillDtoMini billId;
     @Valid
@@ -33,5 +33,5 @@ public class PedidosDto {
     @Size(min=1)
     @NotNull
     @Valid
-    private List<ProductDtoMini> products;
+    private List<ProductDtoMini> products;*/
 }

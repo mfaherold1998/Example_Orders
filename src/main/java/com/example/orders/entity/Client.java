@@ -20,6 +20,6 @@ public class Client {
     @Column
     private String email;
 
-    @OneToMany(mappedBy = "cli")
-    private List<Ordine> ords = Collections.emptyList();
+    /*@OneToMany(mappedBy = "cli")
+    private List<Ordine> ords = Collections.emptyList();*/
 }

@@ -20,12 +20,12 @@ public class BillDto {
     @Min(0)
     @Digits(integer = 10, fraction = 2)
     private Double totalAmount;
-    @Valid
+    /*@Valid
     //@NotNull
     private OrdineDtoMini ord;
     @Size(min=1)
     //@NotNull
     @Valid
-    private List<ProductDtoMini> prods;
+    private List<ProductDtoMini> prods;*/
 
 }

@@ -20,10 +20,10 @@ public class Product {
     @Column(nullable = false, precision = 10)
     private Double price;
 
-    @ManyToOne
+    /*@ManyToOne
     @JoinColumn(name="ordine_id")
     private Ordine ords;
 
     @ManyToMany(mappedBy = "prods")
-    private List<Bill> bills = Collections.emptyList();
+    private List<Bill> bills = Collections.emptyList();*/
 }

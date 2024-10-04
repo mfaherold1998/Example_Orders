@@ -20,7 +20,7 @@ public class Ordine {
     @Column(nullable = false, precision = 10)
     private Double total;
 
-    @OneToOne(mappedBy = "ord", optional = false)
+    /*@OneToOne(mappedBy = "ord", optional = false)
     private Bill billId;
 
     @ManyToOne(optional = false)
@@ -28,5 +28,5 @@ public class Ordine {
     private Client cli;
 
     @OneToMany(mappedBy = "ords")
-    private List<Product> products;
+    private List<Product> products;*/
 }

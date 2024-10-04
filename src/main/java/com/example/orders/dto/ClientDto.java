@@ -22,8 +22,8 @@ public class ClientDto {
     private String name;
     @Email
     private String email;
-    @Size(min=1)
+    /*@Size(min=1)
     //@NotNull
     @Valid
-    private List<OrdineDtoMini> ords;
+    private List<OrdineDtoMini> ords;*/
 }

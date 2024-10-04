@@ -8,10 +8,10 @@ import java.util.Date;
 @Data
 public class CustomException extends RuntimeException{
 
-    private Date timestamp;
-    private String message;
-    private String details;
-    private HttpStatus httpStatus;
+    private final Date timestamp;
+    private final String message;
+    private final String details;
+    private final HttpStatus httpStatus;
 
     public CustomException(String message, String details, HttpStatus httpStatus) {
         this.timestamp = new Date();
