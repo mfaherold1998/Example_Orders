@@ -11,7 +11,7 @@ import java.util.Collections;
 public class Client {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false, length = 100)
@@ -20,6 +20,6 @@ public class Client {
     @Column
     private String email;
 
-    /*@OneToMany(mappedBy = "cli")
-    private List<Ordine> ords = Collections.emptyList();*/
+    @OneToMany(mappedBy = "cli")
+    private List<Ordine> ords = Collections.emptyList();
 }

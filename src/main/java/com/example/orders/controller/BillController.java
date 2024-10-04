@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/bill")
+@RequestMapping("/bills")
 @RequiredArgsConstructor
 public class BillController {
 
@@ -18,25 +18,25 @@ public class BillController {
     @GetMapping("/findall")
     public List<BillDto> getAllBills(){
         return billService.getAllBills();
-    }//DONE
+    }//POSTMAN
 
-    @GetMapping("/getbill/{id}")
+    @GetMapping("/{id}")
     public BillDto getBillById(@PathVariable Long id){
         return billService.getBillById(id);
-    }//DONE
+    }//POSTMAN
 
     @PostMapping("/insert")
     public BillDto saveBill (@RequestBody @Valid BillDto billDto){
         return billService.saveBill(billDto);
-    }//DONE
+    }//POSTMAN
 
     @DeleteMapping("/delete/{id}")
     public BillDto deleteBill(@PathVariable Long id){
         return billService.deleteBill(id);
-    }//DONE
+    }//POSTMAN
 
     @PutMapping("/update")
     public BillDto updateBill (@RequestBody @Valid BillDto billDto){
         return billService.updateBill(billDto);
-    }//DONE
+    }//POSTMAN
 }

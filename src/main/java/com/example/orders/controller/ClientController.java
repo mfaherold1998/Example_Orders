@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/client")
+@RequestMapping("/clients")
 @RequiredArgsConstructor
 public class ClientController {
 
@@ -18,25 +18,25 @@ public class ClientController {
     @GetMapping("/findall")
     public List<ClientDto> getAllClients(){
         return clientService.getAllClients();
-    }//DONE
+    }//POSTMAN
 
-    @GetMapping("/getclient/{id}")
+    @GetMapping("/{id}")
     public ClientDto getClientById(@PathVariable Long id){
         return clientService.getClientById(id);
-    }//DONE
+    }//POSTMAN
 
     @PostMapping("/insert")
     public ClientDto saveClient (@RequestBody @Valid ClientDto clientDto){
         return clientService.saveClient(clientDto);
-    }//DONE
+    }//POSTMAN
 
     @DeleteMapping("/delete/{id}")
     public ClientDto deleteClient(@PathVariable Long id){
         return clientService.deleteClient(id);
-    }//DONE
+    }//POSTMAN
 
     @PutMapping("/update")
     public ClientDto updateClient (@RequestBody @Valid ClientDto clientDto){
         return clientService.updateClient(clientDto);
-    }//DONE
+    }//POSTMAN
 }

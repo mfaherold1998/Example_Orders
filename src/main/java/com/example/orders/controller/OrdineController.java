@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/ordine")
+@RequestMapping("/ordini")
 @RequiredArgsConstructor
 public class OrdineController {
 
@@ -18,26 +18,26 @@ public class OrdineController {
     @GetMapping("/findall")
     public List<OrdineDto> getAllOrdini(){
         return ordineService.getAllOrdini();
-    }
+    }//POSTMAN
 
-    @GetMapping("/getordine/{id}")
+    @GetMapping("/{id}")
     public OrdineDto getOrdineById(@PathVariable Long id){
         return ordineService.getOrdineById(id);
-    }
+    }//POSTMAN
 
     @PostMapping("/insert")
     public OrdineDto saveBill(@RequestBody @Valid OrdineDto ordineDto){
         return ordineService.saveOrdine(ordineDto);
-    }
+    }//POSTMAN
 
     @DeleteMapping("/delete/{id}")
     public OrdineDto deleteOrdine(@PathVariable Long id){
         return ordineService.deleteOrdine(id);
-    }
+    }//POSTMAN
 
     @PutMapping("/update")
     public OrdineDto updateOrdine (@RequestBody @Valid OrdineDto ordineDto){
         return ordineService.updateOrdine(ordineDto);
-    }
+    }//POSTMAN
 
 }

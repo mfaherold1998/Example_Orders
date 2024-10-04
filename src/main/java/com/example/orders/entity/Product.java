@@ -11,7 +11,7 @@ import java.util.List;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false, length = 100)
@@ -20,10 +20,6 @@ public class Product {
     @Column(nullable = false, precision = 10)
     private Double price;
 
-    /*@ManyToOne
-    @JoinColumn(name="ordine_id")
-    private Ordine ords;
-
     @ManyToMany(mappedBy = "prods")
-    private List<Bill> bills = Collections.emptyList();*/
+    private List<Ordine> ords = Collections.emptyList();
 }
