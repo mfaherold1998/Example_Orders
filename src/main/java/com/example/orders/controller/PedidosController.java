@@ -3,17 +3,17 @@ package com.example.orders.controller;
 import com.example.orders.dto.PedidosDto;
 import com.example.orders.service.PedidosService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/pedidos")
+@RequiredArgsConstructor
 public class PedidosController {
 
-    @Autowired
-    private PedidosService pedidosService;
+    private final PedidosService pedidosService;
 
     @GetMapping("/findall")
     public List<PedidosDto> getAllPedidos(){

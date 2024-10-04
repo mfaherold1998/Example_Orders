@@ -3,8 +3,6 @@ package com.example.orders.dto;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import lombok.*;
-
-import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 

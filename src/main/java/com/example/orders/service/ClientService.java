@@ -1,7 +1,6 @@
 package com.example.orders.service;
 
 import com.example.orders.dto.ClientDto;
-import com.example.orders.exceptions.InvalidException;
 import com.example.orders.exceptions.NotFoundException;
 import com.example.orders.mappers.ClientMapper;
 import com.example.orders.repository.ClientRepository;

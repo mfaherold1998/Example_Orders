@@ -4,7 +4,7 @@ import com.example.orders.dto.ProductDto;
 import com.example.orders.entity.Product;
 import org.mapstruct.Mapper;
 
-@Mapper(componentModel = "spring"/*,uses = {PedidosMapper.class, BillMapper.class}*/)
+@Mapper(componentModel = "spring")
 public interface ProductMapper {
 
     ProductDto toDto(Product product);

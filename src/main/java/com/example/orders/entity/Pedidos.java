@@ -27,6 +27,6 @@ public class Pedidos {
     @JoinColumn(name="client_id")
     private Client cli;
 
-    /*@OneToMany(mappedBy = "peds")
-    private List<Product> products;*/
+    @OneToMany(mappedBy = "peds")
+    private List<Product> products;
 }

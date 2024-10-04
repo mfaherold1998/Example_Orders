@@ -20,9 +20,9 @@ public class Product {
     @Column(nullable = false, precision = 10)
     private Double price;
 
-    /*@ManyToOne
+    @ManyToOne
     @JoinColumn(name="pedidosID")
-    private Pedidos peds;*/
+    private Pedidos peds;
 
     @ManyToMany(mappedBy = "prods")
     private List<Bill> bills = Collections.emptyList();

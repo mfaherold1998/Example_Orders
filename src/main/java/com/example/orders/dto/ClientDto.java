@@ -1,14 +1,11 @@
 package com.example.orders.dto;
 
-import com.example.orders.entity.Pedidos;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-
-import java.util.Collections;
 import java.util.List;
 
 @Setter

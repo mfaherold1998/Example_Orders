@@ -3,17 +3,17 @@ package com.example.orders.controller;
 import com.example.orders.dto.BillDto;
 import com.example.orders.service.BillService;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/bill")
+@RequiredArgsConstructor
 public class BillController {
 
-    @Autowired
-    private BillService billService;
+    private final BillService billService;
 
     @GetMapping("/findall")
     public List<BillDto> getAllBills(){
