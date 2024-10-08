@@ -4,39 +4,40 @@ import com.example.orders.dto.ClientDto;
 import com.example.orders.service.ClientService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/clients")
+@RequestMapping("/api")
 @RequiredArgsConstructor
 public class ClientController {
 
     private final ClientService clientService;
 
-    @GetMapping("/findall")
-    public List<ClientDto> getAllClients(){
-        return clientService.getAllClients();
+    @GetMapping("/clients")
+    public ResponseEntity<List<ClientDto>> getAllClients(){
+        return ResponseEntity.ok(clientService.getAllClients());
     }//POSTMAN
 
-    @GetMapping("/{id}")
-    public ClientDto getClientById(@PathVariable Long id){
-        return clientService.getClientById(id);
+    @GetMapping("/clients/{id}")
+    public ResponseEntity<ClientDto> getClientById(@PathVariable Long id){
+        return ResponseEntity.ok(clientService.getClientById(id));
     }//POSTMAN
 
-    @PostMapping("/insert")
-    public ClientDto saveClient (@RequestBody @Valid ClientDto clientDto){
-        return clientService.saveClient(clientDto);
+    @PostMapping("/clients")
+    public ResponseEntity<ClientDto> saveClient (@RequestBody @Valid ClientDto clientDto){
+        return ResponseEntity.ok(clientService.saveClient(clientDto));
     }//POSTMAN
 
-    @DeleteMapping("/delete/{id}")
-    public ClientDto deleteClient(@PathVariable Long id){
-        return clientService.deleteClient(id);
+    @DeleteMapping("/clients/{id}")
+    public ResponseEntity<Void> deleteClient(@PathVariable Long id){
+        return ResponseEntity.noContent().build();
     }//POSTMAN
 
-    @PutMapping("/update")
-    public ClientDto updateClient (@RequestBody @Valid ClientDto clientDto){
-        return clientService.updateClient(clientDto);
+    @PutMapping("/clients")
+    public ResponseEntity<ClientDto> updateClient (@RequestBody @Valid ClientDto clientDto){
+        return ResponseEntity.ok(clientService.updateClient(clientDto));
     }//POSTMAN
 }

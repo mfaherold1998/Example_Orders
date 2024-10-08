@@ -4,39 +4,40 @@ import com.example.orders.dto.ProductDto;
 import com.example.orders.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/api")
 @RequiredArgsConstructor
 public class ProductController {
 
     private final ProductService productService;
 
-    @GetMapping("/findall")
-    public List<ProductDto> getAllProducts(){
-        return productService.getAllProducts();
+    @GetMapping("/products")
+    public ResponseEntity<List<ProductDto>> getAllProducts(){
+        return ResponseEntity.ok(productService.getAllProducts());
     }//POSTMAN
 
-    @GetMapping("/{id}")
-    public ProductDto getProductById(@PathVariable Long id){
-        return productService.getProductById(id);
+    @GetMapping("/products/{id}")
+    public ResponseEntity<ProductDto> getProductById(@PathVariable Long id){
+        return ResponseEntity.ok(productService.getProductById(id));
     }//POSTMAN
 
-    @PostMapping("/insert")
-    public ProductDto saveProduct (@RequestBody @Valid ProductDto productDto){
-        return productService.saveProduct(productDto);
+    @PostMapping("/products")
+    public ResponseEntity<ProductDto> saveProduct (@RequestBody @Valid ProductDto productDto){
+        return ResponseEntity.ok(productService.saveProduct(productDto));
     }//POSTMAN
 
-    @DeleteMapping("/delete/{id}")
-    public ProductDto deleteProduct(@PathVariable Long id){
-        return productService.deleteProduct(id);
+    @DeleteMapping("/products/{id}")
+    public ResponseEntity<Void> deleteProduct(@PathVariable Long id){
+        return ResponseEntity.noContent().build();
     }//POSTMAN
 
-    @PutMapping("/update")
-    public ProductDto updateProduct (@RequestBody @Valid ProductDto productDto){
-        return productService.updateProduct(productDto);
+    @PutMapping("/products")
+    public ResponseEntity<ProductDto> updateProduct (@RequestBody @Valid ProductDto productDto){
+        return ResponseEntity.ok(productService.updateProduct(productDto));
     }//POSTMAN
 }

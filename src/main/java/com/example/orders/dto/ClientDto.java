@@ -25,5 +25,5 @@ public class ClientDto {
     @Size(min=0)
     //@NotNull
     @Valid
-    private List<OrdineDtoMini> ords;
+    private List<OrdineDto> ords;
 }

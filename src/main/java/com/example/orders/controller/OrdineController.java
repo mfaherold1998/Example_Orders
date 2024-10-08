@@ -4,40 +4,41 @@ import com.example.orders.dto.OrdineDto;
 import com.example.orders.service.OrdineService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/ordini")
+@RequestMapping("/api")
 @RequiredArgsConstructor
 public class OrdineController {
 
     private final OrdineService ordineService;
 
-    @GetMapping("/findall")
-    public List<OrdineDto> getAllOrdini(){
-        return ordineService.getAllOrdini();
+    @GetMapping("/ordini")
+    public ResponseEntity<List<OrdineDto>> getAllOrdini(){
+        return ResponseEntity.ok(ordineService.getAllOrdini());
     }//POSTMAN
 
-    @GetMapping("/{id}")
-    public OrdineDto getOrdineById(@PathVariable Long id){
-        return ordineService.getOrdineById(id);
+    @GetMapping("/ordini/{id}")
+    public ResponseEntity<OrdineDto> getOrdineById(@PathVariable Long id){
+        return ResponseEntity.ok(ordineService.getOrdineById(id));
     }//POSTMAN
 
-    @PostMapping("/insert")
-    public OrdineDto saveBill(@RequestBody @Valid OrdineDto ordineDto){
-        return ordineService.saveOrdine(ordineDto);
+    @PostMapping("/ordini")
+    public ResponseEntity<OrdineDto> saveBill(@RequestBody @Valid OrdineDto ordineDto){
+        return ResponseEntity.ok(ordineService.saveOrdine(ordineDto));
     }//POSTMAN
 
-    @DeleteMapping("/delete/{id}")
-    public OrdineDto deleteOrdine(@PathVariable Long id){
-        return ordineService.deleteOrdine(id);
+    @DeleteMapping("/ordini/{id}")
+    public ResponseEntity<Void> deleteOrdine(@PathVariable Long id){
+        return ResponseEntity.noContent().build();
     }//POSTMAN
 
-    @PutMapping("/update")
-    public OrdineDto updateOrdine (@RequestBody @Valid OrdineDto ordineDto){
-        return ordineService.updateOrdine(ordineDto);
+    @PutMapping("/ordini")
+    public ResponseEntity<OrdineDto> updateOrdine (@RequestBody @Valid OrdineDto ordineDto){
+        return ResponseEntity.ok(ordineService.updateOrdine(ordineDto));
     }//POSTMAN
 
 }

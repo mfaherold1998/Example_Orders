@@ -21,7 +21,7 @@ public class BillDto {
     private Double totalAmount;
     @Valid
     //@NotNull
-    private OrdineDtoMini ord;
+    private OrdineDto ord;
 
 
 }

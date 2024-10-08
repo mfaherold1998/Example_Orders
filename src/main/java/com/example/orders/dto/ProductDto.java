@@ -27,6 +27,6 @@ public class ProductDto {
     private Double price;
     @Valid
     @NotNull
-    private List<OrdineDtoMini> ords = Collections.emptyList();
+    private List<OrdineDto> ords = Collections.emptyList();
 
 }

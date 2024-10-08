@@ -26,10 +26,10 @@ public class OrdineDto {
     private Double total;
     @Valid
     //@NotNull
-    private ClientDtoMini cli;
+    private ClientDto cli;
     @Size(min=0)
     @NotNull
     @Valid
-    private List<ProductDtoMini> prods = Collections.emptyList();
+    private List<ProductDto> prods = Collections.emptyList();
 
 }

@@ -33,9 +33,8 @@ erDiagram
 
     %% Relations
     CLIENT ||--o{ ORDER : "makes"
-    ORDER ||--o{ PRODUCT : "contains"
+    ORDER }o--o{ PRODUCT : "contains"
     BILL ||--|| ORDER : "corresponds to"
-    PRODUCT }o--o{ BILL : "include in"
 ```
 **Relations:**
 
