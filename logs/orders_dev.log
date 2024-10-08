@@ -1014,3 +1014,49 @@ Caused by: org.postgresql.util.PSQLException: ERRORE: un valore chiave duplicato
 2024-10-07 21:39:40 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-07 21:39:40 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-10-07 21:39:40 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-08 11:13:35 - c.e.orders.services.BillServiceTest - Starting BillServiceTest using Java 22.0.2 with PID 1988 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-08 11:13:35 - c.e.orders.services.BillServiceTest - The following 1 profile is active: "dev"
+2024-10-08 11:13:36 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-08 11:13:36 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 78 ms. Found 4 JPA repository interfaces.
+2024-10-08 11:13:37 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-08 11:13:37 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@535a518c
+2024-10-08 11:13:37 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-08 11:13:37 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-08 11:13:37 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-08 11:13:37 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-08 11:13:38 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-08 11:13:38 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-08 11:13:39 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-08 11:13:39 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
+2024-10-08 11:13:39 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'Ã¨ alcuna transazione in corso
+2024-10-08 11:13:39 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-08 11:13:39 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-08 11:13:40 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-08 11:13:40 - c.e.orders.services.BillServiceTest - Started BillServiceTest in 5.179 seconds (process running for 6.489)
+2024-10-08 11:13:40 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-08 11:13:40 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-08 11:13:40 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-08 11:14:07 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 16512 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-08 11:14:07 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "dev"
+2024-10-08 11:14:09 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-08 11:14:09 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 92 ms. Found 4 JPA repository interfaces.
+2024-10-08 11:14:09 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-08 11:14:10 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46d2be66
+2024-10-08 11:14:10 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-08 11:14:10 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-08 11:14:10 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-08 11:14:10 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-08 11:14:11 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-08 11:14:11 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-08 11:14:13 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-08 11:14:13 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
+2024-10-08 11:14:13 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
+2024-10-08 11:14:13 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-08 11:14:13 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-08 11:14:14 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-08 11:14:14 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 7.582 seconds (process running for 9.724)
+2024-10-08 11:14:15 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.services.BillServiceTest]: BillServiceTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-08 11:14:15 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.services.BillServiceTest
+2024-10-08 11:14:15 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-08 11:14:15 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-08 11:14:15 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
