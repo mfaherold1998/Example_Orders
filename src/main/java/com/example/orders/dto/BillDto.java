@@ -9,6 +9,7 @@ import java.util.Date;
 @Getter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class BillDto {
 
     //@NotNull
@@ -22,6 +23,4 @@ public class BillDto {
     @Valid
     //@NotNull
     private OrdineDto ord;
-
-
 }
