@@ -19,7 +19,7 @@ public class OrdineDto {
 
     private Long id;
     @PastOrPresent
-    private Date date;
+    private Date dateOrdine;
     @NotNull
     @Min(0)
     @Digits(integer = 10, fraction = 2)

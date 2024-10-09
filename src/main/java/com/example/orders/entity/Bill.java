@@ -2,6 +2,7 @@ package com.example.orders.entity;
 
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Data;
 
 import java.util.Collections;
@@ -18,7 +19,7 @@ public class Bill {
     private Long id;
 
     @Column(nullable = false)
-    private Date date;
+    private Date dateBill;
 
     @Column(nullable = false, precision = 10)
     private Double totalAmount;

@@ -12,6 +12,7 @@ import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Date;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -32,9 +33,9 @@ class BillServiceTest {
         OrdineDto ordine = new OrdineDto();
         bill = BillDto.builder()
                 .id(1L)
-                .date(new Date())
+                .dateBill(new Date())
                 .totalAmount(100.0)
-                .ord(ordine)
+                //.ord(ordine)
                 .build();
     }
 
@@ -43,6 +44,17 @@ class BillServiceTest {
         assertNotNull(bill);
         assertEquals(1L, bill.getId());
         assertEquals(100.00, bill.getTotalAmount());
+    }
+
+    @Test
+    void testGetAllBills_none_ListOfBillDto(){
+
+        BillDto savedDto = billService.saveBill(bill);
+
+        List<BillDto> bills = billService.getAllBills();
+
+        assertNotNull(savedDto);
+        assertEquals(1L,savedDto.getId());
     }
 
 

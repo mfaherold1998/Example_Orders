@@ -8,15 +8,15 @@ insert into product(id,price,name) values (2,15.4,'Soap');
 insert into product(id,price,name) values (3,10.0,'Oil');
 insert into product(id,price,name) values (4,13.20,'toothbrush');
 
-insert into ordine(total, client_id, "date", id) values (20.0,1,'2020-09-20',1);
-insert into ordine(total, client_id, "date", id) values (15.4,2,'2020-09-19',2);
-insert into ordine(total, client_id, "date", id) values (10.0,3,'2020-09-19',3);
-insert into ordine(total, client_id, "date", id) values (13.20,4,'2020-09-17',4);
+insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1);
+insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2);
+insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3);
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4);
 
-insert into bill(total_amount,date,ordine_id,id) values (20.0,'2020-09-20',1,1);
-insert into bill(total_amount,date,ordine_id,id) values (15.4,'2020-09-19',2,2);
-insert into bill(total_amount,date,ordine_id,id) values (10.0,'2020-09-19',3,3);
-insert into bill(total_amount,date,ordine_id,id) values (13.20,'2020-09-17',4,4);
+insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1);
+insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2);
+insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3);
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4);
 
 INSERT INTO public.order_product(ordine_id, product_id) values (1,1);
 INSERT INTO public.order_product(ordine_id, product_id) values (1,2);

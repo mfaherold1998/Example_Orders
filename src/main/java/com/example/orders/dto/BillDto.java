@@ -15,7 +15,7 @@ public class BillDto {
     //@NotNull
     private Long id;
     @PastOrPresent
-    private Date date;
+    private Date dateBill;
     @NotNull
     @Min(0)
     @Digits(integer = 10, fraction = 2)

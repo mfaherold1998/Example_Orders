@@ -16,7 +16,7 @@ public class Ordine {
     private Long id;
 
     @Column(nullable = false)
-    private Date date;
+    private Date dateOrdine;
 
     @Column(nullable = false, precision = 10)
     private Double total;
