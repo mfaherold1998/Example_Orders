@@ -1,9 +1,9 @@
 package com.example.orders.mappers;
 
+import org.mapstruct.Mapper;
+
 import com.example.orders.dto.BillDto;
 import com.example.orders.entity.Bill;
-import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 
 @Mapper(componentModel = "spring"/*,uses = {PedidosMapper.class, ProductMapper.class}*/)
 public interface BillMapper {
