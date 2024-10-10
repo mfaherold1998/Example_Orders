@@ -7,31 +7,32 @@ import com.example.orders.repository.BillRepository;
 import com.example.orders.service.BillService;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.Date;
-import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class BillServiceTest {
 
-    @Mock
+    //@Mock
+    @Autowired
     public BillRepository billRepository;
-    @Mock
+    //@Mock
+    @Autowired
     public BillMapper billMapper;
-    @InjectMocks
+    //@InjectMocks
+    @Autowired
     public BillService billService;
 
-    private static BillDto bill;
+    private static BillDto billDto;
 
     @BeforeAll
     public static void setUp(){
         OrdineDto ordine = new OrdineDto();
-        bill = BillDto.builder()
+        billDto = BillDto.builder()
                 .id(1L)
                 .dateBill(new Date())
                 .totalAmount(100.0)
@@ -41,20 +42,41 @@ class BillServiceTest {
 
     @Test
     void testBillDtoCreation(){
-        assertNotNull(bill);
-        assertEquals(1L, bill.getId());
-        assertEquals(100.00, bill.getTotalAmount());
+        assertNotNull(billDto);
+        assertEquals(1L, billDto.getId());
+        assertEquals(100.00, billDto.getTotalAmount());
+    }
+
+    @Test
+    void testSaveBills_none_BillDto(){
+
+        BillDto savedDto = billService.saveBill(billDto);
+
+        assertNotNull(savedDto);
+        assertEquals(1L,savedDto.getId());
     }
 
     @Test
     void testGetAllBills_none_ListOfBillDto(){
 
-        BillDto savedDto = billService.saveBill(bill);
 
-        List<BillDto> bills = billService.getAllBills();
+        BillDto billDto1 = BillDto.builder()
+                .id(2L)
+                .dateBill(new Date())
+                .totalAmount(100.0)
+                .build();
+        BillDto billDto2 = BillDto.builder()
+                .id(3L)
+                .dateBill(new Date())
+                .totalAmount(100.0)
+                .build();
 
-        assertNotNull(savedDto);
-        assertEquals(1L,savedDto.getId());
+        BillDto savedDto1 = billService.saveBill(billDto1);
+        BillDto savedDto2 = billService.saveBill(billDto2);
+
+        assertEquals(2L,savedDto1.getId());
+        assertEquals(3L,savedDto2.getId());
+        assertEquals(2,billService.getAllBills().size());
     }
 
 
