@@ -2,15 +2,18 @@ package com.example.orders.entity;
 
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
 @Entity
-@Data
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class Bill {
 
     //@Column //redundante si no se especifica ningun parametro

@@ -35,11 +35,9 @@ class BillServiceTest {
 
     @Test
     @Transactional
-    void getAllBills_withTwoValidDto_returnListOfBillDto() {
-        Bill bill1 = new Bill();
-        bill1.setId(0L);
+    void saveBills_withTwoValidDto_returnListOfBillDto() {
 
-        Bill last = billRepository.findFirstByOrderByIdDesc().orElse(bill1);
+        Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 
         BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
         BillDto billDto2 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();

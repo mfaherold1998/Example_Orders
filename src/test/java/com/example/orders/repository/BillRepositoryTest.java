@@ -5,6 +5,7 @@ import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.Date;
 import java.util.List;
@@ -12,6 +13,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
+@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 public class BillRepositoryTest {
 
     @Autowired
@@ -21,17 +23,11 @@ public class BillRepositoryTest {
 	@Transactional
 	public void saveAndFlush_withValidBill_returnSavedBill() {
 		//Create
-		Bill bill1 = new Bill();
-		bill1.setId(0L);
-
-		Bill last = billRepository.findFirstByOrderByIdDesc().orElse(bill1);
-
-		Bill bill2 = new Bill();
-		bill2.setTotalAmount(100.0);
-		bill2.setDateBill(new Date());
+		Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
+		Bill bill = Bill.builder().totalAmount(100.0).dateBill(new Date()).build();
 
 		// Act
-		Bill savedBill = billRepository.saveAndFlush(bill2);
+		Bill savedBill = billRepository.saveAndFlush(bill);
 
 		// Assert
 		assertNotNull(savedBill);
@@ -41,13 +37,8 @@ public class BillRepositoryTest {
 	@Test
 	public void findAll_withTwoValidBill_returnListOfBill() {
 
-		Bill bill1 = new Bill();
-		bill1.setTotalAmount(100.0);
-		bill1.setDateBill(new Date());
-
-		Bill bill2 = new Bill();
-		bill2.setTotalAmount(100.0);
-		bill2.setDateBill(new Date());
+		Bill bill1 = Bill.builder().totalAmount(100.0).dateBill(new Date()).build();
+		Bill bill2 = Bill.builder().totalAmount(100.0).dateBill(new Date()).build();
 
 		List<Bill> beforeBills = billRepository.findAll();
 
@@ -56,6 +47,6 @@ public class BillRepositoryTest {
 
 		List<Bill> bills = billRepository.findAll();
 
-		assertTrue(bills.size() > beforeBills.size());
+		assertEquals(bills.size(), beforeBills.size()+2 );
 	}
 }
