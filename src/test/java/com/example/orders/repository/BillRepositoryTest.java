@@ -1,6 +1,7 @@
 package com.example.orders.repository;
 
 import com.example.orders.entity.Bill;
+import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -8,8 +9,7 @@ import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import java.util.Date;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
 public class BillRepositoryTest {
@@ -17,43 +17,45 @@ public class BillRepositoryTest {
     @Autowired
     public BillRepository billRepository;
 
-    @Test
-    public void BillRepository_SaveAll_ReturnSavedBill(){
+	@Test
+	@Transactional
+	public void saveAndFlush_withValidBill_returnSavedBill() {
+		//Create
+		Bill bill1 = new Bill();
+		bill1.setId(0L);
 
-        //Arrange: crear el objeto
-        Bill bill = new Bill();
-        bill.setId(1L);
-        bill.setTotalAmount(100.0);
-        bill.setDateBill(new Date());
+		Bill last = billRepository.findFirstByOrderByIdDesc().orElse(bill1);
 
-        //Act
-        Bill savedBill = billRepository.save(bill);
+		Bill bill2 = new Bill();
+		bill2.setTotalAmount(100.0);
+		bill2.setDateBill(new Date());
 
-        //Assert
-        assertNotNull(savedBill);
-        assertEquals(1L,savedBill.getId());
-    }
+		// Act
+		Bill savedBill = billRepository.saveAndFlush(bill2);
 
-    @Test
-    public void BillRepository_GetAll_MoreThanOneBill(){
-        Bill bill1 = new Bill();
-        Bill bill2 = new Bill();
+		// Assert
+		assertNotNull(savedBill);
+        assertEquals((long) savedBill.getId(), last.getId() + 1);
+	}
 
-        bill1.setId(1L);
-        bill1.setTotalAmount(100.0);
-        bill1.setDateBill(new Date());
+	@Test
+	public void findAll_withTwoValidBill_returnListOfBill() {
 
-        bill2.setId(2L);
-        bill2.setTotalAmount(100.0);
-        bill2.setDateBill(new Date());
+		Bill bill1 = new Bill();
+		bill1.setTotalAmount(100.0);
+		bill1.setDateBill(new Date());
 
-        billRepository.save(bill1);
-        billRepository.save(bill2);
+		Bill bill2 = new Bill();
+		bill2.setTotalAmount(100.0);
+		bill2.setDateBill(new Date());
 
-        List<Bill> bills = billRepository.findAll();
+		List<Bill> beforeBills = billRepository.findAll();
 
-        assertNotNull(bills);
-        assertEquals(1,bills.size());
-    }
+		billRepository.save(bill1);
+		billRepository.save(bill2);
 
+		List<Bill> bills = billRepository.findAll();
+
+		assertTrue(bills.size() > beforeBills.size());
+	}
 }

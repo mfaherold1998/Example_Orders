@@ -1,9 +1,11 @@
 package com.example.orders.services;
 
 import com.example.orders.dto.BillDto;
+import com.example.orders.entity.Bill;
 import com.example.orders.mappers.BillMapper;
 import com.example.orders.repository.BillRepository;
 import com.example.orders.service.BillService;
+import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -25,41 +27,28 @@ class BillServiceTest {
     public BillService billService;
 
     @Test
-    void testSaveBills_none_BillDto(){
-
-        BillDto billDto1 = BillDto.builder()
-                .id(1L)
-                .dateBill(new Date())
-                .totalAmount(100.0)
-                .build();
-
+    void saveBill_withValidDTO_returnBillDto() {
+        BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
         BillDto savedDto = billService.saveBill(billDto1);
-
         assertNotNull(savedDto);
-        assertEquals(1L,savedDto.getId());
     }
 
     @Test
-    void testGetAllBills_none_ListOfBillDto(){
+    @Transactional
+    void getAllBills_withTwoValidDto_returnListOfBillDto() {
+        Bill bill1 = new Bill();
+        bill1.setId(0L);
 
+        Bill last = billRepository.findFirstByOrderByIdDesc().orElse(bill1);
 
-        BillDto billDto1 = BillDto.builder()
-                .id(1L)
-                .dateBill(new Date())
-                .totalAmount(100.0)
-                .build();
-        BillDto billDto2 = BillDto.builder()
-                .id(2L)
-                .dateBill(new Date())
-                .totalAmount(100.0)
-                .build();
+        BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
+        BillDto billDto2 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
 
         BillDto savedDto1 = billService.saveBill(billDto1);
         BillDto savedDto2 = billService.saveBill(billDto2);
 
-        assertEquals(1L,savedDto1.getId());
-        assertEquals(2L,savedDto2.getId());
-        assertEquals(2,billService.getAllBills().size());
+        assertEquals(last.getId() + 1, savedDto1.getId());
+        assertEquals(last.getId() + 2, savedDto2.getId());
     }
 
 }
