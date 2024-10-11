@@ -4,6 +4,8 @@ import com.example.orders.dto.BillDto;
 import com.example.orders.service.BillService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -29,7 +31,7 @@ public class BillController {
 
     @PostMapping(value = "/bills", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<BillDto> saveBill (@RequestBody @Valid BillDto billDto){
-        return ResponseEntity.ok(billService.saveBill(billDto));
+        return new ResponseEntity<>(billService.saveBill(billDto), HttpStatus.CREATED);
     }//
 
     @DeleteMapping("/bills/{id}")

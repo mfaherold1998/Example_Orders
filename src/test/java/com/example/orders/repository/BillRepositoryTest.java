@@ -86,6 +86,7 @@ class BillRepositoryTest {
 	}
 
 	@Test
+	@Transactional
 	void save_withBillWithInvalidTotalAmount_returnException(){
 
 		Bill bill1 = Bill.builder().totalAmount(null).dateBill(new Date()).build();
@@ -96,6 +97,7 @@ class BillRepositoryTest {
 	}
 
 	@Test
+	@Transactional
 	void save_withBillWithInvalidDate_returnException(){
 
 		Bill bill1 = Bill.builder().totalAmount(100.0).dateBill(null).build();
@@ -106,6 +108,7 @@ class BillRepositoryTest {
 	}
 
 	@Test
+	@Transactional
 	void deleteById_withValidBill_returnListOfBill(){
 
 		Bill bill0 = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
@@ -126,6 +129,7 @@ class BillRepositoryTest {
 	}
 
 	@Test
+	@Transactional
 	void deleteById_withNotValidId_returnException(){
 
 		Bill bill0 = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());

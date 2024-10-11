@@ -33,6 +33,7 @@ class BillServiceTest {
     public BillService billService;
 
     @Test
+    @Transactional
     void saveBill_withValidBillDTO_returnSavedBillDtoNotNull() {
         BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
         BillDto savedDto = billService.saveBill(billDto1);
@@ -40,6 +41,7 @@ class BillServiceTest {
     }
 
     @Test
+    @Transactional
     void saveBill_withNotValidBillDTO_returnException() {
 
         BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(null).build();
@@ -117,6 +119,7 @@ class BillServiceTest {
     }
 
     @Test
+    @Transactional
     void deleteBill_withValidBillDto_returnListOfBillDto(){
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
@@ -138,6 +141,7 @@ class BillServiceTest {
     }
 
     @Test
+    @Transactional
     void deleteBill_withNotValidId_returnException(){
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
@@ -172,6 +176,7 @@ class BillServiceTest {
     }
 
     @Test
+    @Transactional
     void updateBill_withValidBillDto_returnUpdatedBillDto(){
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
@@ -200,6 +205,7 @@ class BillServiceTest {
     }
 
     @Test
+    @Transactional
     void updateBill_withNotValidBillDto_returnException(){
 
         Bill billDto0 = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
