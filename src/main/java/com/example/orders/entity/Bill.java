@@ -4,9 +4,7 @@ package com.example.orders.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.util.Collections;
 import java.util.Date;
-import java.util.List;
 
 @Entity
 @Setter

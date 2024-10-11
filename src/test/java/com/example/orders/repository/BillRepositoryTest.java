@@ -1,15 +1,12 @@
 package com.example.orders.repository;
 
 import com.example.orders.entity.Bill;
-import com.example.orders.exceptions.NotFoundException;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.dao.DataIntegrityViolationException;
-import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.test.annotation.DirtiesContext;
-import org.tukaani.xz.check.None;
 
 import java.util.Date;
 import java.util.List;
@@ -18,14 +15,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
-public class BillRepositoryTest {
+class BillRepositoryTest {
 
     @Autowired
     public BillRepository billRepository;
 
 	@Test
 	@Transactional
-	public void saveAndFlush_withValidBill_returnSavedBill() {
+	void saveAndFlush_withValidBill_returnSavedBill() {
 		//Create
 		Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 		Bill bill = Bill.builder().totalAmount(100.0).dateBill(new Date()).build();
@@ -39,7 +36,7 @@ public class BillRepositoryTest {
 	}
 
 	@Test
-	public void findAll_withTwoValidBill_returnListOfBill() {
+	void findAll_withTwoValidBill_returnListOfBill() {
 
 		Bill bill1 = Bill.builder().totalAmount(100.0).dateBill(new Date()).build();
 		Bill bill2 = Bill.builder().totalAmount(100.0).dateBill(new Date()).build();
@@ -55,7 +52,7 @@ public class BillRepositoryTest {
 	}
 
 	@Test
-	public void findAllByTotalAmount_withTwoValidBill_returnListOfBill() {
+	void findAllByTotalAmount_withTwoValidBill_returnListOfBill() {
 
 		Bill bill1 = Bill.builder().totalAmount(100.0).dateBill(new Date()).build();
 		Bill bill2 = Bill.builder().totalAmount(100.0).dateBill(new Date()).build();
@@ -71,7 +68,7 @@ public class BillRepositoryTest {
 	}
 
 	@Test
-	public void findAllByDateBill_withTwoValidBill_returnListOfBill() {
+	void findAllByDateBill_withTwoValidBill_returnListOfBill() {
 
 		Date date= new Date();
 
@@ -89,7 +86,7 @@ public class BillRepositoryTest {
 	}
 
 	@Test
-	public void save_withBillWithInvalidTotalAmount_returnException(){
+	void save_withBillWithInvalidTotalAmount_returnException(){
 
 		Bill bill1 = Bill.builder().totalAmount(null).dateBill(new Date()).build();
 
@@ -99,7 +96,7 @@ public class BillRepositoryTest {
 	}
 
 	@Test
-	public void save_withBillWithInvalidDate_returnException(){
+	void save_withBillWithInvalidDate_returnException(){
 
 		Bill bill1 = Bill.builder().totalAmount(100.0).dateBill(null).build();
 
@@ -109,7 +106,7 @@ public class BillRepositoryTest {
 	}
 
 	@Test
-	public void deleteById_withValidBill_returnListOfBill(){
+	void deleteById_withValidBill_returnListOfBill(){
 
 		Bill bill0 = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 		Bill bill1 = Bill.builder().totalAmount(100.0).dateBill(new Date()).build();
@@ -129,7 +126,7 @@ public class BillRepositoryTest {
 	}
 
 	@Test
-	public void deleteById_withNotValidId_returnException(){
+	void deleteById_withNotValidId_returnException(){
 
 		Bill bill0 = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 		Bill bill1 = Bill.builder().totalAmount(100.0).dateBill(new Date()).build();

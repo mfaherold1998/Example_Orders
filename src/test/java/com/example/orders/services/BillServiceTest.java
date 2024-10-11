@@ -34,14 +34,14 @@ class BillServiceTest {
     public BillService billService;
 
     @Test
-    public void saveBill_withValidBillDTO_returnSavedBillDtoNotNull() {
+    void saveBill_withValidBillDTO_returnSavedBillDtoNotNull() {
         BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
         BillDto savedDto = billService.saveBill(billDto1);
         assertNotNull(savedDto);
     }
 
     @Test
-    public void saveBill_withNotValidBillDTO_returnException() {
+    void saveBill_withNotValidBillDTO_returnException() {
 
         BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(null).build();
         assertThrows(DataIntegrityViolationException.class, () -> {
@@ -51,7 +51,7 @@ class BillServiceTest {
 
     @Test
     @Transactional
-    public void saveBills_withTwoValidDto_returnBillDtoCorrectId() {
+    void saveBills_withTwoValidDto_returnBillDtoCorrectId() {
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 
@@ -66,15 +66,15 @@ class BillServiceTest {
     }
 
     @Test
-    public void getAllBills_withTwoValidBills_returnListOfBills(){
+    void getAllBills_withTwoValidBills_returnListOfBills(){
 
         BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
         BillDto billDto2 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
 
         List<BillDto> beforeBills = billService.getAllBills();
 
-        BillDto savedDto1 = billService.saveBill(billDto1);
-        BillDto savedDto2 = billService.saveBill(billDto2);
+        billService.saveBill(billDto1);
+        billService.saveBill(billDto2);
 
         List<BillDto> actualBills = billService.getAllBills();
 
@@ -82,7 +82,7 @@ class BillServiceTest {
     }
 
     @Test
-    public void getAllBills_withNone_returnEmptyListOfBills(){
+    void getAllBills_withNone_returnEmptyListOfBills(){
 
         List<BillDto> bills = billService.getAllBills();
 
@@ -90,7 +90,7 @@ class BillServiceTest {
     }
 
     @Test
-    public void getBillById_withValidBillDto_returnBillDto(){
+    void getBillById_withValidBillDto_returnBillDto(){
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 
@@ -108,17 +108,17 @@ class BillServiceTest {
     }
 
     @Test
-    public void getBillById_withNotValidId_returnException(){
+    void getBillById_withNotValidId_returnException(){
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
-
+        long notValidId = last.getId()+1;
         assertThrows(NotFoundException.class, () -> {
-            billService.getBillById(last.getId()+1);
+            billService.getBillById(notValidId);
         });
     }
 
     @Test
-    public void deleteBill_withValidBillDto_returnListOfBillDto(){
+    void deleteBill_withValidBillDto_returnListOfBillDto(){
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 
@@ -139,7 +139,7 @@ class BillServiceTest {
     }
 
     @Test
-    public void deleteBill_withNotValidId_returnException(){
+    void deleteBill_withNotValidId_returnException(){
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 
@@ -149,13 +149,15 @@ class BillServiceTest {
         billService.saveBill(billDto1);
         billService.saveBill(billDto2);
 
+        long notValidId = last.getId()+3;
+
         assertThrows(NotFoundException.class, () -> {
-            billService.deleteBill(last.getId() + 3);
+            billService.deleteBill(notValidId);
         });
     }
 
     @Test
-    public void existById_withExistingBillDto_returnTrue(){
+    void existById_withExistingBillDto_returnTrue(){
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 
@@ -171,7 +173,7 @@ class BillServiceTest {
     }
 
     @Test
-    public void updateBill_withValidBillDto_returnUpdatedBillDto(){
+    void updateBill_withValidBillDto_returnUpdatedBillDto(){
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 
@@ -199,12 +201,13 @@ class BillServiceTest {
     }
 
     @Test
-    public void updateBill_withNotValidBillDto_returnException(){
+    void updateBill_withNotValidBillDto_returnException(){
 
         Bill billDto0 = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
+        BillDto updatedBill = BillDto.builder().id(billDto0.getId()+1).dateBill(new Date()).totalAmount(200.0).build();
 
         assertThrows(InvalidException.class, () -> {
-            billService.updateBill(BillDto.builder().id(billDto0.getId()+1).dateBill(new Date()).totalAmount(200.0).build());
+            billService.updateBill(updatedBill);
         });
     }
 }
