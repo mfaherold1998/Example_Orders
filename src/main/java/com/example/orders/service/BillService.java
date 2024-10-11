@@ -1,6 +1,7 @@
 package com.example.orders.service;
 
 import com.example.orders.dto.BillDto;
+import com.example.orders.exceptions.InvalidException;
 import com.example.orders.exceptions.NotFoundException;
 import com.example.orders.mappers.BillMapper;
 import com.example.orders.repository.BillRepository;
@@ -39,6 +40,13 @@ public class BillService {
     }
 
     public BillDto updateBill (BillDto billDto){
-        return billMapper.toDto(billRepository.saveAndFlush(billMapper.toEntity(billDto)));
+        if(billRepository.existsById(billDto.getId())){
+            return billMapper.toDto(billRepository.saveAndFlush(billMapper.toEntity(billDto)));
+        }
+        else{
+            throw new InvalidException("Invalid Exception","Bill with id "+billDto.getId()+" does not exists, you cannot update it");
+        }
+
+
     }
 }
