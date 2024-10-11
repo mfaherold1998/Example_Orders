@@ -23,13 +23,12 @@ import static org.junit.jupiter.api.Assertions.*;
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 class BillServiceTest {
 
-    //@Mock
     @Autowired
     public BillRepository billRepository;
-    //@Mock
+
     @Autowired
     public BillMapper billMapper;
-    //@InjectMocks
+
     @Autowired
     public BillService billService;
 
