@@ -9,6 +9,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.annotation.DirtiesContext;
@@ -36,6 +37,7 @@ public class BillControllerTest {
     @Autowired
     private BillService billService;
 
+    //GET
     @Test
     void getBillById_withValidBillDto_returnIsOK() throws Exception, RuntimeException {
 
@@ -48,16 +50,50 @@ public class BillControllerTest {
                 .andExpect(MockMvcResultMatchers.jsonPath("$.totalAmount").value(savedBill.getTotalAmount()));
     }
 
+    //DELETE
+    @Test
+    void deleteBill_withExistentBillDto_returnVoid() throws Exception {
+        Bill bill = Bill.builder().dateBill(new Date()).totalAmount(100.0).build();
+        Bill savedBill = billRepository.save(bill);
+
+        mockMvc.perform( MockMvcRequestBuilders.delete("/api/bills/{id}", savedBill.getId()) )
+                .andExpect(MockMvcResultMatchers.status().isAccepted());
+
+    }
+
+    //PUT
+    @Test
+    void updatebill_withExistentBillDto_returnBillDto() throws Exception{
+        Date date = new Date();
+        Bill bill1 = Bill.builder().dateBill(date).totalAmount(100.0).build();
+        Bill savedBill = billRepository.save(bill1);
+
+        Bill bill2 = Bill.builder().id(bill1.getId()).dateBill(date).totalAmount(200.0).build();
+        String reqBody = new ObjectMapper().writeValueAsString(bill2);
+
+        mockMvc.perform( MockMvcRequestBuilders
+                        .put("/api/bills", savedBill.getId())
+                        .content(reqBody)
+                        .contentType(MediaType.APPLICATION_JSON)
+                        .accept(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.id").value((savedBill.getId())))
+                .andExpect(MockMvcResultMatchers.jsonPath("$.totalAmount").value(200.0));
+    }
+
+    //POST
     @Test
     void saveBill_withValidBillDto_returnBillDto() throws Exception {
-        /*BillDto billDto = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();;
+        BillDto billDto = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
         String reqBody = new ObjectMapper().writeValueAsString(billDto);
 
-        mockMvc.perform(MockMvcRequestBuilders.post("/bills")
+        mockMvc.perform( MockMvcRequestBuilders
+                        .post("/api/bills")
+                        .content(reqBody)
                         .contentType(MediaType.APPLICATION_JSON)
-                        .accept(MediaType.APPLICATION_JSON_VALUE)
-                        .content(reqBody))
-                        .andExpect(MockMvcResultMatchers.status().isCreated());*/
+                        .accept(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isCreated())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.id").exists());
     }
 
 }

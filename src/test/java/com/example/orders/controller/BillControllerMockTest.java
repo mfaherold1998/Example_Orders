@@ -8,6 +8,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.Date;
@@ -16,20 +17,20 @@ import org.mockito.Mockito;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-@WebMvcTest(controllers = {BillController.class})
+@WebMvcTest(BillController.class)
 public class BillControllerMockTest {
 
     @Autowired
     private MockMvc mockMvc;
 
-    @MockBean
+    /*@MockBean
     private BillRepository billRepository;
 
     @MockBean
-    private BillService billService;
+    private BillService billService;*/
 
     @Test
-    void getBillById_withValidBill_returnIsOk() throws Exception, RuntimeException{
+    void getAllBills_withValidBills_returnOk() throws Exception {
 
        /* Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 
@@ -44,5 +45,12 @@ public class BillControllerMockTest {
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(last.getId()+1))
                 .andExpect(MockMvcResultMatchers.jsonPath("$.totalAmount").value(100.0));*/
+
+        mockMvc.perform(MockMvcRequestBuilders
+                        .get("/bills")
+                        .accept(MediaType.APPLICATION_JSON))
+                .andExpect(MockMvcResultMatchers.status().isOk())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.employees").exists())
+                .andExpect(MockMvcResultMatchers.jsonPath("$.employees[*].employeeId").isNotEmpty());
     }
 }

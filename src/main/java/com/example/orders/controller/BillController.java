@@ -36,7 +36,7 @@ public class BillController {
 
     @DeleteMapping("/bills/{id}")
     public ResponseEntity<Void> deleteBill(@PathVariable Long id){
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.accepted().build();
     }//
 
     @PutMapping(value = "/bills", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
