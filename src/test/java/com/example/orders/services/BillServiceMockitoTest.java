@@ -35,25 +35,25 @@ public class BillServiceMockitoTest {
     @Test
     void getAllBill_withValidBillDTO_returnListOfBillDto() {
 
-        Bill bill1 = Bill.builder().dateBill(new Date()).totalAmount(100.0).build();
+        //Bill bill1 = Bill.builder().dateBill(new Date()).totalAmount(100.0).build();
         BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
-        Bill bill2 = Bill.builder().dateBill(new Date()).totalAmount(100.0).build();
+        //Bill bill2 = Bill.builder().dateBill(new Date()).totalAmount(100.0).build();
         BillDto billDto2 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
         List<BillDto> bills = new ArrayList<>();
         bills.add(billDto1);
         bills.add(billDto2);
 
-        List<BillDto> beforeBills = billService.getAllBills();
+       // List<BillDto> beforeBills = billService.getAllBills();
 
         Mockito.when(billService.getAllBills()).thenReturn(bills);
-        Mockito.when(billMapper.toDto(bill1)).thenReturn(billDto1);
+        /*Mockito.when(billMapper.toDto(bill1)).thenReturn(billDto1);
         Mockito.when(billMapper.toEntity(billDto1)).thenReturn(bill1);
         Mockito.when(billMapper.toDto(bill2)).thenReturn(billDto2);
-        Mockito.when(billMapper.toEntity(billDto2)).thenReturn(bill2);
+        Mockito.when(billMapper.toEntity(billDto2)).thenReturn(bill2);*/
 
         List<BillDto> actualBills = billService.getAllBills();
 
-        assertEquals(beforeBills.size() + 2, actualBills.size());
+        assertEquals(2, actualBills.size());
 
     }
 
