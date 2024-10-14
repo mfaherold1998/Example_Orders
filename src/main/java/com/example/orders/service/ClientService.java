@@ -28,10 +28,8 @@ public class ClientService {
         return clientMapper.toDto(clientRepository.saveAndFlush(clientMapper.toEntity(clientDto)));
     }
 
-    public ClientDto deleteClient(Long id){
-        ClientDto clientDto = getClientById(id);
+    public void deleteClient(Long id){
         clientRepository.deleteById(id);
-        return clientDto;
     }
 
     public boolean existsById(Long id){

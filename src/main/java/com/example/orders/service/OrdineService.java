@@ -28,10 +28,8 @@ public class OrdineService {
         return ordineMapper.toDto(ordineRepository.saveAndFlush(ordineMapper.toEntity(ordineDto)));
     }
 
-    public OrdineDto deleteOrdine(Long id){
-        OrdineDto ordineDto = getOrdineById(id);
+    public void deleteOrdine(Long id){
         ordineRepository.deleteById(id);
-        return ordineDto;
     }
 
     public boolean existsById(Long id){return ordineRepository.existsById(id);}

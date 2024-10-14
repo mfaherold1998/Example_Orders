@@ -33,7 +33,7 @@ public class OrdineController {
 
     @DeleteMapping("/ordini/{id}")
     public ResponseEntity<Void> deleteOrdine(@PathVariable Long id){
-        return ResponseEntity.noContent().build();
+        return ResponseEntity.accepted().build();
     }//POSTMAN
 
     @PutMapping("/ordini")

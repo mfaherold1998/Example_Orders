@@ -28,10 +28,8 @@ public class ProductService {
         return productMapper.toDto(productRepository.saveAndFlush(productMapper.toEntity(productDto)));
     }
 
-    public ProductDto deleteProduct(Long id){
-        ProductDto prodDto = getProductById(id);
+    public void deleteProduct(Long id){
         productRepository.deleteById(id);
-        return  prodDto;
     }
 
     public boolean existsById(Long id){
