@@ -29,10 +29,9 @@ public class BillService {
         return  billMapper.toDto(billRepository.saveAndFlush(billMapper.toEntity(billDto)));
     }
 
-    public BillDto deleteBill(Long id){
-        BillDto billDto= getBillById(id);
+    public boolean deleteBill(Long id){
         billRepository.deleteById(id);
-        return billDto;
+        return true;
     }
 
     public boolean existsById(Long id){

@@ -7,16 +7,17 @@ import com.example.orders.repository.BillRepository;
 import com.example.orders.service.BillService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentMatchers;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertNotNull;
-import static org.mockito.Mockito.lenient;
-import static org.mockito.Mockito.when;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
 public class BillServiceMockitoTest {
@@ -32,20 +33,28 @@ public class BillServiceMockitoTest {
 
 
     @Test
-    void saveBill_withValidBillDTO_returnSavedBillDtoNotNull() {
+    void getAllBill_withValidBillDTO_returnListOfBillDto() {
 
-        /*Date date = new Date();
+        Bill bill1 = Bill.builder().dateBill(new Date()).totalAmount(100.0).build();
+        BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
+        Bill bill2 = Bill.builder().dateBill(new Date()).totalAmount(100.0).build();
+        BillDto billDto2 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
+        List<BillDto> bills = new ArrayList<>();
+        bills.add(billDto1);
+        bills.add(billDto2);
 
-        Bill bill = Bill.builder().dateBill(date).totalAmount(100.0).build();
-        BillDto billDto = BillDto.builder().dateBill(date).totalAmount(100.0).build();
+        List<BillDto> beforeBills = billService.getAllBills();
 
-        lenient().when(billMapper.toDto(Mockito.any(Bill.class))).thenReturn(billDto);
-        when(billMapper.toEntity(Mockito.any(BillDto.class))).thenReturn(bill);
-        when(billRepository.save(Mockito.any(Bill.class))).thenReturn(bill);
+        Mockito.when(billService.getAllBills()).thenReturn(bills);
+        Mockito.when(billMapper.toDto(bill1)).thenReturn(billDto1);
+        Mockito.when(billMapper.toEntity(billDto1)).thenReturn(bill1);
+        Mockito.when(billMapper.toDto(bill2)).thenReturn(billDto2);
+        Mockito.when(billMapper.toEntity(billDto2)).thenReturn(bill2);
 
-        BillDto savedDto = billService.saveBill(billDto);
+        List<BillDto> actualBills = billService.getAllBills();
 
-        assertNotNull(savedDto);*/
+        assertEquals(beforeBills.size() + 2, actualBills.size());
+
     }
 
 
