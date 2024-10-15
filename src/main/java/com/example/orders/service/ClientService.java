@@ -29,7 +29,12 @@ public class ClientService {
     }
 
     public void deleteClient(Long id){
-        clientRepository.deleteById(id);
+        if(clientRepository.existsById(id)) {
+            clientRepository.deleteById(id);
+        }
+        else{
+            throw new NotFoundException("Not Found Exception","Client with id "+id+" does not exists, you cannot delete it");
+        }
     }
 
     public boolean existsById(Long id){
@@ -37,6 +42,11 @@ public class ClientService {
     }
 
     public ClientDto updateClient (ClientDto clientDto){
-        return clientMapper.toDto(clientRepository.saveAndFlush(clientMapper.toEntity(clientDto)));
+        if(clientRepository.existsById(clientDto.getId())){
+            return clientMapper.toDto(clientRepository.saveAndFlush(clientMapper.toEntity(clientDto)));
+        }
+        else{
+            throw new NotFoundException("Not Found Exception","Client with id "+clientDto.getId()+" does not exists, you cannot update it");
+        }
     }
 }

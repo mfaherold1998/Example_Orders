@@ -29,12 +29,22 @@ public class OrdineService {
     }
 
     public void deleteOrdine(Long id){
-        ordineRepository.deleteById(id);
+        if(ordineRepository.existsById(id)) {
+            ordineRepository.deleteById(id);
+        }
+        else{
+            throw new NotFoundException("Not Found Exception","Order with id "+id+" does not exists, you cannot delete it");
+        }
     }
 
     public boolean existsById(Long id){return ordineRepository.existsById(id);}
 
     public OrdineDto updateOrdine (OrdineDto ordineDto){
-        return ordineMapper.toDto(ordineRepository.saveAndFlush(ordineMapper.toEntity(ordineDto)));
+        if(ordineRepository.existsById(ordineDto.getId())){
+            return ordineMapper.toDto(ordineRepository.saveAndFlush(ordineMapper.toEntity(ordineDto)));
+        }
+        else{
+            throw new NotFoundException("Not Found Exception","Order with id "+ordineDto.getId()+" does not exists, you cannot update it");
+        }
     }
 }

@@ -54,7 +54,7 @@ class BillServiceTest {
 
     @Test
     @Transactional
-    void saveBills_withTwoValidDto_returnBillDtoCorrectId() {
+    void saveBill_withTwoValidDto_returnBillDtoCorrectId() {
 
         Bill last = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
 

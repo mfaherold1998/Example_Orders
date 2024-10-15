@@ -29,7 +29,12 @@ public class ProductService {
     }
 
     public void deleteProduct(Long id){
-        productRepository.deleteById(id);
+        if(productRepository.existsById(id)) {
+            productRepository.deleteById(id);
+        }
+        else{
+            throw new NotFoundException("Not Found Exception","Product with id "+id+" does not exists, you cannot delete it");
+        }
     }
 
     public boolean existsById(Long id){
@@ -37,6 +42,11 @@ public class ProductService {
     }
 
     public ProductDto updateProduct (ProductDto productDto){
-        return productMapper.toDto(productRepository.saveAndFlush(productMapper.toEntity(productDto)));
+        if(productRepository.existsById(productDto.getId())){
+            return productMapper.toDto(productRepository.saveAndFlush(productMapper.toEntity(productDto)));
+        }
+        else{
+            throw new NotFoundException("Not Found Exception","Product with id "+productDto.getId()+" does not exists, you cannot update it");
+        }
     }
 }

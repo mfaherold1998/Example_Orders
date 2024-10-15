@@ -62,6 +62,14 @@ public class BillControllerTest {
 
     }
 
+    @Test
+    void deleteBill_withNotExistentBillDto_throwException() throws Exception {
+
+        mockMvc.perform( MockMvcRequestBuilders.delete("/api/bills/{id}", 1L) )
+                .andExpect(MockMvcResultMatchers.status().isNotFound());
+
+    }
+
     //PUT
     @Test
     void updatebill_withExistentBillDto_returnBillDto() throws Exception{

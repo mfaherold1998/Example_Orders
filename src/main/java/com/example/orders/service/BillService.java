@@ -1,7 +1,6 @@
 package com.example.orders.service;
 
 import com.example.orders.dto.BillDto;
-import com.example.orders.exceptions.InvalidException;
 import com.example.orders.exceptions.NotFoundException;
 import com.example.orders.mappers.BillMapper;
 import com.example.orders.repository.BillRepository;
@@ -49,7 +48,5 @@ public class BillService {
         else{
             throw new NotFoundException("Not Found Exception","Bill with id "+billDto.getId()+" does not exists, you cannot update it");
         }
-
-
     }
 }
