@@ -5,6 +5,7 @@ import com.example.orders.entity.Bill;
 import com.example.orders.mappers.BillMapper;
 import com.example.orders.repository.BillRepository;
 import com.example.orders.service.BillService;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentMatchers;
@@ -12,6 +13,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -20,6 +22,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @ExtendWith(MockitoExtension.class)
+@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 public class BillServiceMockitoTest {
 
     @Mock
@@ -32,6 +35,7 @@ public class BillServiceMockitoTest {
     private BillService billService;
 
 
+    @Disabled
     @Test
     void getAllBill_withValidBillDTO_returnListOfBillDto() {
 

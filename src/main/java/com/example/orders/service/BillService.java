@@ -30,7 +30,12 @@ public class BillService {
     }
 
     public void deleteBill(Long id){
-        billRepository.deleteById(id);
+        if(billRepository.existsById(id)) {
+            billRepository.deleteById(id);
+        }
+        else{
+            throw new NotFoundException("Not Found Exception","Bill with id "+id+" does not exists, you cannot delete it");
+        }
     }
 
     public boolean existsById(Long id){
@@ -42,7 +47,7 @@ public class BillService {
             return billMapper.toDto(billRepository.saveAndFlush(billMapper.toEntity(billDto)));
         }
         else{
-            throw new InvalidException("Invalid Exception","Bill with id "+billDto.getId()+" does not exists, you cannot update it");
+            throw new NotFoundException("Not Found Exception","Bill with id "+billDto.getId()+" does not exists, you cannot update it");
         }
 
 

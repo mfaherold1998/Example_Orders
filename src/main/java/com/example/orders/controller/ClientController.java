@@ -33,6 +33,7 @@ public class ClientController {
 
     @DeleteMapping("/clients/{id}")
     public ResponseEntity<Void> deleteClient(@PathVariable Long id){
+        clientService.deleteClient(id);
         return ResponseEntity.accepted().build();
     }//POSTMAN
 

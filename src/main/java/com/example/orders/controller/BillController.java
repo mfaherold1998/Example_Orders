@@ -35,6 +35,7 @@ public class BillController {
 
     @DeleteMapping("/bills/{id}")
     public ResponseEntity<Void> deleteBill(@PathVariable Long id){
+        billService.deleteBill(id);
         return ResponseEntity.accepted().build();
     }//
 
