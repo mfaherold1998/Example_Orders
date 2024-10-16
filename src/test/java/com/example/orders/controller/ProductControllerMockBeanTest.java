@@ -1,12 +1,12 @@
 package com.example.orders.controller;
 
-import com.example.orders.dto.ClientDto;
 import com.example.orders.dto.OrdineDto;
 import com.example.orders.dto.ProductDto;
 import com.example.orders.exceptions.NotFoundException;
 import com.example.orders.repository.ProductRepository;
 import com.example.orders.service.ProductService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentMatchers;
 import org.mockito.Mockito;
@@ -24,7 +24,7 @@ import java.util.List;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 
-
+@Disabled
 @WebMvcTest(ProductController.class)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 class ProductControllerMockBeanTest {

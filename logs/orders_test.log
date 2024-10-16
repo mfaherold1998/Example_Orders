@@ -9338,3 +9338,265 @@ insert into client (email,name,id) values (?,?,default) [23502-224]
 2024-10-16 23:33:33 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-16 23:33:33 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-10-16 23:33:33 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 23:43:16 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:16 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:43:20 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:43:20 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:43:20 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:43:20 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 4.597 seconds (process running for 7.305)
+2024-10-16 23:43:20 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:43:20 CEST 2024
+2024-10-16 23:43:20 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:20 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:43:21 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:43:21 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:43:21 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:43:21 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.344 seconds (process running for 8.054)
+2024-10-16 23:43:21 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.OrdineDto> com.example.orders.controller.OrdineController.saveBill(com.example.orders.dto.OrdineDto) with 2 errors: [Field error in object 'ordineDto' on field 'cli.name': rejected value [null]; codes [NotNull.ordineDto.cli.name,NotNull.cli.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.cli.name,cli.name]; arguments []; default message [cli.name]]; default message [must not be null]] [Field error in object 'ordineDto' on field 'prods': rejected value [null]; codes [NotNull.ordineDto.prods,NotNull.prods,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.prods,prods]; arguments []; default message [prods]]; default message [must not be null]] 
+2024-10-16 23:43:21 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:21 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:43:21 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:43:21 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:43:21 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:43:21 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.392 seconds (process running for 8.836)
+2024-10-16 23:43:22 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:22 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:43:22 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:43:22 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:43:22 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:43:22 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.328 seconds (process running for 9.296)
+2024-10-16 23:43:22 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:43:22 CEST 2024
+2024-10-16 23:43:22 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:22 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:43:22 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:43:22 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:43:22 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:43:22 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.39 seconds (process running for 9.712)
+2024-10-16 23:43:22 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:22 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:43:23 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:43:23 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:43:23 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 16 ms
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.297 seconds (process running for 10.027)
+2024-10-16 23:43:23 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.OrdineDto> com.example.orders.controller.OrdineController.updateOrdine(com.example.orders.dto.OrdineDto) with 2 errors: [Field error in object 'ordineDto' on field 'cli.name': rejected value [null]; codes [NotNull.ordineDto.cli.name,NotNull.cli.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.cli.name,cli.name]; arguments []; default message [cli.name]]; default message [must not be null]] [Field error in object 'ordineDto' on field 'prods': rejected value [null]; codes [NotNull.ordineDto.prods,NotNull.prods,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.prods,prods]; arguments []; default message [prods]]; default message [must not be null]] 
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:43:23 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:43:23 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:43:23 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.252 seconds (process running for 10.338)
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:43:23 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:43:23 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:43:23 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.219 seconds (process running for 10.578)
+2024-10-16 23:43:23 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.OrdineDto> com.example.orders.controller.OrdineController.saveBill(com.example.orders.dto.OrdineDto) with 2 errors: [Field error in object 'ordineDto' on field 'prods': rejected value [null]; codes [NotNull.ordineDto.prods,NotNull.prods,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.prods,prods]; arguments []; default message [prods]]; default message [must not be null]] [Field error in object 'ordineDto' on field 'cli.name': rejected value [null]; codes [NotNull.ordineDto.cli.name,NotNull.cli.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.cli.name,cli.name]; arguments []; default message [cli.name]]; default message [must not be null]] 
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:43:23 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:43:23 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:43:23 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.219 seconds (process running for 10.843)
+2024-10-16 23:43:23 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.OrdineDto> com.example.orders.controller.OrdineController.updateOrdine(com.example.orders.dto.OrdineDto) with 2 errors: [Field error in object 'ordineDto' on field 'prods': rejected value [null]; codes [NotNull.ordineDto.prods,NotNull.prods,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.prods,prods]; arguments []; default message [prods]]; default message [must not be null]] [Field error in object 'ordineDto' on field 'cli.name': rejected value [null]; codes [NotNull.ordineDto.cli.name,NotNull.cli.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.cli.name,cli.name]; arguments []; default message [cli.name]]; default message [must not be null]] 
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:23 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:43:24 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:43:24 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:43:24 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:43:24 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.203 seconds (process running for 11.09)
+2024-10-16 23:43:24 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 23:43:24 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 23:43:24 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 10388 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:43:24 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 23:43:24 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 23:43:24 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 70 ms. Found 4 JPA repository interfaces.
+2024-10-16 23:43:25 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 23:43:25 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 23:43:25 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 23:43:25 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 23:43:25 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 23:43:26 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 23:43:26 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 23:43:26 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 23:43:27 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 23:43:27 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:43:28 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 23:43:28 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 23:43:28 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 4.579 seconds (process running for 15.735)
+2024-10-16 23:43:28 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:43:28 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 23:43:29 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 23:44:39 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:39 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:44:42 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:44:42 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:44:42 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:44:42 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 4.411 seconds (process running for 7.014)
+2024-10-16 23:44:42 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:44:42 CEST 2024
+2024-10-16 23:44:43 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:43 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:44:43 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:44:43 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:44:43 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:44:43 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.312 seconds (process running for 7.702)
+2024-10-16 23:44:43 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.OrdineDto> com.example.orders.controller.OrdineController.saveBill(com.example.orders.dto.OrdineDto) with 2 errors: [Field error in object 'ordineDto' on field 'prods': rejected value [null]; codes [NotNull.ordineDto.prods,NotNull.prods,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.prods,prods]; arguments []; default message [prods]]; default message [must not be null]] [Field error in object 'ordineDto' on field 'cli.name': rejected value [null]; codes [NotNull.ordineDto.cli.name,NotNull.cli.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.cli.name,cli.name]; arguments []; default message [cli.name]]; default message [must not be null]] 
+2024-10-16 23:44:43 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:43 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:44:43 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:44:43 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:44:43 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:44:43 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.25 seconds (process running for 8.264)
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:44:44 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:44:44 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:44:44 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.203 seconds (process running for 8.581)
+2024-10-16 23:44:44 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:44:44 CEST 2024
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:44:44 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:44:44 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:44:44 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.219 seconds (process running for 8.817)
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:44:44 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:44:44 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:44:44 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.235 seconds (process running for 9.061)
+2024-10-16 23:44:44 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.OrdineDto> com.example.orders.controller.OrdineController.updateOrdine(com.example.orders.dto.OrdineDto) with 2 errors: [Field error in object 'ordineDto' on field 'cli.name': rejected value [null]; codes [NotNull.ordineDto.cli.name,NotNull.cli.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.cli.name,cli.name]; arguments []; default message [cli.name]]; default message [must not be null]] [Field error in object 'ordineDto' on field 'prods': rejected value [null]; codes [NotNull.ordineDto.prods,NotNull.prods,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.prods,prods]; arguments []; default message [prods]]; default message [must not be null]] 
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:44:44 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:44:44 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:44:44 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:44:44 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.203 seconds (process running for 9.307)
+2024-10-16 23:44:45 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:45 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:44:45 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:44:45 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:44:45 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:44:45 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.172 seconds (process running for 9.491)
+2024-10-16 23:44:45 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.OrdineDto> com.example.orders.controller.OrdineController.saveBill(com.example.orders.dto.OrdineDto) with 2 errors: [Field error in object 'ordineDto' on field 'cli.name': rejected value [null]; codes [NotNull.ordineDto.cli.name,NotNull.cli.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.cli.name,cli.name]; arguments []; default message [cli.name]]; default message [must not be null]] [Field error in object 'ordineDto' on field 'prods': rejected value [null]; codes [NotNull.ordineDto.prods,NotNull.prods,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.prods,prods]; arguments []; default message [prods]]; default message [must not be null]] 
+2024-10-16 23:44:45 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:45 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:44:45 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:44:45 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:44:45 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:44:45 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.344 seconds (process running for 9.853)
+2024-10-16 23:44:45 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.OrdineDto> com.example.orders.controller.OrdineController.updateOrdine(com.example.orders.dto.OrdineDto) with 2 errors: [Field error in object 'ordineDto' on field 'cli.name': rejected value [null]; codes [NotNull.ordineDto.cli.name,NotNull.cli.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.cli.name,cli.name]; arguments []; default message [cli.name]]; default message [must not be null]] [Field error in object 'ordineDto' on field 'prods': rejected value [null]; codes [NotNull.ordineDto.prods,NotNull.prods,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.prods,prods]; arguments []; default message [prods]]; default message [must not be null]] 
+2024-10-16 23:44:45 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:45 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:44:45 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:44:45 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:44:45 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:44:45 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.172 seconds (process running for 10.045)
+2024-10-16 23:44:45 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 23:44:45 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 23:44:45 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 11792 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:44:45 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 23:44:46 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 23:44:46 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces.
+2024-10-16 23:44:46 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 23:44:46 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 23:44:46 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 23:44:47 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 23:44:47 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 23:44:47 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 23:44:47 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 23:44:47 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 23:44:49 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 23:44:49 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:44:49 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 23:44:49 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 23:44:50 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 4.286 seconds (process running for 14.39)
+2024-10-16 23:44:50 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:44:50 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 23:44:50 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 23:48:29 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:29 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:48:33 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:48:33 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:48:33 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:48:33 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 4.668 seconds (process running for 7.377)
+2024-10-16 23:48:33 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:48:33 CEST 2024
+2024-10-16 23:48:33 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:33 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:48:34 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:48:34 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:48:34 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:48:34 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.344 seconds (process running for 8.114)
+2024-10-16 23:48:34 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.OrdineDto> com.example.orders.controller.OrdineController.saveBill(com.example.orders.dto.OrdineDto) with 2 errors: [Field error in object 'ordineDto' on field 'prods': rejected value [null]; codes [NotNull.ordineDto.prods,NotNull.prods,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.prods,prods]; arguments []; default message [prods]]; default message [must not be null]] [Field error in object 'ordineDto' on field 'cli.name': rejected value [null]; codes [NotNull.ordineDto.cli.name,NotNull.cli.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [ordineDto.cli.name,cli.name]; arguments []; default message [cli.name]]; default message [must not be null]] 
+2024-10-16 23:48:34 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:34 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:48:34 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:48:34 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:48:34 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:48:34 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.235 seconds (process running for 8.68)
+2024-10-16 23:48:34 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:34 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:48:34 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:48:34 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:48:35 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 15 ms
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.218 seconds (process running for 9.003)
+2024-10-16 23:48:35 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:48:35 CEST 2024
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:48:35 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:48:35 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:48:35 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.203 seconds (process running for 9.23)
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:48:35 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:48:35 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:48:35 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.187 seconds (process running for 9.433)
+2024-10-16 23:48:35 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:48:35 CEST 2024
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:48:35 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:48:35 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:48:35 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.203 seconds (process running for 9.75)
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:48:35 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:48:35 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:48:35 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:48:35 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.204 seconds (process running for 9.954)
+2024-10-16 23:48:36 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:36 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:48:36 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:48:36 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:48:36 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:48:36 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.188 seconds (process running for 10.213)
+2024-10-16 23:48:36 - c.e.o.c.OrdineControllerMockBeanTest - Starting OrdineControllerMockBeanTest using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:36 - c.e.o.c.OrdineControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:48:36 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:48:36 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:48:36 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:48:36 - c.e.o.c.OrdineControllerMockBeanTest - Started OrdineControllerMockBeanTest in 0.203 seconds (process running for 10.455)
+2024-10-16 23:48:36 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 23:48:36 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 23:48:36 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 1064 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:48:36 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 23:48:36 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 23:48:36 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 4 JPA repository interfaces.
+2024-10-16 23:48:37 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 23:48:37 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 23:48:37 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 23:48:37 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 23:48:37 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 23:48:38 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 23:48:38 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 23:48:38 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 23:48:39 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 23:48:39 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:48:40 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 23:48:40 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 23:48:40 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 4.464 seconds (process running for 14.972)
+2024-10-16 23:48:41 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:48:41 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 23:48:41 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
