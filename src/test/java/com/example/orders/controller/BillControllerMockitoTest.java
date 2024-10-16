@@ -1,16 +1,13 @@
 package com.example.orders.controller;
 
 import com.example.orders.dto.BillDto;
-import com.example.orders.entity.Bill;
 import com.example.orders.exceptions.InvalidException;
 import com.example.orders.exceptions.NotFoundException;
 import com.example.orders.service.BillService;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.annotation.DirtiesContext;
@@ -21,10 +18,9 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@Disabled
 @ExtendWith(MockitoExtension.class)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
-public class BillControllerMockitoTest {
+class BillControllerMockitoTest {
 
     @Mock
     private BillService billService;
