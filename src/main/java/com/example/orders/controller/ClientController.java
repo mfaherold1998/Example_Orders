@@ -4,6 +4,7 @@ import com.example.orders.dto.ClientDto;
 import com.example.orders.service.ClientService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +29,7 @@ public class ClientController {
 
     @PostMapping("/clients")
     public ResponseEntity<ClientDto> saveClient (@RequestBody @Valid ClientDto clientDto){
-        return ResponseEntity.ok(clientService.saveClient(clientDto));
+        return new ResponseEntity<>(clientService.saveClient(clientDto), HttpStatus.CREATED);
     }//POSTMAN
 
     @DeleteMapping("/clients/{id}")

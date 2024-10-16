@@ -8643,3 +8643,175 @@ insert into client (email,name,id) values (?,?,default) [23502-224]
 2024-10-16 22:46:13 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-16 22:46:13 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-10-16 22:46:13 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 22:57:39 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:39 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 22:57:43 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 22:57:43 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 22:57:43 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 22:57:43 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 4.494 seconds (process running for 6.631)
+2024-10-16 22:57:43 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:43 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 22:57:44 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 22:57:44 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 22:57:44 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 22:57:44 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.337 seconds (process running for 7.477)
+2024-10-16 22:57:44 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 22:57:44 CEST 2024
+2024-10-16 22:57:44 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:44 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 22:57:44 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 22:57:44 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 22:57:44 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 22:57:44 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.282 seconds (process running for 7.826)
+2024-10-16 22:57:44 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 22:57:44 CEST 2024
+2024-10-16 22:57:44 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:44 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 22:57:45 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 22:57:45 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 22:57:45 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.229 seconds (process running for 8.343)
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 22:57:45 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 22:57:45 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 22:57:45 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.204 seconds (process running for 8.586)
+2024-10-16 22:57:45 - c.e.o.e.GlobalExceptionHandler - java.lang.RuntimeException
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 22:57:45 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 22:57:45 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 22:57:45 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.188 seconds (process running for 8.799)
+2024-10-16 22:57:45 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 22:57:45 CEST 2024
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 22:57:45 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 22:57:45 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 22:57:45 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.204 seconds (process running for 9.014)
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:45 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 22:57:46 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 22:57:46 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 22:57:46 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 22:57:46 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.172 seconds (process running for 9.23)
+2024-10-16 22:57:46 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:46 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 22:57:46 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 22:57:46 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 22:57:46 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 22:57:46 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.189 seconds (process running for 9.433)
+2024-10-16 22:57:46 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:46 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 22:57:46 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 22:57:46 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 22:57:46 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 22:57:46 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.157 seconds (process running for 9.618)
+2024-10-16 22:57:46 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 22:57:46 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 22:57:46 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 376 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 22:57:46 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 22:57:46 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 22:57:46 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+2024-10-16 22:57:47 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 22:57:47 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 22:57:47 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 22:57:47 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 22:57:47 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 22:57:48 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 22:57:48 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 22:57:48 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 22:57:49 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 22:57:49 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 22:57:50 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 22:57:50 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 22:57:50 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 4.099 seconds (process running for 13.777)
+2024-10-16 22:57:50 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 22:57:50 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 22:57:50 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 23:00:33 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:33 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:00:36 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:00:36 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:00:36 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:00:36 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 4.602 seconds (process running for 7.075)
+2024-10-16 23:00:37 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:37 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:00:37 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:00:37 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:00:37 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:00:37 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.297 seconds (process running for 7.836)
+2024-10-16 23:00:37 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:00:37 CEST 2024
+2024-10-16 23:00:37 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:37 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:00:37 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:00:37 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:00:37 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:00:37 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.253 seconds (process running for 8.143)
+2024-10-16 23:00:38 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:00:37 CEST 2024
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:00:38 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:00:38 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:00:38 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.234 seconds (process running for 8.625)
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:00:38 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:00:38 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:00:38 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.221 seconds (process running for 8.887)
+2024-10-16 23:00:38 - c.e.o.e.GlobalExceptionHandler - java.lang.RuntimeException
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:00:38 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:00:38 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:00:38 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.194 seconds (process running for 9.124)
+2024-10-16 23:00:38 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:00:38 CEST 2024
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:38 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:00:39 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:00:39 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:00:39 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:00:39 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.179 seconds (process running for 9.328)
+2024-10-16 23:00:39 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:39 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:00:39 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:00:39 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:00:39 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:00:39 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.173 seconds (process running for 9.522)
+2024-10-16 23:00:39 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:39 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:00:39 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:00:39 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:00:39 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:00:39 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.173 seconds (process running for 9.706)
+2024-10-16 23:00:39 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:39 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:00:39 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:00:39 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:00:39 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:00:39 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.156 seconds (process running for 9.893)
+2024-10-16 23:00:39 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 23:00:39 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 23:00:39 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 3800 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:00:39 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 23:00:40 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 23:00:40 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2024-10-16 23:00:40 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 23:00:40 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 23:00:40 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 23:00:41 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 23:00:41 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 23:00:41 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 23:00:41 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 23:00:41 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 23:00:43 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 23:00:43 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:00:43 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 23:00:43 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 23:00:44 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 4.447 seconds (process running for 14.398)
+2024-10-16 23:00:44 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:00:44 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 23:00:44 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

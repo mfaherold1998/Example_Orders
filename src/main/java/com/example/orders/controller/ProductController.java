@@ -4,6 +4,7 @@ import com.example.orders.dto.ProductDto;
 import com.example.orders.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +29,7 @@ public class ProductController {
 
     @PostMapping("/products")
     public ResponseEntity<ProductDto> saveProduct (@RequestBody @Valid ProductDto productDto){
-        return ResponseEntity.ok(productService.saveProduct(productDto));
+        return new ResponseEntity<>(productService.saveProduct(productDto), HttpStatus.CREATED);
     }//POSTMAN
 
     @DeleteMapping("/products/{id}")

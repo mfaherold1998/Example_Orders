@@ -4,6 +4,7 @@ import com.example.orders.dto.OrdineDto;
 import com.example.orders.service.OrdineService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +29,7 @@ public class OrdineController {
 
     @PostMapping("/ordini")
     public ResponseEntity<OrdineDto> saveBill(@RequestBody @Valid OrdineDto ordineDto){
-        return ResponseEntity.ok(ordineService.saveOrdine(ordineDto));
+        return new ResponseEntity<>(ordineService.saveOrdine(ordineDto), HttpStatus.CREATED);
     }//POSTMAN
 
     @DeleteMapping("/ordini/{id}")

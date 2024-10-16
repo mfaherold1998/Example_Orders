@@ -35,7 +35,7 @@ class ProductServiceMockitoTest {
     private ProductService productService;
 
     private NotFoundException createNotFoundException(Long id){
-        return new NotFoundException("Not Found Exception","There is not Bill with id "+id);
+        return new NotFoundException("Not Found Exception","There is not Product with id "+id);
     }
 
     @Test
