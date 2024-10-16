@@ -8815,3 +8815,526 @@ insert into client (email,name,id) values (?,?,default) [23502-224]
 2024-10-16 23:00:44 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-16 23:00:44 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-10-16 23:00:44 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 23:03:04 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:04 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:03:07 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:03:07 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:03:07 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:03:07 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 4.135 seconds (process running for 6.394)
+2024-10-16 23:03:08 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:08 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:03:08 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:03:08 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:03:08 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:03:08 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.312 seconds (process running for 7.2)
+2024-10-16 23:03:08 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:03:08 CEST 2024
+2024-10-16 23:03:08 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:08 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:03:08 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:03:08 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:03:08 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:03:08 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.282 seconds (process running for 7.53)
+2024-10-16 23:03:09 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:03:08 CEST 2024
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:03:09 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:03:09 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:03:09 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.218 seconds (process running for 7.968)
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:03:09 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:03:09 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:03:09 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.203 seconds (process running for 8.204)
+2024-10-16 23:03:09 - c.e.o.e.GlobalExceptionHandler - java.lang.RuntimeException
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:03:09 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:03:09 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:03:09 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.219 seconds (process running for 8.454)
+2024-10-16 23:03:09 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:03:09 CEST 2024
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:09 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:03:10 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:03:10 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:03:10 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:03:10 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.25 seconds (process running for 8.732)
+2024-10-16 23:03:10 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:10 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:03:10 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:03:10 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:03:10 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:03:10 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.264 seconds (process running for 9.023)
+2024-10-16 23:03:10 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:10 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:03:10 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:03:10 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:03:10 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:03:10 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.25 seconds (process running for 9.286)
+2024-10-16 23:03:10 - c.e.o.c.ClientControllerMockBeanTest - Starting ClientControllerMockBeanTest using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:10 - c.e.o.c.ClientControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:03:10 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:03:10 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:03:10 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:03:10 - c.e.o.c.ClientControllerMockBeanTest - Started ClientControllerMockBeanTest in 0.203 seconds (process running for 9.508)
+2024-10-16 23:03:10 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 23:03:10 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 23:03:11 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 8272 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:03:11 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 23:03:11 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 23:03:11 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 79 ms. Found 4 JPA repository interfaces.
+2024-10-16 23:03:11 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 23:03:12 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 23:03:12 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 23:03:12 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 23:03:12 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 23:03:13 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 23:03:13 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 23:03:13 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 23:03:14 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 23:03:14 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:03:15 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 23:03:15 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 23:03:15 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 4.657 seconds (process running for 14.22)
+2024-10-16 23:03:15 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:03:15 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 23:03:15 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 23:08:01 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:01 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:08:05 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:08:05 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:08:05 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:08:05 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 4.559 seconds (process running for 7.041)
+2024-10-16 23:08:05 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:05 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:08:06 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:08:06 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:08:06 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:08:06 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.335 seconds (process running for 7.791)
+2024-10-16 23:08:06 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.saveProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:08:06 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:06 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:08:06 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:08:06 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:08:06 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:08:06 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.263 seconds (process running for 8.419)
+2024-10-16 23:08:06 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.updateProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:08:06 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:06 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:08:06 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:08:06 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:08:06 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:08:06 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.25 seconds (process running for 8.699)
+2024-10-16 23:08:07 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.updateProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:08:07 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:08:07 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:08:07 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.235 seconds (process running for 8.98)
+2024-10-16 23:08:07 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:08:07 CEST 2024
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:08:07 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:08:07 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:08:07 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.204 seconds (process running for 9.222)
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:08:07 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:08:07 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:08:07 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.203 seconds (process running for 9.442)
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:08:07 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:08:07 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:08:07 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.187 seconds (process running for 9.656)
+2024-10-16 23:08:07 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.saveProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:07 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:08:08 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:08:08 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:08:08 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:08:08 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.187 seconds (process running for 9.866)
+2024-10-16 23:08:08 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:08 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:08:08 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:08:08 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:08:08 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:08:08 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.172 seconds (process running for 10.06)
+2024-10-16 23:08:08 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:08:08 CEST 2024
+2024-10-16 23:08:08 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 23:08:08 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 23:08:08 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 12656 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:08:08 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 23:08:08 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 23:08:08 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 4 JPA repository interfaces.
+2024-10-16 23:08:09 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 23:08:09 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 23:08:09 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 23:08:09 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 23:08:09 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 23:08:10 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 23:08:10 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 23:08:10 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 23:08:11 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 23:08:11 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:08:12 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 23:08:12 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 23:08:12 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 4.58 seconds (process running for 14.679)
+2024-10-16 23:08:13 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:08:13 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 23:08:13 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 23:15:29 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:29 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:15:33 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:15:33 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:15:33 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:15:33 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 4.698 seconds (process running for 7.121)
+2024-10-16 23:15:33 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:33 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:15:34 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:15:34 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:15:34 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:15:34 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.324 seconds (process running for 7.83)
+2024-10-16 23:15:34 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.saveProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:15:34 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:34 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:15:35 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:15:35 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:15:35 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:15:35 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.485 seconds (process running for 8.862)
+2024-10-16 23:15:35 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.updateProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:15:35 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:35 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:15:35 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:15:35 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:15:35 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 13 ms
+2024-10-16 23:15:35 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.355 seconds (process running for 9.277)
+2024-10-16 23:15:35 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.updateProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:15:35 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:35 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:15:36 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:15:36 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:15:36 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:15:36 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.342 seconds (process running for 9.689)
+2024-10-16 23:15:36 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:15:36 CEST 2024
+2024-10-16 23:15:36 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:36 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:15:36 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:15:36 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:15:36 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-10-16 23:15:36 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.392 seconds (process running for 10.102)
+2024-10-16 23:15:36 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:36 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:15:36 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:15:36 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:15:36 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:15:36 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.294 seconds (process running for 10.44)
+2024-10-16 23:15:36 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:36 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:15:37 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:15:37 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:15:37 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:15:37 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.273 seconds (process running for 10.736)
+2024-10-16 23:15:37 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.saveProduct(com.example.orders.dto.ProductDto) with 2 errors: [Field error in object 'productDto' on field 'name': rejected value [null]; codes [NotNull.productDto.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.name,name]; arguments []; default message [name]]; default message [must not be null]] [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:15:37 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:37 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:15:37 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:15:37 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:15:37 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-10-16 23:15:37 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.29 seconds (process running for 11.067)
+2024-10-16 23:15:37 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:37 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:15:37 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:15:37 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:15:37 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:15:37 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.284 seconds (process running for 11.385)
+2024-10-16 23:15:37 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:15:37 CEST 2024
+2024-10-16 23:15:37 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 23:15:37 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 23:15:37 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 876 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:15:37 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 23:15:38 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 23:15:38 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67 ms. Found 4 JPA repository interfaces.
+2024-10-16 23:15:39 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 23:15:39 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 23:15:39 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 23:15:39 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 23:15:39 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 23:15:40 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 23:15:40 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 23:15:40 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 23:15:42 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 23:15:42 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:15:43 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 23:15:43 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 23:15:43 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 5.905 seconds (process running for 17.369)
+2024-10-16 23:15:43 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:15:43 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 23:15:44 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 23:24:27 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:27 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:24:31 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:24:31 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:24:31 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-10-16 23:24:32 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 5.574 seconds (process running for 7.893)
+2024-10-16 23:24:32 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:32 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:24:32 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:24:32 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:24:32 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-10-16 23:24:32 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.362 seconds (process running for 8.765)
+2024-10-16 23:24:33 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.saveProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:24:33 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:33 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:24:33 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:24:33 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:24:33 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:24:33 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.262 seconds (process running for 9.454)
+2024-10-16 23:24:33 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.updateProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:24:33 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:33 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:24:33 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:24:33 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:24:33 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:24:33 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.23 seconds (process running for 9.723)
+2024-10-16 23:24:33 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.updateProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:24:33 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:33 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:24:34 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:24:34 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:24:34 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.23 seconds (process running for 9.989)
+2024-10-16 23:24:34 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:24:34 CEST 2024
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:24:34 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:24:34 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:24:34 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.235 seconds (process running for 10.251)
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:24:34 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:24:34 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:24:34 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.23 seconds (process running for 10.511)
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:24:34 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:24:34 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:24:34 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 5 ms
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.179 seconds (process running for 10.703)
+2024-10-16 23:24:34 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.saveProduct(com.example.orders.dto.ProductDto) with 2 errors: [Field error in object 'productDto' on field 'name': rejected value [null]; codes [NotNull.productDto.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.name,name]; arguments []; default message [name]]; default message [must not be null]] [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:34 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:24:35 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:24:35 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:24:35 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:24:35 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.19 seconds (process running for 10.917)
+2024-10-16 23:24:35 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:35 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:24:35 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:24:35 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:24:35 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+2024-10-16 23:24:35 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.269 seconds (process running for 11.198)
+2024-10-16 23:24:35 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:24:35 CEST 2024
+2024-10-16 23:24:35 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 23:24:35 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 23:24:35 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 9624 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:24:35 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 23:24:35 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 23:24:36 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 89 ms. Found 4 JPA repository interfaces.
+2024-10-16 23:24:36 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 23:24:36 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 23:24:36 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 23:24:37 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 23:24:37 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 23:24:37 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 23:24:37 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 23:24:37 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 23:24:40 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 23:24:40 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:24:41 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 23:24:41 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 23:24:41 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 6.562 seconds (process running for 17.829)
+2024-10-16 23:24:42 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:24:42 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 23:24:42 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 23:28:46 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:46 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:28:50 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:28:50 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:28:50 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:28:50 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 4.448 seconds (process running for 6.661)
+2024-10-16 23:28:50 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:50 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:28:50 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:28:50 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:28:50 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:28:50 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.313 seconds (process running for 7.392)
+2024-10-16 23:28:51 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:51 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:28:51 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:28:51 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:28:51 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:28:51 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.25 seconds (process running for 8.046)
+2024-10-16 23:28:51 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.updateProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:28:51 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:51 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:28:51 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:28:51 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:28:51 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:28:51 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.234 seconds (process running for 8.356)
+2024-10-16 23:28:51 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.updateProduct(com.example.orders.dto.ProductDto): [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] 
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:28:52 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:28:52 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:28:52 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.203 seconds (process running for 8.604)
+2024-10-16 23:28:52 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:28:52 CEST 2024
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:28:52 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:28:52 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:28:52 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.219 seconds (process running for 8.844)
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:28:52 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:28:52 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:28:52 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.187 seconds (process running for 9.059)
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:28:52 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:28:52 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:28:52 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.172 seconds (process running for 9.245)
+2024-10-16 23:28:52 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.saveProduct(com.example.orders.dto.ProductDto) with 2 errors: [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] [Field error in object 'productDto' on field 'name': rejected value [null]; codes [NotNull.productDto.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.name,name]; arguments []; default message [name]]; default message [must not be null]] 
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:52 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:28:53 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:28:53 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:28:53 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:28:53 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.172 seconds (process running for 9.446)
+2024-10-16 23:28:53 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:53 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:28:53 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:28:53 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:28:53 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:28:53 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.156 seconds (process running for 9.633)
+2024-10-16 23:28:53 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:28:53 CEST 2024
+2024-10-16 23:28:53 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 23:28:53 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 23:28:53 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 6440 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:28:53 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 23:28:53 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 23:28:53 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+2024-10-16 23:28:54 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 23:28:54 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 23:28:54 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 23:28:54 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 23:28:54 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 23:28:55 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 23:28:55 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 23:28:55 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 23:28:56 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 23:28:56 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:28:57 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 23:28:57 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 23:28:57 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 4.156 seconds (process running for 13.835)
+2024-10-16 23:28:57 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:28:57 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 23:28:57 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 23:33:22 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:22 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:33:25 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:33:25 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:33:25 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:33:25 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 4.518 seconds (process running for 7.167)
+2024-10-16 23:33:26 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:26 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:33:26 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:33:26 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:33:26 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:33:26 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.312 seconds (process running for 7.909)
+2024-10-16 23:33:27 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:27 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:33:27 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:33:27 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:33:27 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:33:27 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.281 seconds (process running for 8.603)
+2024-10-16 23:33:27 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:27 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:33:27 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:33:27 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:33:27 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:33:27 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.219 seconds (process running for 8.876)
+2024-10-16 23:33:27 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:33:27 CEST 2024
+2024-10-16 23:33:27 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:27 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:33:27 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:33:27 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:33:27 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:33:27 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.265 seconds (process running for 9.203)
+2024-10-16 23:33:28 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:33:28 CEST 2024
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:33:28 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:33:28 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:33:28 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.235 seconds (process running for 9.471)
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:33:28 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:33:28 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:33:28 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.204 seconds (process running for 9.683)
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:33:28 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:33:28 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:33:28 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.172 seconds (process running for 9.874)
+2024-10-16 23:33:28 - c.e.o.e.GlobalExceptionHandler - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.orders.dto.ProductDto> com.example.orders.controller.ProductController.saveProduct(com.example.orders.dto.ProductDto) with 2 errors: [Field error in object 'productDto' on field 'ords': rejected value [null]; codes [NotNull.productDto.ords,NotNull.ords,NotNull.java.util.List,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.ords,ords]; arguments []; default message [ords]]; default message [must not be null]] [Field error in object 'productDto' on field 'name': rejected value [null]; codes [NotNull.productDto.name,NotNull.name,NotNull.java.lang.String,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [productDto.name,name]; arguments []; default message [name]]; default message [must not be null]] 
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:33:28 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:33:28 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:33:28 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.171 seconds (process running for 10.104)
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - Starting ProductControllerMockBeanTest using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:28 - c.e.o.c.ProductControllerMockBeanTest - The following 1 profile is active: "test"
+2024-10-16 23:33:29 - o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2024-10-16 23:33:29 - o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2024-10-16 23:33:29 - o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+2024-10-16 23:33:29 - c.e.o.c.ProductControllerMockBeanTest - Started ProductControllerMockBeanTest in 0.187 seconds (process running for 10.314)
+2024-10-16 23:33:29 - c.e.o.e.GlobalExceptionHandler - Wed Oct 16 23:33:29 CEST 2024
+2024-10-16 23:33:29 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.OnlineOrdersApplicationTests]: OnlineOrdersApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 23:33:29 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.OnlineOrdersApplicationTests
+2024-10-16 23:33:29 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 14808 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 23:33:29 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 23:33:29 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 23:33:29 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces.
+2024-10-16 23:33:29 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 23:33:30 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 23:33:30 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 23:33:30 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 23:33:30 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 23:33:30 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 23:33:30 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 23:33:30 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 23:33:32 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 23:33:32 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:33:33 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 23:33:33 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 23:33:33 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 4.256 seconds (process running for 14.624)
+2024-10-16 23:33:33 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 23:33:33 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 23:33:33 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
