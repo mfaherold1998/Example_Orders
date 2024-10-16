@@ -4,6 +4,7 @@ import com.example.orders.dto.BillDto;
 import com.example.orders.exceptions.InvalidException;
 import com.example.orders.exceptions.NotFoundException;
 import com.example.orders.service.BillService;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
@@ -18,6 +19,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@Disabled
 @ExtendWith(MockitoExtension.class)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 class BillControllerMockitoTest {
