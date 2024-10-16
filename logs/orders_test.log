@@ -5238,3 +5238,152 @@ insert into bill (date_bill,ordine_id,total_amount,id) values (?,?,?,default) [2
 2024-10-16 12:28:14 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-10-16 12:28:14 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2024-10-16 12:28:14 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 12:33:44 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 14172 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 12:33:44 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 12:33:45 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 12:33:45 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 110 ms. Found 4 JPA repository interfaces.
+2024-10-16 12:33:46 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 12:33:46 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 12:33:46 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 12:33:47 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 12:33:47 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 12:33:47 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 12:33:47 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 12:33:47 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 12:33:49 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 12:33:49 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:33:50 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 12:33:50 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 12:33:51 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 7.647 seconds (process running for 10.545)
+2024-10-16 12:33:51 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:33:51 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 12:33:51 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 12:34:05 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 6900 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 12:34:05 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 12:34:06 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 12:34:06 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102 ms. Found 4 JPA repository interfaces.
+2024-10-16 12:34:07 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 12:34:07 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 12:34:08 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 12:34:08 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 12:34:08 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 12:34:09 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 12:34:09 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 12:34:09 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 12:34:10 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 12:34:10 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:34:11 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 12:34:11 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 12:34:12 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 7.359 seconds (process running for 10.07)
+2024-10-16 12:34:12 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:34:12 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 12:34:12 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-10-16 12:35:48 - c.e.o.OnlineOrdersApplicationTests - Starting OnlineOrdersApplicationTests using Java 17.0.11 with PID 7252 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 12:35:48 - c.e.o.OnlineOrdersApplicationTests - The following 1 profile is active: "test"
+2024-10-16 12:35:49 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 12:35:49 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 118 ms. Found 4 JPA repository interfaces.
+2024-10-16 12:35:50 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 12:35:50 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-10-16 12:35:50 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 12:35:51 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 12:35:51 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-10-16 12:35:51 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-10-16 12:35:51 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-10-16 12:35:51 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 12:35:53 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 12:35:53 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:53 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-10-16 12:35:54 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-10-16 12:35:54 - c.e.o.OnlineOrdersApplicationTests - Started OnlineOrdersApplicationTests in 7.418 seconds (process running for 9.937)
+2024-10-16 12:35:55 - o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.example.orders.repository.ClientRepositoryTest]: ClientRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-10-16 12:35:55 - o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.example.orders.OnlineOrdersApplication for test class com.example.orders.repository.ClientRepositoryTest
+2024-10-16 12:35:55 - c.e.o.r.ClientRepositoryTest - Starting ClientRepositoryTest using Java 17.0.11 with PID 7252 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 12:35:55 - c.e.o.r.ClientRepositoryTest - The following 1 profile is active: "test"
+2024-10-16 12:35:55 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 12:35:55 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-10-16 12:35:55 - o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2024-10-16 12:35:55 - o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:c1605dd8-f4cf-43a3-9053-34d4403a747d;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-10-16 12:35:55 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 12:35:55 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 12:35:55 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 12:35:55 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 12:35:55 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 12:35:55 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:55 - c.e.o.r.ClientRepositoryTest - Started ClientRepositoryTest in 0.448 seconds (process running for 10.766)
+2024-10-16 12:35:56 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:56 - c.e.o.r.ClientRepositoryTest - Starting ClientRepositoryTest using Java 17.0.11 with PID 7252 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 12:35:56 - c.e.o.r.ClientRepositoryTest - The following 1 profile is active: "test"
+2024-10-16 12:35:56 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 12:35:56 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-10-16 12:35:56 - o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2024-10-16 12:35:56 - o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:beae06cc-65e6-4ceb-ab2e-52594d86dd87;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-10-16 12:35:56 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 12:35:56 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 12:35:56 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 12:35:56 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 12:35:56 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 12:35:56 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:56 - c.e.o.r.ClientRepositoryTest - Started ClientRepositoryTest in 0.355 seconds (process running for 11.53)
+2024-10-16 12:35:56 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:56 - c.e.o.r.ClientRepositoryTest - Starting ClientRepositoryTest using Java 17.0.11 with PID 7252 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 12:35:56 - c.e.o.r.ClientRepositoryTest - The following 1 profile is active: "test"
+2024-10-16 12:35:56 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 12:35:56 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 4 JPA repository interfaces.
+2024-10-16 12:35:56 - o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2024-10-16 12:35:56 - o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:802479cb-b5e9-47d9-9a2b-7caa9323d742;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-10-16 12:35:56 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 12:35:56 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 12:35:56 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 12:35:56 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 12:35:56 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 12:35:56 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:56 - c.e.o.r.ClientRepositoryTest - Started ClientRepositoryTest in 0.327 seconds (process running for 11.883)
+2024-10-16 12:35:56 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:56 - c.e.o.r.ClientRepositoryTest - Starting ClientRepositoryTest using Java 17.0.11 with PID 7252 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 12:35:56 - c.e.o.r.ClientRepositoryTest - The following 1 profile is active: "test"
+2024-10-16 12:35:56 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 12:35:56 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14 ms. Found 4 JPA repository interfaces.
+2024-10-16 12:35:56 - o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2024-10-16 12:35:56 - o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:21db0451-d025-4269-94df-cadc1d513b0b;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-10-16 12:35:57 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 12:35:57 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 12:35:57 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 12:35:57 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 12:35:57 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 12:35:57 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:57 - c.e.o.r.ClientRepositoryTest - Started ClientRepositoryTest in 0.326 seconds (process running for 12.255)
+2024-10-16 12:35:57 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:57 - c.e.o.r.ClientRepositoryTest - Starting ClientRepositoryTest using Java 17.0.11 with PID 7252 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 12:35:57 - c.e.o.r.ClientRepositoryTest - The following 1 profile is active: "test"
+2024-10-16 12:35:57 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 12:35:57 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 13 ms. Found 4 JPA repository interfaces.
+2024-10-16 12:35:57 - o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2024-10-16 12:35:57 - o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:6e7dcc6e-c63d-41b5-8556-55f3c5ace3ff;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-10-16 12:35:57 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 12:35:57 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 12:35:57 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 12:35:57 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 12:35:57 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 12:35:57 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:57 - c.e.o.r.ClientRepositoryTest - Started ClientRepositoryTest in 0.332 seconds (process running for 12.608)
+2024-10-16 12:35:57 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:57 - c.e.o.r.ClientRepositoryTest - Starting ClientRepositoryTest using Java 17.0.11 with PID 7252 (started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-10-16 12:35:57 - c.e.o.r.ClientRepositoryTest - The following 1 profile is active: "test"
+2024-10-16 12:35:57 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-10-16 12:35:57 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 4 JPA repository interfaces.
+2024-10-16 12:35:57 - o.s.b.t.a.j.TestDatabaseAutoConfiguration$EmbeddedDataSourceBeanFactoryPostProcessor - Replacing 'dataSource' DataSource bean with embedded version
+2024-10-16 12:35:57 - o.s.j.d.e.EmbeddedDatabaseFactory - Starting embedded database: url='jdbc:h2:mem:2f522c1e-7c9a-4130-886d-d592a8e16d77;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=false', username='sa'
+2024-10-16 12:35:57 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-10-16 12:35:57 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-10-16 12:35:57 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-10-16 12:35:57 - org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-10-16 12:35:57 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-10-16 12:35:57 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:57 - c.e.o.r.ClientRepositoryTest - Started ClientRepositoryTest in 0.291 seconds (process running for 12.917)
+2024-10-16 12:35:57 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 23502, SQLState: 23502
+2024-10-16 12:35:57 - o.h.e.jdbc.spi.SqlExceptionHelper - NULL not allowed for column "NAME"; SQL statement:
+insert into client (email,name,id) values (?,?,default) [23502-224]
+2024-10-16 12:35:57 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:57 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-10-16 12:35:57 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-10-16 12:35:58 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
