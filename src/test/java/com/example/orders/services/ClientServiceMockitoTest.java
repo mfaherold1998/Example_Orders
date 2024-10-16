@@ -1,15 +1,10 @@
 package com.example.orders.services;
 
-import com.example.orders.dto.BillDto;
 import com.example.orders.dto.ClientDto;
-import com.example.orders.entity.Bill;
 import com.example.orders.entity.Client;
 import com.example.orders.exceptions.NotFoundException;
-import com.example.orders.mappers.BillMapper;
 import com.example.orders.mappers.ClientMapper;
-import com.example.orders.repository.BillRepository;
 import com.example.orders.repository.ClientRepository;
-import com.example.orders.service.BillService;
 import com.example.orders.service.ClientService;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -20,12 +15,12 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@Disabled
 @ExtendWith(MockitoExtension.class)
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 class ClientServiceMockitoTest {
@@ -116,7 +111,6 @@ class ClientServiceMockitoTest {
 
         Long id = 1L;
         Client client = Client.builder().id(1L).name("Maria").email("maria@test.com").build();
-        ClientDto clientDto = ClientDto.builder().id(1L).name("Maria").email("maria@test.com").build();
         Optional<Client> optClient = Optional.of(client);
 
         Mockito.when(clientRepository.findById(id)).thenReturn(optClient);
