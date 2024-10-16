@@ -2,7 +2,6 @@ package com.example.orders.services;
 
 import com.example.orders.dto.BillDto;
 import com.example.orders.entity.Bill;
-import com.example.orders.exceptions.InvalidException;
 import com.example.orders.exceptions.NotFoundException;
 import com.example.orders.mappers.BillMapper;
 import com.example.orders.repository.BillRepository;
@@ -211,7 +210,7 @@ class BillServiceTest {
         Bill billDto0 = billRepository.findFirstByOrderByIdDesc().orElse(Bill.builder().id(0L).build());
         BillDto updatedBill = BillDto.builder().id(billDto0.getId()+1).dateBill(new Date()).totalAmount(200.0).build();
 
-        assertThrows(InvalidException.class, () -> {
+        assertThrows(NotFoundException.class, () -> {
             billService.updateBill(updatedBill);
         });
     }

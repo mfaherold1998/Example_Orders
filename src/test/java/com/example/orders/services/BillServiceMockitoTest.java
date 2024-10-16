@@ -35,6 +35,9 @@ class BillServiceMockitoTest {
     @InjectMocks
     private BillService billService;
 
+    private NotFoundException createNotFoundException(Long id){
+        return new NotFoundException("Not Found Exception","There is not Bill with id "+id);
+    }
 
     @Test
     void getAllBill_withValidBillDTO_returnListOfBillDto() {
@@ -137,7 +140,7 @@ class BillServiceMockitoTest {
 
         Long id = 1L;
 
-        Mockito.when(billRepository.findById(id)).thenThrow(new NotFoundException("Not Found Exception","There is not Bill with id "+id));
+        Mockito.when(billRepository.findById(id)).thenThrow(createNotFoundException(id));
 
         assertThrows(NotFoundException.class, () -> {
             billService.getBillById(id);

@@ -28,6 +28,10 @@ class BillControllerMockitoTest {
     @InjectMocks
     private BillController billController;
 
+    private NotFoundException createNotFoundException(Long id){
+        return new NotFoundException("Not Found Exception","There is not Bill with id "+id);
+    }
+
     @Test
      void getAllBills_withValidDto_returnListOfBillDto() {
         BillDto bill1 = BillDto.builder().dateBill(new Date()).totalAmount(100.0).build();
@@ -101,7 +105,8 @@ class BillControllerMockitoTest {
     @Test
     void getBillById_withInvalidId_throwInvalidException(){
 
-        Mockito.when(billService.getBillById(1L)).thenThrow(new NotFoundException("Not Found Exception", "There is not Bill with id 1"));
+        Long id = 1L;
+        Mockito.when(billService.getBillById(id)).thenThrow(createNotFoundException(id));
 
         NotFoundException exception = assertThrows(NotFoundException.class, () -> {
             billController.getBillById(1L);
@@ -124,7 +129,9 @@ class BillControllerMockitoTest {
     @Test
     void deleteBill_withInvalidId_throwNotFoundException(){
 
-        Mockito.doThrow(new NotFoundException("Not Found Exception", "There is not Bill with id 1")).when(billService).deleteBill(1L);
+        Long id = 1L;
+
+        Mockito.doThrow(createNotFoundException(id)).when(billService).deleteBill(id);
 
         NotFoundException exception = assertThrows(NotFoundException.class, () -> {
             billController.deleteBill(1L);
@@ -148,9 +155,11 @@ class BillControllerMockitoTest {
     @Test
     void updateBill_withInvalidBillDto_throwNotFoundException(){
 
-        BillDto billDto = BillDto.builder().id(1L).dateBill(new Date()).totalAmount(200.0).build();
+        Long id = 1L;
 
-        Mockito.when(billService.updateBill(billDto)).thenThrow(new NotFoundException("Not Found Exception","There is not Bill with id 1"));
+        BillDto billDto = BillDto.builder().id(id).dateBill(new Date()).totalAmount(200.0).build();
+
+        Mockito.when(billService.updateBill(billDto)).thenThrow(createNotFoundException(id));
 
         NotFoundException exception = assertThrows(NotFoundException.class, () -> {
             billController.updateBill(billDto);
