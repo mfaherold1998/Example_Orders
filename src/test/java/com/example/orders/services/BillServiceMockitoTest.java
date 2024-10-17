@@ -6,13 +6,11 @@ import com.example.orders.exceptions.NotFoundException;
 import com.example.orders.mappers.BillMapper;
 import com.example.orders.repository.BillRepository;
 import com.example.orders.service.BillService;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mapstruct.factory.Mappers;
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.test.annotation.DirtiesContext;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -21,9 +19,7 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@Disabled
 @ExtendWith(MockitoExtension.class)
-@DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
 class BillServiceMockitoTest {
 
     @Mock
