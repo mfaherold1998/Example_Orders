@@ -20,8 +20,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-
 @WebMvcTest(ProductController.class)
 class ProductControllerMockBeanTest {
 
@@ -86,7 +84,6 @@ class ProductControllerMockBeanTest {
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/products/" + id)
                         .contentType(MediaType.APPLICATION_JSON))
-                //.andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(id));
     }
@@ -100,7 +97,6 @@ class ProductControllerMockBeanTest {
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/products/" + id)
                         .contentType(MediaType.APPLICATION_JSON))
-                //.andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
     }
 
@@ -116,7 +112,6 @@ class ProductControllerMockBeanTest {
                         .content(objectMapper.writeValueAsString(response))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isCreated())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(id));
     }
@@ -133,7 +128,6 @@ class ProductControllerMockBeanTest {
                         .content(objectMapper.writeValueAsString(response))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON_VALUE))
-                //.andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isInternalServerError());
     }
 
@@ -145,7 +139,6 @@ class ProductControllerMockBeanTest {
         Mockito.doNothing().when(productService).deleteProduct(id);
 
         mockMvc.perform(MockMvcRequestBuilders.delete("/api/products/{id}",id))
-                //.andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isAccepted());
 
     }
@@ -158,7 +151,6 @@ class ProductControllerMockBeanTest {
         Mockito.doThrow(createNotFoundException(id)).when(productService).deleteProduct(id);
 
         mockMvc.perform(MockMvcRequestBuilders.delete("/api/products/{id}",id))
-                //.andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
 
     }
@@ -175,7 +167,6 @@ class ProductControllerMockBeanTest {
                     .content(objectMapper.writeValueAsString(response))
                     .contentType(MediaType.APPLICATION_JSON)
                     .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isOk());
 
     }
@@ -192,7 +183,6 @@ class ProductControllerMockBeanTest {
                     .content(objectMapper.writeValueAsString(response))
                     .contentType(MediaType.APPLICATION_JSON)
                     .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
 
     }

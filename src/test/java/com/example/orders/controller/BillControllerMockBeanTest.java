@@ -83,7 +83,7 @@ class BillControllerMockBeanTest {
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/bills/" + id)
                         .contentType(MediaType.APPLICATION_JSON))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(id));
     }
@@ -97,7 +97,7 @@ class BillControllerMockBeanTest {
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/bills/" + id)
                         .contentType(MediaType.APPLICATION_JSON))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
     }
 
@@ -113,7 +113,7 @@ class BillControllerMockBeanTest {
                         .content(objectMapper.writeValueAsString(response))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isCreated())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(id));
     }
@@ -130,7 +130,7 @@ class BillControllerMockBeanTest {
                         .content(objectMapper.writeValueAsString(response))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isInternalServerError());
     }
 
@@ -142,7 +142,7 @@ class BillControllerMockBeanTest {
         Mockito.doNothing().when(billService).deleteBill(id);
 
         mockMvc.perform(MockMvcRequestBuilders.delete("/api/bills/{id}",id))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isAccepted());
 
     }
@@ -155,7 +155,7 @@ class BillControllerMockBeanTest {
         Mockito.doThrow(new NotFoundException("Not Found Exception","There is not Bill with id "+id)).when(billService).deleteBill(id);
 
         mockMvc.perform(MockMvcRequestBuilders.delete("/api/bills/{id}",id))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
 
     }
@@ -172,7 +172,7 @@ class BillControllerMockBeanTest {
                     .content(objectMapper.writeValueAsString(response))
                     .contentType(MediaType.APPLICATION_JSON)
                     .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isOk());
 
     }
@@ -189,7 +189,7 @@ class BillControllerMockBeanTest {
                     .content(objectMapper.writeValueAsString(response))
                     .contentType(MediaType.APPLICATION_JSON)
                     .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
 
     }

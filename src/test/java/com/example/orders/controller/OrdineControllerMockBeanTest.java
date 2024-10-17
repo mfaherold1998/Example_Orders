@@ -22,8 +22,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-
 
 @WebMvcTest(OrdineController.class)
 class OrdineControllerMockBeanTest {
@@ -93,7 +91,6 @@ class OrdineControllerMockBeanTest {
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/ordini/" + id)
                         .contentType(MediaType.APPLICATION_JSON))
-                //.andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(id));
     }
@@ -107,7 +104,6 @@ class OrdineControllerMockBeanTest {
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/ordini/" + id)
                         .contentType(MediaType.APPLICATION_JSON))
-                //.andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
     }
 
@@ -124,7 +120,6 @@ class OrdineControllerMockBeanTest {
                         .content(objectMapper.writeValueAsString(response))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isCreated())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(id));
     }
@@ -142,7 +137,6 @@ class OrdineControllerMockBeanTest {
                         .content(objectMapper.writeValueAsString(response))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON_VALUE))
-                //.andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isInternalServerError());
     }
 
@@ -154,7 +148,6 @@ class OrdineControllerMockBeanTest {
         Mockito.doNothing().when(ordineService).deleteOrdine(id);
 
         mockMvc.perform(MockMvcRequestBuilders.delete("/api/ordini/{id}",id))
-                //.andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isAccepted());
 
     }
@@ -167,8 +160,7 @@ class OrdineControllerMockBeanTest {
         Mockito.doThrow(createNotFoundException(id)).when(ordineService).deleteOrdine(id);
 
         mockMvc.perform(MockMvcRequestBuilders.delete("/api/ordini/{id}",id))
-                //.andDo(print())
-                .andExpect(MockMvcResultMatchers.status().isNotFound());
+               .andExpect(MockMvcResultMatchers.status().isNotFound());
 
     }
 
@@ -185,7 +177,6 @@ class OrdineControllerMockBeanTest {
                     .content(objectMapper.writeValueAsString(response))
                     .contentType(MediaType.APPLICATION_JSON)
                     .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isOk());
 
     }
@@ -203,7 +194,6 @@ class OrdineControllerMockBeanTest {
                     .content(objectMapper.writeValueAsString(response))
                     .contentType(MediaType.APPLICATION_JSON)
                     .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
 
     }

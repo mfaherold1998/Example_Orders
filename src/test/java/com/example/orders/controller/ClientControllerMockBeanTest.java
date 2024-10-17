@@ -86,7 +86,7 @@ class ClientControllerMockBeanTest {
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/clients/" + id)
                         .contentType(MediaType.APPLICATION_JSON))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(id));
     }
@@ -100,7 +100,7 @@ class ClientControllerMockBeanTest {
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/clients/" + id)
                         .contentType(MediaType.APPLICATION_JSON))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
     }
 
@@ -116,7 +116,7 @@ class ClientControllerMockBeanTest {
                         .content(objectMapper.writeValueAsString(response))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isCreated())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(id));
     }
@@ -133,7 +133,7 @@ class ClientControllerMockBeanTest {
                         .content(objectMapper.writeValueAsString(response))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isInternalServerError());
     }
 
@@ -145,7 +145,7 @@ class ClientControllerMockBeanTest {
         Mockito.doNothing().when(clientService).deleteClient(id);
 
         mockMvc.perform(MockMvcRequestBuilders.delete("/api/clients/{id}",id))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isAccepted());
 
     }
@@ -158,7 +158,7 @@ class ClientControllerMockBeanTest {
         Mockito.doThrow(createNotFoundException(id)).when(clientService).deleteClient(id);
 
         mockMvc.perform(MockMvcRequestBuilders.delete("/api/clients/{id}",id))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
 
     }
@@ -175,7 +175,7 @@ class ClientControllerMockBeanTest {
                     .content(objectMapper.writeValueAsString(response))
                     .contentType(MediaType.APPLICATION_JSON)
                     .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isOk());
 
     }
@@ -192,7 +192,7 @@ class ClientControllerMockBeanTest {
                     .content(objectMapper.writeValueAsString(response))
                     .contentType(MediaType.APPLICATION_JSON)
                     .accept(MediaType.APPLICATION_JSON_VALUE))
-                .andDo(print())
+                
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
 
     }
