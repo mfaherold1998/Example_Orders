@@ -21,8 +21,6 @@ import java.util.List;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-
 @WebMvcTest(BillController.class)
 class BillControllerMockBeanTest {
 
@@ -37,6 +35,10 @@ class BillControllerMockBeanTest {
 
     @Autowired
     private ObjectMapper objectMapper;
+
+    private NotFoundException createNotFoundException(Long id){
+        return new NotFoundException("Not Found Exception","There is not bill with id "+id);
+    }
 
     @Test
     void getAllBills_withValidBills_returnOk() throws Exception {
@@ -83,7 +85,6 @@ class BillControllerMockBeanTest {
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/bills/" + id)
                         .contentType(MediaType.APPLICATION_JSON))
-                
                 .andExpect(MockMvcResultMatchers.status().isOk())
                 .andExpect(MockMvcResultMatchers.jsonPath("$.id").value(id));
     }
@@ -93,11 +94,10 @@ class BillControllerMockBeanTest {
 
         Long id = 1L;
 
-        Mockito.when(billService.getBillById(id)).thenThrow(new NotFoundException("Not Found Exception", "Bill with id "+id+" does not exists"));
+        Mockito.when(billService.getBillById(id)).thenThrow(createNotFoundException(id));
 
         mockMvc.perform(MockMvcRequestBuilders.get("/api/bills/" + id)
                         .contentType(MediaType.APPLICATION_JSON))
-                
                 .andExpect(MockMvcResultMatchers.status().isNotFound());
     }
 
@@ -119,7 +119,7 @@ class BillControllerMockBeanTest {
     }
 
     @Test
-    void saveBill_withInvalidBillDto_returnOk() throws Exception {
+    void saveBill_withInvalidBillDto_throwException() throws Exception {
 
         Long id = 1L;
         BillDto response = BillDto.builder().id(id).dateBill(new Date()).totalAmount(null).build();
@@ -130,12 +130,11 @@ class BillControllerMockBeanTest {
                         .content(objectMapper.writeValueAsString(response))
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON_VALUE))
-                
                 .andExpect(MockMvcResultMatchers.status().isInternalServerError());
     }
 
     @Test
-    void deleteBill_withExistentBillDto_returnAccepted() throws Exception{
+    void deleteBill_withExistentId_returnAccepted() throws Exception{
 
         Long id = 1L;
 
@@ -148,11 +147,11 @@ class BillControllerMockBeanTest {
     }
 
     @Test
-    void deleteBill_withNotExistentBillDto_throwNotFoundException() throws Exception{
+    void deleteBill_withInvalidId_throwNotFoundException() throws Exception{
 
         Long id = 1L;
 
-        Mockito.doThrow(new NotFoundException("Not Found Exception","There is not Bill with id "+id)).when(billService).deleteBill(id);
+        Mockito.doThrow(createNotFoundException(id)).when(billService).deleteBill(id);
 
         mockMvc.perform(MockMvcRequestBuilders.delete("/api/bills/{id}",id))
                 
@@ -183,7 +182,7 @@ class BillControllerMockBeanTest {
         Long id = 1L;
         BillDto response = BillDto.builder().id(id).dateBill(new Date()).totalAmount(200.0).build();
 
-        Mockito.when(billService.updateBill(ArgumentMatchers.any(BillDto.class))).thenThrow(new NotFoundException("Not Found Exception","There is not Bill with id 1"));
+        Mockito.when(billService.updateBill(ArgumentMatchers.any(BillDto.class))).thenThrow(createNotFoundException(id));
 
         mockMvc.perform(MockMvcRequestBuilders.put("/api/bills")
                     .content(objectMapper.writeValueAsString(response))

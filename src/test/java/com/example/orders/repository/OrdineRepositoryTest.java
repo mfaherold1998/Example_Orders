@@ -16,7 +16,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @DataJpaTest
 @DirtiesContext(classMode = DirtiesContext.ClassMode.AFTER_EACH_TEST_METHOD)
-public class OrdineRepositoryTest {
+class OrdineRepositoryTest {
 
     @Autowired
     public OrdineRepository ordineRepository;

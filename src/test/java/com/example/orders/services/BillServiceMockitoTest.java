@@ -40,11 +40,11 @@ class BillServiceMockitoTest {
 
         Bill bill1 = Bill.builder().id(1L).dateBill(new Date()).totalAmount(100.0).build();
         Bill bill2 = Bill.builder().id(2L).dateBill(new Date()).totalAmount(100.0).build();
-        List<Bill> bills = new ArrayList<>();
-        bills.add(bill1);
-        bills.add(bill2);
+        List<Bill> billsList = new ArrayList<>();
+        billsList.add(bill1);
+        billsList.add(bill2);
 
-        Mockito.when(billRepository.findAll()).thenReturn(bills);
+        Mockito.when(billRepository.findAll()).thenReturn(billsList);
 
         List<BillDto> response = billService.getAllBills();
 
@@ -55,9 +55,9 @@ class BillServiceMockitoTest {
     @Test
     void getAllBill_withNone_returnEmptyListOfBillDto() {
 
-        List<Bill> bills = new ArrayList<>();
+        List<Bill> billsList = new ArrayList<>();
 
-        Mockito.when(billRepository.findAll()).thenReturn(bills);
+        Mockito.when(billRepository.findAll()).thenReturn(billsList);
 
         List<BillDto> response = billService.getAllBills();
 
@@ -90,7 +90,7 @@ class BillServiceMockitoTest {
     }
 
     @Test
-    void saveBill_withTwoValidDto_returnBillDtoCorrectId() {
+    void saveBill_withValidBillDto_returnBillDto() {
 
         Date date = new Date();
         Bill bill1 = Bill.builder().id(1L).dateBill(date).totalAmount(100.0).build();
@@ -109,7 +109,6 @@ class BillServiceMockitoTest {
         Long id = 1L;
         Bill bill1 = Bill.builder().id(id).dateBill(new Date()).totalAmount(100.0).build();
         Optional<Bill> optBill = Optional.of(bill1);
-        BillDto billDto1 = BillDto.builder().id(id).dateBill(new Date()).totalAmount(100.0).build();
 
         Mockito.when(billRepository.findById(id)).thenReturn(optBill);
 
@@ -121,7 +120,7 @@ class BillServiceMockitoTest {
     }
 
     @Test
-    void getBillById_withNotValidId_returnException(){
+    void getBillById_withInvalidId_throwException(){
 
         Long id = 1L;
 
@@ -133,7 +132,7 @@ class BillServiceMockitoTest {
     }
 
     @Test
-    void deleteBill_withValidBillDto_returnListOfBillDto(){
+    void deleteBill_withValidBillDto_mockitoVerify(){
 
         Long id = 1L;
 
@@ -147,7 +146,7 @@ class BillServiceMockitoTest {
     }
 
     @Test
-    void deleteBill_withNotValidId_returnException(){
+    void deleteBill_withInvalidId_throwException(){
 
         Long id = 1L;
 
@@ -157,7 +156,7 @@ class BillServiceMockitoTest {
     }
 
     @Test
-    void existById_withExistingBillDto_returnTrue(){
+    void existById_withExistingId_returnTrue(){
 
         Long id = 1L;
 
@@ -184,7 +183,7 @@ class BillServiceMockitoTest {
     }
 
     @Test
-    void updateBill_withNotValidBillDto_returnException(){
+    void updateBill_withInvalidBillDto_throwException(){
 
         Long id = 1L;
         BillDto billDto1 = BillDto.builder().dateBill(new Date()).totalAmount(200.0).id(id).build();

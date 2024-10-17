@@ -107,7 +107,6 @@ class ClientRepositoryTest {
 
         Client client0 = clientRepository.findFirstByOrderByIdDesc().orElse(Client.builder().id(0L).build());
         Client client1 = Client.builder().name("Maria").email("maria@test.com").build();
-        Client client2 = Client.builder().name("Federico").email("federico@test.com").build();
 
         clientRepository.save(client1);
         clientRepository.save(client1);

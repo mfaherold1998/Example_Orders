@@ -18,10 +18,6 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
-
-
 @WebMvcTest(ClientController.class)
 class ClientControllerMockBeanTest {
 
