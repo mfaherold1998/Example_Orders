@@ -1,9 +1,12 @@
 package com.example.orders.controller;
 
 import com.example.orders.dto.BillDto;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import io.swagger.v3.oas.annotations.servers.Server;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.http.ResponseEntity;
@@ -12,6 +15,14 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
+@OpenAPIDefinition(
+        info = @Info(
+                title = "Mi API",
+                version = "1.0.0",
+                description = "Descripción de mi API"
+        ),
+        servers = @Server(url = "https://orders.example.com/v1")
+)
 @Tag(name = "Bill", description = "the Bill Api")
 
 public interface BillApi {
