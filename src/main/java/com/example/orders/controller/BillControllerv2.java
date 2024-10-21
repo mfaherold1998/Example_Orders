@@ -12,9 +12,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/v2/api")
+@RequestMapping("/v1/api")
 @RequiredArgsConstructor
-public class BillController implements BillApi{
+public class BillControllerv2 implements BillApi{
 
     private final BillService billService;
 
