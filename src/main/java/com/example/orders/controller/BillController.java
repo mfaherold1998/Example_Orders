@@ -14,7 +14,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
-public class BillController {
+public class BillController implements BillApi{
 
     private final BillService billService;
 

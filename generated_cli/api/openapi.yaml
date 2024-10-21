@@ -1,0 +1,697 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- description: Generated server url
+  url: http://localhost:8080
+tags:
+- description: the Client Api
+  name: Client
+- description: the Product Api
+  name: Product
+- description: the Ordine Api
+  name: Ordine
+- description: the Bill Api
+  name: Bill
+paths:
+  /api/products:
+    get:
+      description: Fetches all products entities and their data from data source
+      operationId: getAllProducts
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                items:
+                  $ref: '#/components/schemas/ProductDto'
+                type: array
+          description: successful operation
+      summary: Fetch all products
+      tags:
+      - Product
+      x-accepts:
+      - '*/*'
+    post:
+      description: Adds a product to the list of products in the data source
+      operationId: saveProduct
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProductDto'
+        required: true
+      responses:
+        "500":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ProductDto'
+          description: invalid product cannot be added
+        "201":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ProductDto'
+          description: successfully added a product
+      summary: Adds a product
+      tags:
+      - Product
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+    put:
+      description: Update a product by a specific id from the list of products in
+        the data source
+      operationId: updateProduct
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ProductDto'
+        required: true
+      responses:
+        "404":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ProductDto'
+          description: there is not product with the given id
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ProductDto'
+          description: successfully updated a product
+      summary: Update a product
+      tags:
+      - Product
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+  /api/ordini:
+    get:
+      description: Fetches all ordini entities and their data from data source
+      operationId: getAllOrdini
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                items:
+                  $ref: '#/components/schemas/OrdineDto'
+                type: array
+          description: successful operation
+      summary: Fetch all ordini
+      tags:
+      - Ordine
+      x-accepts:
+      - '*/*'
+    post:
+      description: Adds a ordine to the list of ordini in the data source
+      operationId: saveOrdine
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrdineDto'
+        required: true
+      responses:
+        "201":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/OrdineDto'
+          description: successfully added a ordine
+        "500":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/OrdineDto'
+          description: invalid ordine cannot be added
+      summary: Adds a ordine
+      tags:
+      - Ordine
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+    put:
+      description: Update a ordine by a specific id from the list of ordini in the
+        data source
+      operationId: updateOrdine
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/OrdineDto'
+        required: true
+      responses:
+        "404":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/OrdineDto'
+          description: there is not ordine with the given id
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/OrdineDto'
+          description: successfully updated a ordine
+      summary: Update a ordine
+      tags:
+      - Ordine
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+  /api/clients:
+    get:
+      description: Fetches all clients entities and their data from data source
+      operationId: getAllClients
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                items:
+                  $ref: '#/components/schemas/ClientDto'
+                type: array
+          description: successful operation
+      summary: Fetch all clients
+      tags:
+      - Client
+      x-accepts:
+      - '*/*'
+    post:
+      description: Adds a client to the list of clients in the data source
+      operationId: saveClient
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ClientDto'
+        required: true
+      responses:
+        "201":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ClientDto'
+          description: successfully added a client
+        "500":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ClientDto'
+          description: invalid client cannot be added
+      summary: Adds a client
+      tags:
+      - Client
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+    put:
+      description: Update a client by a specific id from the list of clients in the
+        data source
+      operationId: updateClient
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ClientDto'
+        required: true
+      responses:
+        "404":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ClientDto'
+          description: there is not client with the given id
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ClientDto'
+          description: successfully updated a client
+      summary: Update a client
+      tags:
+      - Client
+      x-content-type: application/json
+      x-accepts:
+      - '*/*'
+  /api/bills:
+    get:
+      description: Fetches all bills entities and their data from data source
+      operationId: getAllBills
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/BillDto'
+                type: array
+          description: successful operation
+      summary: Fetch all bills
+      tags:
+      - Bill
+      x-accepts:
+      - application/json
+    post:
+      description: Adds a bill to the list of bills in the data source
+      operationId: saveBill
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BillDto'
+        required: true
+      responses:
+        "500":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BillDto'
+          description: invalid bill cannot be added
+        "201":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BillDto'
+          description: successfully added a bill
+      summary: Adds a bill
+      tags:
+      - Bill
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+    put:
+      description: Update a bill by a specific id from the list of bills in the data
+        source
+      operationId: updateBill
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BillDto'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BillDto'
+          description: successfully updated a bill
+        "404":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BillDto'
+          description: there is not bill with the given id
+      summary: Update a bill
+      tags:
+      - Bill
+      x-content-type: application/json
+      x-accepts:
+      - application/json
+  /api/products/{id}:
+    delete:
+      description: Delete a product by a specific id from the list of products in
+        the data source
+      operationId: deleteProduct
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "404":
+          description: there is not product with the given id
+        "202":
+          description: successfully deleted a product
+      summary: Delete a product
+      tags:
+      - Product
+      x-accepts:
+      - application/json
+    get:
+      description: Fetches a product entity and their data from data source by an
+        specific Id
+      operationId: getProductById
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ProductDto'
+          description: successful operation
+      summary: Fetch a product by Id
+      tags:
+      - Product
+      x-accepts:
+      - '*/*'
+  /api/ordini/{id}:
+    delete:
+      description: Delete a ordine by a specific id from the list of ordini in the
+        data source
+      operationId: deleteOrdine
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "404":
+          description: there is not ordine with the given id
+        "202":
+          description: successfully deleted a ordine
+      summary: Delete a ordine
+      tags:
+      - Ordine
+      x-accepts:
+      - application/json
+    get:
+      description: Fetches a ordine entity and their data from data source by an specific
+        Id
+      operationId: getOrdineById
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/OrdineDto'
+          description: successful operation
+      summary: Fetch a ordine by Id
+      tags:
+      - Ordine
+      x-accepts:
+      - '*/*'
+  /api/clients/{id}:
+    delete:
+      description: Delete a client by a specific id from the list of clients in the
+        data source
+      operationId: deleteClient
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "404":
+          description: there is not client with the given id
+        "202":
+          description: successfully deleted a client
+      summary: Delete a client
+      tags:
+      - Client
+      x-accepts:
+      - application/json
+    get:
+      description: Fetches a client entity and their data from data source by an specific
+        Id
+      operationId: getClientById
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/ClientDto'
+          description: successful operation
+      summary: Fetch a client by Id
+      tags:
+      - Client
+      x-accepts:
+      - '*/*'
+  /api/bills/{id}:
+    delete:
+      description: Delete a bill by a specific id from the list of bills in the data
+        source
+      operationId: deleteBill
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "202":
+          description: successfully deleted a bill
+        "404":
+          description: there is not bill with the given id
+      summary: Delete a bill
+      tags:
+      - Bill
+      x-accepts:
+      - application/json
+    get:
+      description: Fetches a bill entity and their data from data source by an specific
+        Id
+      operationId: getBillById
+      parameters:
+      - explode: false
+        in: path
+        name: id
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BillDto'
+          description: successful operation
+      summary: Fetch a bill by Id
+      tags:
+      - Bill
+      x-accepts:
+      - application/json
+components:
+  schemas:
+    ClientDto:
+      example:
+        ords:
+        - null
+        - null
+        - null
+        - null
+        - null
+        name: name
+        id: 5
+        email: email
+      properties:
+        id:
+          format: int64
+          type: integer
+        name:
+          maxLength: 100
+          minLength: 1
+          pattern: "^[a-zA-Z\\s]+$"
+          type: string
+        email:
+          type: string
+        ords:
+          items:
+            $ref: '#/components/schemas/OrdineDto'
+          maxItems: 2147483647
+          minItems: 0
+          type: array
+      required:
+      - name
+      type: object
+    OrdineDto:
+      example:
+        cli:
+          ords:
+          - null
+          - null
+          - null
+          - null
+          - null
+          name: name
+          id: 5
+          email: email
+        total: 0.5962133916683182
+        prods:
+        - null
+        - null
+        - null
+        - null
+        - null
+        id: 1
+        dateOrdine: 2000-01-23T04:56:07.000+00:00
+      properties:
+        id:
+          format: int64
+          type: integer
+        dateOrdine:
+          format: date-time
+          type: string
+        total:
+          format: double
+          minimum: 0
+          type: number
+        cli:
+          $ref: '#/components/schemas/ClientDto'
+        prods:
+          items:
+            $ref: '#/components/schemas/ProductDto'
+          maxItems: 2147483647
+          minItems: 0
+          type: array
+      required:
+      - prods
+      - total
+      type: object
+    ProductDto:
+      example:
+        price: 0.6027456183070403
+        ords:
+        - cli:
+            ords:
+            - null
+            - null
+            - null
+            - null
+            - null
+            name: name
+            id: 5
+            email: email
+          total: 0.5962133916683182
+          prods:
+          - null
+          - null
+          - null
+          - null
+          - null
+          id: 1
+          dateOrdine: 2000-01-23T04:56:07.000+00:00
+        - cli:
+            ords:
+            - null
+            - null
+            - null
+            - null
+            - null
+            name: name
+            id: 5
+            email: email
+          total: 0.5962133916683182
+          prods:
+          - null
+          - null
+          - null
+          - null
+          - null
+          id: 1
+          dateOrdine: 2000-01-23T04:56:07.000+00:00
+        name: name
+        id: 0
+      properties:
+        id:
+          format: int64
+          type: integer
+        name:
+          maxLength: 100
+          minLength: 1
+          type: string
+        price:
+          format: double
+          minimum: 0
+          type: number
+        ords:
+          items:
+            $ref: '#/components/schemas/OrdineDto'
+          type: array
+      required:
+      - name
+      - ords
+      - price
+      type: object
+    BillDto:
+      example:
+        ord:
+          cli:
+            ords:
+            - null
+            - null
+            - null
+            - null
+            - null
+            name: name
+            id: 5
+            email: email
+          total: 0.5962133916683182
+          prods:
+          - null
+          - null
+          - null
+          - null
+          - null
+          id: 1
+          dateOrdine: 2000-01-23T04:56:07.000+00:00
+        totalAmount: 0.6027456183070403
+        dateBill: 2000-01-23T04:56:07.000+00:00
+        id: 0
+      properties:
+        id:
+          format: int64
+          type: integer
+        dateBill:
+          format: date-time
+          type: string
+        totalAmount:
+          format: double
+          minimum: 0
+          type: number
+        ord:
+          $ref: '#/components/schemas/OrdineDto'
+      required:
+      - totalAmount
+      type: object
+

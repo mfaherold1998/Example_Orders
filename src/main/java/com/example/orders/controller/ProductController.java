@@ -2,6 +2,7 @@ package com.example.orders.controller;
 
 import com.example.orders.dto.ProductDto;
 import com.example.orders.service.ProductService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -10,10 +11,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Product", description = "the Product Api")
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
-public class ProductController {
+public class ProductController implements ProductApi{
 
     private final ProductService productService;
 

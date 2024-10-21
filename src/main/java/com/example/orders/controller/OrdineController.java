@@ -2,6 +2,7 @@ package com.example.orders.controller;
 
 import com.example.orders.dto.OrdineDto;
 import com.example.orders.service.OrdineService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -10,10 +11,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Tag(name = "Ordine", description = "the Ordine Api")
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
-public class OrdineController {
+public class OrdineController implements OrdineApi{
 
     private final OrdineService ordineService;
 
@@ -28,7 +30,7 @@ public class OrdineController {
     }//POSTMAN
 
     @PostMapping("/ordini")
-    public ResponseEntity<OrdineDto> saveBill(@RequestBody @Valid OrdineDto ordineDto){
+    public ResponseEntity<OrdineDto> saveOrdine(@RequestBody @Valid OrdineDto ordineDto){
         return new ResponseEntity<>(ordineService.saveOrdine(ordineDto), HttpStatus.CREATED);
     }//POSTMAN
 

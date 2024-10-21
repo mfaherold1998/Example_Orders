@@ -2,6 +2,7 @@ package com.example.orders.controller;
 
 import com.example.orders.dto.ClientDto;
 import com.example.orders.service.ClientService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -10,10 +11,11 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
 @RestController
 @RequestMapping("/api")
 @RequiredArgsConstructor
-public class ClientController {
+public class ClientController implements ClientApi {
 
     private final ClientService clientService;
 
