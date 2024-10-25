@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-@Tag(name = "Bill v1", description = "the Bill Api - Version 1")
+@Tag(name = "Bill", description = "the Bill Api")
 
 public interface BillApi {
 
