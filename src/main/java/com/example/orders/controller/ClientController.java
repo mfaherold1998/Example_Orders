@@ -2,7 +2,6 @@ package com.example.orders.controller;
 
 import com.example.orders.dto.ClientDto;
 import com.example.orders.service.ClientService;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
