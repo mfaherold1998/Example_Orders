@@ -23,8 +23,4 @@ public class ProductDto {
     @Min(0)
     @Digits(integer = 10, fraction = 2)
     private Double price;
-    @Valid
-    @NotNull
-    private List<OrdineDto> ords = Collections.emptyList();
-
 }

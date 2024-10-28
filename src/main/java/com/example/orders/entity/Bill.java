@@ -14,7 +14,6 @@ import java.util.Date;
 @Builder
 public class Bill {
 
-    //@Column //redundante si no se especifica ningun parametro
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -26,7 +25,7 @@ public class Bill {
     private Double totalAmount;
 
     @OneToOne
-    @JoinColumn(name="ordine_id",nullable = true)
+    @JoinColumn(name="ordine_id",nullable = false)
     private Ordine ord;
 
 }

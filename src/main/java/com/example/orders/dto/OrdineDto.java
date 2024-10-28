@@ -23,11 +23,7 @@ public class OrdineDto {
     @Digits(integer = 10, fraction = 2)
     private Double total;
     @Valid
-    //@NotNull
-    private ClientDto cli;
-    @Size(min=0)
     @NotNull
-    @Valid
-    private List<ProductDto> prods = Collections.emptyList();
+    private ClientDto cli;
 
 }

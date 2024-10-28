@@ -19,7 +19,4 @@ public class CustomException extends RuntimeException{
         this.details = details;
         this.httpStatus = httpStatus;
     }
-
-
-
 }

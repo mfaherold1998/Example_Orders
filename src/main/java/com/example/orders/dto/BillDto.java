@@ -21,6 +21,6 @@ public class BillDto {
     @Digits(integer = 10, fraction = 2)
     private Double totalAmount;
     @Valid
-    //@NotNull
+    @NotNull
     private OrdineDto ord;
 }

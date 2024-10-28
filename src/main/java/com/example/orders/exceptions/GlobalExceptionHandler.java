@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
-
     @ExceptionHandler(CustomException.class)
     public ResponseEntity<ErrorDetails> handleCustomException(CustomException ex) {
         log.error(ex.getTimestamp().toString(), ex.getMessage(), ex.getDetails());
