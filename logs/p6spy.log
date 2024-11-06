@@ -1,75 +1,75 @@
-#1730753617988 | took 5ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879786045 | took 60ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5)
 insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5);
-#1730753617990 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879786050 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5)
 insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5);
-#1730753617992 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879786054 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 INSERT INTO public.order_product(ordine_id, product_id) values (5,2)
 INSERT INTO public.order_product(ordine_id, product_id) values (5,2);
-#1730753617996 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879786064 | took 10ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6
 ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6;
-#1730753617998 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879786069 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6
 ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6;
-#1730753618002 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879786073 | took 5ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 commit
 commit;
-#1730753619796 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788221 | took 7ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     alter table if exists bill 
        drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh
 
     alter table if exists bill 
        drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh;
-#1730753619797 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788221 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     alter table if exists order_product 
        drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno
 
     alter table if exists order_product 
        drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno;
-#1730753619799 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788222 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     alter table if exists order_product 
        drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e
 
     alter table if exists order_product 
        drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e;
-#1730753619800 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788223 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     alter table if exists ordine 
        drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq
 
     alter table if exists ordine 
        drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq;
-#1730753619803 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788226 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     drop table if exists bill cascade
 
     drop table if exists bill cascade;
-#1730753619804 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788227 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     drop table if exists client cascade
 
     drop table if exists client cascade;
-#1730753619806 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788228 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     drop table if exists order_product cascade
 
     drop table if exists order_product cascade;
-#1730753619808 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788230 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     drop table if exists ordine cascade
 
     drop table if exists ordine cascade;
-#1730753619810 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788231 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     drop table if exists product cascade
 
     drop table if exists product cascade;
-#1730753619824 | took 9ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788252 | took 15ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     create table bill (
         total_amount float(34) not null,
@@ -86,7 +86,7 @@ commit;
         ordine_id bigint not null unique,
         primary key (id)
     );
-#1730753619828 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788256 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     create table client (
         id bigint generated by default as identity,
@@ -101,7 +101,7 @@ commit;
         email varchar(255),
         primary key (id)
     );
-#1730753619831 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788258 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     create table order_product (
         ordine_id bigint not null,
@@ -112,7 +112,7 @@ commit;
         ordine_id bigint not null,
         product_id bigint not null
     );
-#1730753619839 | took 7ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788261 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     create table ordine (
         total float(34) not null,
@@ -129,7 +129,7 @@ commit;
         id bigint generated by default as identity,
         primary key (id)
     );
-#1730753619844 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788265 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     create table product (
         price float(34) not null,
@@ -144,7 +144,7 @@ commit;
         name varchar(100) not null,
         primary key (id)
     );
-#1730753619848 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788269 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     alter table if exists bill 
        add constraint FKpe181bmgsvp6khm02aoq4wsuh 
@@ -155,7 +155,7 @@ commit;
        add constraint FKpe181bmgsvp6khm02aoq4wsuh 
        foreign key (ordine_id) 
        references ordine;
-#1730753619849 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788271 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     alter table if exists order_product 
        add constraint FKhnfgqyjx3i80qoymrssls3kno 
@@ -166,7 +166,7 @@ commit;
        add constraint FKhnfgqyjx3i80qoymrssls3kno 
        foreign key (product_id) 
        references product;
-#1730753619850 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788272 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     alter table if exists order_product 
        add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
@@ -177,7 +177,7 @@ commit;
        add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
        foreign key (ordine_id) 
        references ordine;
-#1730753619852 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788273 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
     alter table if exists ordine 
        add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
@@ -188,373 +188,1216 @@ commit;
        add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
        foreign key (client_id) 
        references client;
-#1730753619854 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788276 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria')
 insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria');
-#1730753619855 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788277 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico')
 insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico');
-#1730753619855 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788277 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos')
 insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos');
-#1730753619856 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788278 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila')
 insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila');
-#1730753619856 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788278 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into product(id,price,name) values (1,20.0,'Shampoo')
 insert into product(id,price,name) values (1,20.0,'Shampoo');
-#1730753619857 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788279 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into product(id,price,name) values (2,15.4,'Soap')
 insert into product(id,price,name) values (2,15.4,'Soap');
-#1730753619857 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788279 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into product(id,price,name) values (3,10.0,'Oil')
 insert into product(id,price,name) values (3,10.0,'Oil');
-#1730753619858 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788280 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into product(id,price,name) values (4,13.20,'toothbrush')
 insert into product(id,price,name) values (4,13.20,'toothbrush');
-#1730753619859 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788281 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1)
 insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1);
-#1730753619859 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788281 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2)
 insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2);
-#1730753619860 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788282 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3)
 insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3);
-#1730753619861 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788283 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4)
 insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4);
-#1730753619862 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788284 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1)
 insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1);
-#1730753619863 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788284 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2)
 insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2);
-#1730753619863 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788285 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3)
 insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3);
-#1730753619863 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788287 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4)
 insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4);
-#1730753619865 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788289 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 INSERT INTO public.order_product(ordine_id, product_id) values (1,1)
 INSERT INTO public.order_product(ordine_id, product_id) values (1,1);
-#1730753619866 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788290 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 INSERT INTO public.order_product(ordine_id, product_id) values (1,2)
 INSERT INTO public.order_product(ordine_id, product_id) values (1,2);
-#1730753619867 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788291 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 INSERT INTO public.order_product(ordine_id, product_id) values (2,2)
 INSERT INTO public.order_product(ordine_id, product_id) values (2,2);
-#1730753619868 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788292 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 INSERT INTO public.order_product(ordine_id, product_id) values (2,3)
 INSERT INTO public.order_product(ordine_id, product_id) values (2,3);
-#1730753619868 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788293 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 INSERT INTO public.order_product(ordine_id, product_id) values (3,1)
 INSERT INTO public.order_product(ordine_id, product_id) values (3,1);
-#1730753619869 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788294 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 INSERT INTO public.order_product(ordine_id, product_id) values (3,4)
 INSERT INTO public.order_product(ordine_id, product_id) values (3,4);
-#1730753619870 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788295 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 INSERT INTO public.order_product(ordine_id, product_id) values (4,1)
 INSERT INTO public.order_product(ordine_id, product_id) values (4,1);
-#1730753619870 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788295 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 INSERT INTO public.order_product(ordine_id, product_id) values (4,4)
 INSERT INTO public.order_product(ordine_id, product_id) values (4,4);
-#1730753619873 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788299 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5
 ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5;
-#1730753619875 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788302 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5
 ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5;
-#1730753619876 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788305 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5
 ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5;
-#1730753619879 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788307 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5
 ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5;
-#1730753619879 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879788307 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 commit
 commit;
-#1730753712345 | took 6ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5)
-insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5);
-#1730753712348 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5)
-insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5);
-#1730753712352 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-INSERT INTO public.order_product(ordine_id, product_id) values (5,2)
-INSERT INTO public.order_product(ordine_id, product_id) values (5,2);
-#1730753712356 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6
-ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6;
-#1730753712359 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6
-ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6;
-#1730753712363 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-commit
-commit;
-#1730753714218 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    alter table if exists bill 
-       drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh
-
-    alter table if exists bill 
-       drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh;
-#1730753714219 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    alter table if exists order_product 
-       drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno
-
-    alter table if exists order_product 
-       drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno;
-#1730753714220 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    alter table if exists order_product 
-       drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e
-
-    alter table if exists order_product 
-       drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e;
-#1730753714221 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    alter table if exists ordine 
-       drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq
-
-    alter table if exists ordine 
-       drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq;
-#1730753714225 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    drop table if exists bill cascade
-
-    drop table if exists bill cascade;
-#1730753714228 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    drop table if exists client cascade
-
-    drop table if exists client cascade;
-#1730753714230 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    drop table if exists order_product cascade
-
-    drop table if exists order_product cascade;
-#1730753714233 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    drop table if exists ordine cascade
-
-    drop table if exists ordine cascade;
-#1730753714235 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    drop table if exists product cascade
-
-    drop table if exists product cascade;
-#1730753714250 | took 9ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    create table bill (
-        total_amount float(34) not null,
-        date_bill timestamp(6) not null,
-        id bigint generated by default as identity,
-        ordine_id bigint not null unique,
-        primary key (id)
-    )
-
-    create table bill (
-        total_amount float(34) not null,
-        date_bill timestamp(6) not null,
-        id bigint generated by default as identity,
-        ordine_id bigint not null unique,
-        primary key (id)
-    );
-#1730753714254 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    create table client (
-        id bigint generated by default as identity,
-        name varchar(100) not null,
-        email varchar(255),
-        primary key (id)
-    )
-
-    create table client (
-        id bigint generated by default as identity,
-        name varchar(100) not null,
-        email varchar(255),
-        primary key (id)
-    );
-#1730753714256 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    create table order_product (
-        ordine_id bigint not null,
-        product_id bigint not null
-    )
-
-    create table order_product (
-        ordine_id bigint not null,
-        product_id bigint not null
-    );
-#1730753714261 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    create table ordine (
-        total float(34) not null,
-        client_id bigint not null,
-        date_ordine timestamp(6) not null,
-        id bigint generated by default as identity,
-        primary key (id)
-    )
-
-    create table ordine (
-        total float(34) not null,
-        client_id bigint not null,
-        date_ordine timestamp(6) not null,
-        id bigint generated by default as identity,
-        primary key (id)
-    );
-#1730753714265 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    create table product (
-        price float(34) not null,
-        id bigint generated by default as identity,
-        name varchar(100) not null,
-        primary key (id)
-    )
-
-    create table product (
-        price float(34) not null,
-        id bigint generated by default as identity,
-        name varchar(100) not null,
-        primary key (id)
-    );
-#1730753714270 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    alter table if exists bill 
-       add constraint FKpe181bmgsvp6khm02aoq4wsuh 
-       foreign key (ordine_id) 
-       references ordine
-
-    alter table if exists bill 
-       add constraint FKpe181bmgsvp6khm02aoq4wsuh 
-       foreign key (ordine_id) 
-       references ordine;
-#1730753714273 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    alter table if exists order_product 
-       add constraint FKhnfgqyjx3i80qoymrssls3kno 
-       foreign key (product_id) 
-       references product
-
-    alter table if exists order_product 
-       add constraint FKhnfgqyjx3i80qoymrssls3kno 
-       foreign key (product_id) 
-       references product;
-#1730753714275 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    alter table if exists order_product 
-       add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
-       foreign key (ordine_id) 
-       references ordine
-
-    alter table if exists order_product 
-       add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
-       foreign key (ordine_id) 
-       references ordine;
-#1730753714278 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-
-    alter table if exists ordine 
-       add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
-       foreign key (client_id) 
-       references client
-
-    alter table if exists ordine 
-       add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
-       foreign key (client_id) 
-       references client;
-#1730753714280 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria')
-insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria');
-#1730753714281 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico')
-insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico');
-#1730753714282 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos')
-insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos');
-#1730753714283 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila')
-insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila');
-#1730753714284 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into product(id,price,name) values (1,20.0,'Shampoo')
-insert into product(id,price,name) values (1,20.0,'Shampoo');
-#1730753714284 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into product(id,price,name) values (2,15.4,'Soap')
-insert into product(id,price,name) values (2,15.4,'Soap');
-#1730753714285 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into product(id,price,name) values (3,10.0,'Oil')
-insert into product(id,price,name) values (3,10.0,'Oil');
-#1730753714285 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into product(id,price,name) values (4,13.20,'toothbrush')
-insert into product(id,price,name) values (4,13.20,'toothbrush');
-#1730753714287 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1)
-insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1);
-#1730753714287 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2)
-insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2);
-#1730753714288 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3)
-insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3);
-#1730753714289 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4)
-insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4);
-#1730753714290 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1)
-insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1);
-#1730753714291 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2)
-insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2);
-#1730753714292 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3)
-insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3);
-#1730753714293 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4)
-insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4);
-#1730753714294 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-INSERT INTO public.order_product(ordine_id, product_id) values (1,1)
-INSERT INTO public.order_product(ordine_id, product_id) values (1,1);
-#1730753714294 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-INSERT INTO public.order_product(ordine_id, product_id) values (1,2)
-INSERT INTO public.order_product(ordine_id, product_id) values (1,2);
-#1730753714295 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-INSERT INTO public.order_product(ordine_id, product_id) values (2,2)
-INSERT INTO public.order_product(ordine_id, product_id) values (2,2);
-#1730753714296 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-INSERT INTO public.order_product(ordine_id, product_id) values (2,3)
-INSERT INTO public.order_product(ordine_id, product_id) values (2,3);
-#1730753714297 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-INSERT INTO public.order_product(ordine_id, product_id) values (3,1)
-INSERT INTO public.order_product(ordine_id, product_id) values (3,1);
-#1730753714298 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-INSERT INTO public.order_product(ordine_id, product_id) values (3,4)
-INSERT INTO public.order_product(ordine_id, product_id) values (3,4);
-#1730753714299 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-INSERT INTO public.order_product(ordine_id, product_id) values (4,1)
-INSERT INTO public.order_product(ordine_id, product_id) values (4,1);
-#1730753714300 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-INSERT INTO public.order_product(ordine_id, product_id) values (4,4)
-INSERT INTO public.order_product(ordine_id, product_id) values (4,4);
-#1730753714302 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5
-ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5;
-#1730753714306 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5
-ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5;
-#1730753714309 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5
-ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5;
-#1730753714312 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5
-ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5;
-#1730753714313 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
-commit
-commit;
-#1730753764167 | took 5ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879909387 | took 5ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 select c1_0.id,c1_0.email,c1_0.name from client c1_0
 select c1_0.id,c1_0.email,c1_0.name from client c1_0;
-#1730753764208 | took 1ms | commit | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+#1730879909433 | took 1ms | commit | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
 
 ;
+#1730880017533 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+select c1_0.id,c1_0.email,c1_0.name from client c1_0 where c1_0.id=?
+select c1_0.id,c1_0.email,c1_0.name from client c1_0 where c1_0.id=1;
+#1730880017534 | took 0ms | commit | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+;
+#1730881706231 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5)
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5);
+#1730881706233 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5)
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5);
+#1730881706235 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (5,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (5,2);
+#1730881706238 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6;
+#1730881706240 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6;
+#1730881706242 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+commit
+commit;
+#1730881707843 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists bill 
+       drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh
+
+    alter table if exists bill 
+       drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh;
+#1730881707843 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno
+
+    alter table if exists order_product 
+       drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno;
+#1730881707844 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e
+
+    alter table if exists order_product 
+       drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e;
+#1730881707845 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists ordine 
+       drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq
+
+    alter table if exists ordine 
+       drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq;
+#1730881707847 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists bill cascade
+
+    drop table if exists bill cascade;
+#1730881707849 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists client cascade
+
+    drop table if exists client cascade;
+#1730881707850 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists order_product cascade
+
+    drop table if exists order_product cascade;
+#1730881707852 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists ordine cascade
+
+    drop table if exists ordine cascade;
+#1730881707853 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists product cascade
+
+    drop table if exists product cascade;
+#1730881707865 | took 8ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table bill (
+        total_amount float(34) not null,
+        date_bill timestamp(6) not null,
+        id bigint generated by default as identity,
+        ordine_id bigint not null unique,
+        primary key (id)
+    )
+
+    create table bill (
+        total_amount float(34) not null,
+        date_bill timestamp(6) not null,
+        id bigint generated by default as identity,
+        ordine_id bigint not null unique,
+        primary key (id)
+    );
+#1730881707869 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table client (
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        email varchar(255),
+        primary key (id)
+    )
+
+    create table client (
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        email varchar(255),
+        primary key (id)
+    );
+#1730881707870 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table order_product (
+        ordine_id bigint not null,
+        product_id bigint not null
+    )
+
+    create table order_product (
+        ordine_id bigint not null,
+        product_id bigint not null
+    );
+#1730881707874 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table ordine (
+        total float(34) not null,
+        client_id bigint not null,
+        date_ordine timestamp(6) not null,
+        id bigint generated by default as identity,
+        primary key (id)
+    )
+
+    create table ordine (
+        total float(34) not null,
+        client_id bigint not null,
+        date_ordine timestamp(6) not null,
+        id bigint generated by default as identity,
+        primary key (id)
+    );
+#1730881707878 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table product (
+        price float(34) not null,
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        primary key (id)
+    )
+
+    create table product (
+        price float(34) not null,
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        primary key (id)
+    );
+#1730881707881 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists bill 
+       add constraint FKpe181bmgsvp6khm02aoq4wsuh 
+       foreign key (ordine_id) 
+       references ordine
+
+    alter table if exists bill 
+       add constraint FKpe181bmgsvp6khm02aoq4wsuh 
+       foreign key (ordine_id) 
+       references ordine;
+#1730881707882 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       add constraint FKhnfgqyjx3i80qoymrssls3kno 
+       foreign key (product_id) 
+       references product
+
+    alter table if exists order_product 
+       add constraint FKhnfgqyjx3i80qoymrssls3kno 
+       foreign key (product_id) 
+       references product;
+#1730881707883 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
+       foreign key (ordine_id) 
+       references ordine
+
+    alter table if exists order_product 
+       add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
+       foreign key (ordine_id) 
+       references ordine;
+#1730881707884 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists ordine 
+       add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
+       foreign key (client_id) 
+       references client
+
+    alter table if exists ordine 
+       add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
+       foreign key (client_id) 
+       references client;
+#1730881707886 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria')
+insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria');
+#1730881707886 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico')
+insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico');
+#1730881707887 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos')
+insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos');
+#1730881707888 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila')
+insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila');
+#1730881707889 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (1,20.0,'Shampoo')
+insert into product(id,price,name) values (1,20.0,'Shampoo');
+#1730881707890 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (2,15.4,'Soap')
+insert into product(id,price,name) values (2,15.4,'Soap');
+#1730881707890 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (3,10.0,'Oil')
+insert into product(id,price,name) values (3,10.0,'Oil');
+#1730881707891 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (4,13.20,'toothbrush')
+insert into product(id,price,name) values (4,13.20,'toothbrush');
+#1730881707892 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1)
+insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1);
+#1730881707893 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2)
+insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2);
+#1730881707893 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3)
+insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3);
+#1730881707893 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4)
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4);
+#1730881707894 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1)
+insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1);
+#1730881707895 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2)
+insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2);
+#1730881707895 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3)
+insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3);
+#1730881707896 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4)
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4);
+#1730881707897 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (1,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (1,1);
+#1730881707897 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (1,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (1,2);
+#1730881707897 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (2,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (2,2);
+#1730881707898 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (2,3)
+INSERT INTO public.order_product(ordine_id, product_id) values (2,3);
+#1730881707899 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (3,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (3,1);
+#1730881707900 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (3,4)
+INSERT INTO public.order_product(ordine_id, product_id) values (3,4);
+#1730881707900 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (4,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (4,1);
+#1730881707901 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (4,4)
+INSERT INTO public.order_product(ordine_id, product_id) values (4,4);
+#1730881707904 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730881707906 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5;
+#1730881707908 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730881707909 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730881707910 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+commit
+commit;
+#1730881778576 | took 5ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+select c1_0.id,c1_0.email,c1_0.name from client c1_0
+select c1_0.id,c1_0.email,c1_0.name from client c1_0;
+#1730881778614 | took 0ms | commit | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+;
+#1730882084433 | took 5ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5)
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5);
+#1730882084436 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5)
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5);
+#1730882084439 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (5,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (5,2);
+#1730882084444 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6;
+#1730882084447 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6;
+#1730882084451 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+commit
+commit;
+#1730882086141 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists bill 
+       drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh
+
+    alter table if exists bill 
+       drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh;
+#1730882086142 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno
+
+    alter table if exists order_product 
+       drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno;
+#1730882086144 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e
+
+    alter table if exists order_product 
+       drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e;
+#1730882086144 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists ordine 
+       drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq
+
+    alter table if exists ordine 
+       drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq;
+#1730882086147 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists bill cascade
+
+    drop table if exists bill cascade;
+#1730882086149 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists client cascade
+
+    drop table if exists client cascade;
+#1730882086150 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists order_product cascade
+
+    drop table if exists order_product cascade;
+#1730882086152 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists ordine cascade
+
+    drop table if exists ordine cascade;
+#1730882086154 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists product cascade
+
+    drop table if exists product cascade;
+#1730882086167 | took 8ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table bill (
+        total_amount float(34) not null,
+        date_bill timestamp(6) not null,
+        id bigint generated by default as identity,
+        ordine_id bigint not null unique,
+        primary key (id)
+    )
+
+    create table bill (
+        total_amount float(34) not null,
+        date_bill timestamp(6) not null,
+        id bigint generated by default as identity,
+        ordine_id bigint not null unique,
+        primary key (id)
+    );
+#1730882086171 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table client (
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        email varchar(255),
+        primary key (id)
+    )
+
+    create table client (
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        email varchar(255),
+        primary key (id)
+    );
+#1730882086172 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table order_product (
+        ordine_id bigint not null,
+        product_id bigint not null
+    )
+
+    create table order_product (
+        ordine_id bigint not null,
+        product_id bigint not null
+    );
+#1730882086174 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table ordine (
+        total float(34) not null,
+        client_id bigint not null,
+        date_ordine timestamp(6) not null,
+        id bigint generated by default as identity,
+        primary key (id)
+    )
+
+    create table ordine (
+        total float(34) not null,
+        client_id bigint not null,
+        date_ordine timestamp(6) not null,
+        id bigint generated by default as identity,
+        primary key (id)
+    );
+#1730882086177 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table product (
+        price float(34) not null,
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        primary key (id)
+    )
+
+    create table product (
+        price float(34) not null,
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        primary key (id)
+    );
+#1730882086179 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists bill 
+       add constraint FKpe181bmgsvp6khm02aoq4wsuh 
+       foreign key (ordine_id) 
+       references ordine
+
+    alter table if exists bill 
+       add constraint FKpe181bmgsvp6khm02aoq4wsuh 
+       foreign key (ordine_id) 
+       references ordine;
+#1730882086180 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       add constraint FKhnfgqyjx3i80qoymrssls3kno 
+       foreign key (product_id) 
+       references product
+
+    alter table if exists order_product 
+       add constraint FKhnfgqyjx3i80qoymrssls3kno 
+       foreign key (product_id) 
+       references product;
+#1730882086181 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
+       foreign key (ordine_id) 
+       references ordine
+
+    alter table if exists order_product 
+       add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
+       foreign key (ordine_id) 
+       references ordine;
+#1730882086182 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists ordine 
+       add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
+       foreign key (client_id) 
+       references client
+
+    alter table if exists ordine 
+       add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
+       foreign key (client_id) 
+       references client;
+#1730882086184 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria')
+insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria');
+#1730882086185 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico')
+insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico');
+#1730882086185 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos')
+insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos');
+#1730882086186 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila')
+insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila');
+#1730882086186 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (1,20.0,'Shampoo')
+insert into product(id,price,name) values (1,20.0,'Shampoo');
+#1730882086187 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (2,15.4,'Soap')
+insert into product(id,price,name) values (2,15.4,'Soap');
+#1730882086188 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (3,10.0,'Oil')
+insert into product(id,price,name) values (3,10.0,'Oil');
+#1730882086188 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (4,13.20,'toothbrush')
+insert into product(id,price,name) values (4,13.20,'toothbrush');
+#1730882086189 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1)
+insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1);
+#1730882086190 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2)
+insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2);
+#1730882086190 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3)
+insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3);
+#1730882086191 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4)
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4);
+#1730882086191 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1)
+insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1);
+#1730882086192 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2)
+insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2);
+#1730882086192 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3)
+insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3);
+#1730882086193 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4)
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4);
+#1730882086194 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (1,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (1,1);
+#1730882086194 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (1,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (1,2);
+#1730882086195 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (2,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (2,2);
+#1730882086195 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (2,3)
+INSERT INTO public.order_product(ordine_id, product_id) values (2,3);
+#1730882086196 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (3,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (3,1);
+#1730882086196 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (3,4)
+INSERT INTO public.order_product(ordine_id, product_id) values (3,4);
+#1730882086197 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (4,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (4,1);
+#1730882086199 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (4,4)
+INSERT INTO public.order_product(ordine_id, product_id) values (4,4);
+#1730882086201 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730882086203 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5;
+#1730882086205 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730882086207 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730882086207 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+commit
+commit;
+#1730883084728 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5)
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5);
+#1730883084731 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5)
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5);
+#1730883084733 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (5,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (5,2);
+#1730883084737 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6;
+#1730883084739 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6;
+#1730883084742 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+commit
+commit;
+#1730883086278 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists bill 
+       drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh
+
+    alter table if exists bill 
+       drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh;
+#1730883086278 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno
+
+    alter table if exists order_product 
+       drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno;
+#1730883086279 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e
+
+    alter table if exists order_product 
+       drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e;
+#1730883086280 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists ordine 
+       drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq
+
+    alter table if exists ordine 
+       drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq;
+#1730883086283 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists bill cascade
+
+    drop table if exists bill cascade;
+#1730883086285 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists client cascade
+
+    drop table if exists client cascade;
+#1730883086286 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists order_product cascade
+
+    drop table if exists order_product cascade;
+#1730883086288 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists ordine cascade
+
+    drop table if exists ordine cascade;
+#1730883086289 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists product cascade
+
+    drop table if exists product cascade;
+#1730883086302 | took 8ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table bill (
+        total_amount float(34) not null,
+        date_bill timestamp(6) not null,
+        id bigint generated by default as identity,
+        ordine_id bigint not null unique,
+        primary key (id)
+    )
+
+    create table bill (
+        total_amount float(34) not null,
+        date_bill timestamp(6) not null,
+        id bigint generated by default as identity,
+        ordine_id bigint not null unique,
+        primary key (id)
+    );
+#1730883086308 | took 5ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table client (
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        email varchar(255),
+        primary key (id)
+    )
+
+    create table client (
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        email varchar(255),
+        primary key (id)
+    );
+#1730883086309 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table order_product (
+        ordine_id bigint not null,
+        product_id bigint not null
+    )
+
+    create table order_product (
+        ordine_id bigint not null,
+        product_id bigint not null
+    );
+#1730883086314 | took 5ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table ordine (
+        total float(34) not null,
+        client_id bigint not null,
+        date_ordine timestamp(6) not null,
+        id bigint generated by default as identity,
+        primary key (id)
+    )
+
+    create table ordine (
+        total float(34) not null,
+        client_id bigint not null,
+        date_ordine timestamp(6) not null,
+        id bigint generated by default as identity,
+        primary key (id)
+    );
+#1730883086317 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table product (
+        price float(34) not null,
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        primary key (id)
+    )
+
+    create table product (
+        price float(34) not null,
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        primary key (id)
+    );
+#1730883086318 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists bill 
+       add constraint FKpe181bmgsvp6khm02aoq4wsuh 
+       foreign key (ordine_id) 
+       references ordine
+
+    alter table if exists bill 
+       add constraint FKpe181bmgsvp6khm02aoq4wsuh 
+       foreign key (ordine_id) 
+       references ordine;
+#1730883086321 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       add constraint FKhnfgqyjx3i80qoymrssls3kno 
+       foreign key (product_id) 
+       references product
+
+    alter table if exists order_product 
+       add constraint FKhnfgqyjx3i80qoymrssls3kno 
+       foreign key (product_id) 
+       references product;
+#1730883086322 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
+       foreign key (ordine_id) 
+       references ordine
+
+    alter table if exists order_product 
+       add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
+       foreign key (ordine_id) 
+       references ordine;
+#1730883086323 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists ordine 
+       add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
+       foreign key (client_id) 
+       references client
+
+    alter table if exists ordine 
+       add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
+       foreign key (client_id) 
+       references client;
+#1730883086325 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria')
+insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria');
+#1730883086326 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico')
+insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico');
+#1730883086326 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos')
+insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos');
+#1730883086327 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila')
+insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila');
+#1730883086328 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (1,20.0,'Shampoo')
+insert into product(id,price,name) values (1,20.0,'Shampoo');
+#1730883086328 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (2,15.4,'Soap')
+insert into product(id,price,name) values (2,15.4,'Soap');
+#1730883086329 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (3,10.0,'Oil')
+insert into product(id,price,name) values (3,10.0,'Oil');
+#1730883086329 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (4,13.20,'toothbrush')
+insert into product(id,price,name) values (4,13.20,'toothbrush');
+#1730883086330 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1)
+insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1);
+#1730883086330 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2)
+insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2);
+#1730883086331 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3)
+insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3);
+#1730883086331 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4)
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4);
+#1730883086332 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1)
+insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1);
+#1730883086333 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2)
+insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2);
+#1730883086334 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3)
+insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3);
+#1730883086334 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4)
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4);
+#1730883086335 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (1,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (1,1);
+#1730883086335 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (1,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (1,2);
+#1730883086335 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (2,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (2,2);
+#1730883086335 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (2,3)
+INSERT INTO public.order_product(ordine_id, product_id) values (2,3);
+#1730883086337 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (3,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (3,1);
+#1730883086337 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (3,4)
+INSERT INTO public.order_product(ordine_id, product_id) values (3,4);
+#1730883086338 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (4,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (4,1);
+#1730883086338 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (4,4)
+INSERT INTO public.order_product(ordine_id, product_id) values (4,4);
+#1730883086341 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730883086343 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5;
+#1730883086345 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730883086347 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730883086348 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+commit
+commit;
+#1730883352885 | took 5ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5)
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',5);
+#1730883352887 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5)
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',5,5);
+#1730883352889 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (5,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (5,2);
+#1730883352891 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 6 RESTART 6;
+#1730883352894 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 6 RESTART 6;
+#1730883352897 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+commit
+commit;
+#1730883354495 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists bill 
+       drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh
+
+    alter table if exists bill 
+       drop constraint if exists FKpe181bmgsvp6khm02aoq4wsuh;
+#1730883354496 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno
+
+    alter table if exists order_product 
+       drop constraint if exists FKhnfgqyjx3i80qoymrssls3kno;
+#1730883354497 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e
+
+    alter table if exists order_product 
+       drop constraint if exists FKgrd3jb8u2hfle5m6p1in9fn9e;
+#1730883354498 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists ordine 
+       drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq
+
+    alter table if exists ordine 
+       drop constraint if exists FKpjxj2r7o8pqyi7ynhdv26ovgq;
+#1730883354502 | took 3ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists bill cascade
+
+    drop table if exists bill cascade;
+#1730883354504 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists client cascade
+
+    drop table if exists client cascade;
+#1730883354505 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists order_product cascade
+
+    drop table if exists order_product cascade;
+#1730883354507 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists ordine cascade
+
+    drop table if exists ordine cascade;
+#1730883354509 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    drop table if exists product cascade
+
+    drop table if exists product cascade;
+#1730883354520 | took 7ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table bill (
+        total_amount float(34) not null,
+        date_bill timestamp(6) not null,
+        id bigint generated by default as identity,
+        ordine_id bigint not null unique,
+        primary key (id)
+    )
+
+    create table bill (
+        total_amount float(34) not null,
+        date_bill timestamp(6) not null,
+        id bigint generated by default as identity,
+        ordine_id bigint not null unique,
+        primary key (id)
+    );
+#1730883354525 | took 4ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table client (
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        email varchar(255),
+        primary key (id)
+    )
+
+    create table client (
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        email varchar(255),
+        primary key (id)
+    );
+#1730883354526 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table order_product (
+        ordine_id bigint not null,
+        product_id bigint not null
+    )
+
+    create table order_product (
+        ordine_id bigint not null,
+        product_id bigint not null
+    );
+#1730883354530 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table ordine (
+        total float(34) not null,
+        client_id bigint not null,
+        date_ordine timestamp(6) not null,
+        id bigint generated by default as identity,
+        primary key (id)
+    )
+
+    create table ordine (
+        total float(34) not null,
+        client_id bigint not null,
+        date_ordine timestamp(6) not null,
+        id bigint generated by default as identity,
+        primary key (id)
+    );
+#1730883354534 | took 5ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    create table product (
+        price float(34) not null,
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        primary key (id)
+    )
+
+    create table product (
+        price float(34) not null,
+        id bigint generated by default as identity,
+        name varchar(100) not null,
+        primary key (id)
+    );
+#1730883354536 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists bill 
+       add constraint FKpe181bmgsvp6khm02aoq4wsuh 
+       foreign key (ordine_id) 
+       references ordine
+
+    alter table if exists bill 
+       add constraint FKpe181bmgsvp6khm02aoq4wsuh 
+       foreign key (ordine_id) 
+       references ordine;
+#1730883354538 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       add constraint FKhnfgqyjx3i80qoymrssls3kno 
+       foreign key (product_id) 
+       references product
+
+    alter table if exists order_product 
+       add constraint FKhnfgqyjx3i80qoymrssls3kno 
+       foreign key (product_id) 
+       references product;
+#1730883354539 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists order_product 
+       add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
+       foreign key (ordine_id) 
+       references ordine
+
+    alter table if exists order_product 
+       add constraint FKgrd3jb8u2hfle5m6p1in9fn9e 
+       foreign key (ordine_id) 
+       references ordine;
+#1730883354540 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+
+    alter table if exists ordine 
+       add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
+       foreign key (client_id) 
+       references client
+
+    alter table if exists ordine 
+       add constraint FKpjxj2r7o8pqyi7ynhdv26ovgq 
+       foreign key (client_id) 
+       references client;
+#1730883354543 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria')
+insert into client(id,email,name) values (1,'maria2000@gmail.com','Maria');
+#1730883354543 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico')
+insert into client(id,email,name) values (2,'federico2000@gmail.com','Federico');
+#1730883354544 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos')
+insert into client(id,email,name) values (3,'carlos2000@gmail.com','Carlos');
+#1730883354544 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila')
+insert into client(id,email,name) values (4,'camila2000@gmail.com','Camila');
+#1730883354545 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (1,20.0,'Shampoo')
+insert into product(id,price,name) values (1,20.0,'Shampoo');
+#1730883354546 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (2,15.4,'Soap')
+insert into product(id,price,name) values (2,15.4,'Soap');
+#1730883354546 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (3,10.0,'Oil')
+insert into product(id,price,name) values (3,10.0,'Oil');
+#1730883354547 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into product(id,price,name) values (4,13.20,'toothbrush')
+insert into product(id,price,name) values (4,13.20,'toothbrush');
+#1730883354548 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1)
+insert into ordine(total, client_id, date_ordine, id) values (20.0,1,'2020-09-20',1);
+#1730883354549 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2)
+insert into ordine(total, client_id, date_ordine, id) values (15.4,2,'2020-09-19',2);
+#1730883354549 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3)
+insert into ordine(total, client_id, date_ordine, id) values (10.0,3,'2020-09-19',3);
+#1730883354549 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4)
+insert into ordine(total, client_id, date_ordine, id) values (13.20,4,'2020-09-17',4);
+#1730883354550 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1)
+insert into bill(total_amount,date_bill,ordine_id,id) values (20.0,'2020-09-20',1,1);
+#1730883354551 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2)
+insert into bill(total_amount,date_bill,ordine_id,id) values (15.4,'2020-09-19',2,2);
+#1730883354551 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3)
+insert into bill(total_amount,date_bill,ordine_id,id) values (10.0,'2020-09-19',3,3);
+#1730883354552 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4)
+insert into bill(total_amount,date_bill,ordine_id,id) values (13.20,'2020-09-17',4,4);
+#1730883354553 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (1,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (1,1);
+#1730883354553 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (1,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (1,2);
+#1730883354554 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (2,2)
+INSERT INTO public.order_product(ordine_id, product_id) values (2,2);
+#1730883354554 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (2,3)
+INSERT INTO public.order_product(ordine_id, product_id) values (2,3);
+#1730883354555 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (3,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (3,1);
+#1730883354556 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (3,4)
+INSERT INTO public.order_product(ordine_id, product_id) values (3,4);
+#1730883354556 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (4,1)
+INSERT INTO public.order_product(ordine_id, product_id) values (4,1);
+#1730883354558 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+INSERT INTO public.order_product(ordine_id, product_id) values (4,4)
+INSERT INTO public.order_product(ordine_id, product_id) values (4,4);
+#1730883354561 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.client_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730883354563 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5
+ALTER SEQUENCE public.ordine_id_seq INCREMENT BY 1 START 5	RESTART 5;
+#1730883354564 | took 1ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.product_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730883354567 | took 2ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5
+ALTER SEQUENCE public.bill_id_seq INCREMENT BY 1 START 5 RESTART 5;
+#1730883354567 | took 0ms | statement | connection 0| url jdbc:p6spy:postgresql://localhost:5432/ordersdb
+commit
+commit;
