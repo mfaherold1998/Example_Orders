@@ -1,160 +1,69 @@
-2024-11-06 08:56:22 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 10212 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
-2024-11-06 08:56:22 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
-2024-11-06 08:56:24 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-06 08:56:24 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 4 JPA repository interfaces.
-2024-11-06 08:56:25 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-11-06 08:56:25 - o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-06 08:56:25 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-06 08:56:25 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-06 08:56:25 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2550 ms
-2024-11-06 08:56:25 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-11-06 08:56:25 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@4d69d288
-2024-11-06 08:56:25 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-11-06 08:56:26 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-06 08:56:26 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-06 08:56:26 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-11-06 08:56:27 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-06 08:56:27 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-06 08:56:28 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-06 08:56:28 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
-2024-11-06 08:56:28 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
-2024-11-06 08:56:28 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06 08:56:28 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-11-06 08:56:29 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-06 08:56:29 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-11-06 08:56:30 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-11-06 08:56:30 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 8.78 seconds (process running for 10.171)
-2024-11-06 08:56:30 - c.e.orders.OnlineOrdersApplication - App is started!
-2024-11-06 08:57:22 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-06 08:57:33 - o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 652 ms
-2024-11-06 09:28:05 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06 09:28:05 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-11-06 09:28:05 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-11-06 09:28:23 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 17280 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
-2024-11-06 09:28:23 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
-2024-11-06 09:28:24 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-06 09:28:24 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
-2024-11-06 09:28:25 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-11-06 09:28:25 - o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-06 09:28:25 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-06 09:28:25 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-06 09:28:25 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2072 ms
-2024-11-06 09:28:25 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-11-06 09:28:26 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@73e4bb60
-2024-11-06 09:28:26 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-11-06 09:28:26 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-06 09:28:26 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-06 09:28:26 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-11-06 09:28:27 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-06 09:28:27 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-06 09:28:27 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-06 09:28:27 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
-2024-11-06 09:28:27 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
-2024-11-06 09:28:27 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06 09:28:28 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-11-06 09:28:28 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-06 09:28:28 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-11-06 09:28:29 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-11-06 09:28:29 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 6.775 seconds (process running for 8.004)
-2024-11-06 09:28:29 - c.e.orders.OnlineOrdersApplication - App is started!
-2024-11-06 09:28:58 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-06 09:29:07 - o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 680 ms
-2024-11-06 09:34:37 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06 09:34:37 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-11-06 09:34:37 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-11-06 09:34:41 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 6548 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
-2024-11-06 09:34:41 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
-2024-11-06 09:34:42 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-06 09:34:43 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 4 JPA repository interfaces.
-2024-11-06 09:34:43 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-11-06 09:34:43 - o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-06 09:34:43 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-06 09:34:43 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-06 09:34:43 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2071 ms
-2024-11-06 09:34:44 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-11-06 09:34:44 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@70f148dc
-2024-11-06 09:34:44 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-11-06 09:34:44 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-06 09:34:44 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-06 09:34:44 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-11-06 09:34:45 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-06 09:34:45 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-06 09:34:46 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-06 09:34:46 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
-2024-11-06 09:34:46 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
-2024-11-06 09:34:46 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06 09:34:46 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-11-06 09:34:46 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-06 09:34:47 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-11-06 09:34:47 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-11-06 09:34:47 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 6.815 seconds (process running for 7.345)
-2024-11-06 09:34:47 - c.e.orders.OnlineOrdersApplication - App is started!
-2024-11-06 09:34:54 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-06 09:35:05 - o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 664 ms
-2024-11-06 09:51:17 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06 09:51:17 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-11-06 09:51:17 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-11-06 09:51:22 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 6564 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
-2024-11-06 09:51:22 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
-2024-11-06 09:51:23 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-06 09:51:23 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces.
-2024-11-06 09:51:24 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-11-06 09:51:24 - o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-06 09:51:24 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-06 09:51:24 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-06 09:51:24 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2024 ms
-2024-11-06 09:51:24 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-11-06 09:51:24 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@795b66d
-2024-11-06 09:51:24 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-11-06 09:51:24 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-06 09:51:24 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-06 09:51:25 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-11-06 09:51:25 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-06 09:51:25 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-06 09:51:26 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-06 09:51:26 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
-2024-11-06 09:51:26 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
-2024-11-06 09:51:26 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06 09:51:26 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-11-06 09:51:27 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-06 09:51:27 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-11-06 09:51:28 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-11-06 09:51:28 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 6.617 seconds (process running for 7.16)
-2024-11-06 09:51:28 - c.e.orders.OnlineOrdersApplication - App is started!
-2024-11-06 09:51:35 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-06 09:51:45 - o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 864 ms
-2024-11-06 09:55:45 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06 09:55:45 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-11-06 09:55:45 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2024-11-06 09:55:50 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 14376 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
-2024-11-06 09:55:50 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
-2024-11-06 09:55:51 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-06 09:55:51 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 82 ms. Found 4 JPA repository interfaces.
-2024-11-06 09:55:52 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2024-11-06 09:55:52 - o.a.catalina.core.StandardService - Starting service [Tomcat]
-2024-11-06 09:55:52 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
-2024-11-06 09:55:52 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2024-11-06 09:55:52 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2038 ms
-2024-11-06 09:55:52 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2024-11-06 09:55:52 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@73e4bb60
-2024-11-06 09:55:52 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2024-11-06 09:55:53 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-06 09:55:53 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-06 09:55:53 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2024-11-06 09:55:53 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-06 09:55:53 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-06 09:55:54 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-06 09:55:54 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
-2024-11-06 09:55:54 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
-2024-11-06 09:55:54 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06 09:55:54 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
-2024-11-06 09:55:55 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-06 09:55:55 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
-2024-11-06 09:55:56 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2024-11-06 09:55:56 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 6.615 seconds (process running for 7.15)
-2024-11-06 09:55:56 - c.e.orders.OnlineOrdersApplication - App is started!
-2024-11-06 09:56:36 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-06 09:56:37 - o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 700 ms
-2024-11-06 11:00:39 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-11-06 11:00:39 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2024-11-06 11:00:39 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-06 11:37:07 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 10864 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-11-06 11:37:07 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-11-06 11:37:09 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-06 11:37:09 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 4 JPA repository interfaces.
+2024-11-06 11:37:10 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-06 11:37:10 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-06 11:37:10 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-06 11:37:10 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-06 11:37:10 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2141 ms
+2024-11-06 11:37:10 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-06 11:37:10 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@77aea
+2024-11-06 11:37:10 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-06 11:37:10 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-06 11:37:10 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-06 11:37:10 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-06 11:37:11 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-06 11:37:11 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-06 11:37:12 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-06 11:37:12 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
+2024-11-06 11:37:12 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
+2024-11-06 11:37:12 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-06 11:37:12 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-06 11:37:12 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-06 11:37:13 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-11-06 11:37:14 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-06 11:37:14 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 6.804 seconds (process running for 7.31)
+2024-11-06 11:37:14 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-11-06 11:37:49 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-06 11:37:51 - o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 714 ms
+2024-11-06 11:40:32 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-06 11:40:32 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-06 11:40:32 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-11-06 11:40:36 - c.e.orders.OnlineOrdersApplication - Starting OnlineOrdersApplication using Java 22.0.2 with PID 17900 (C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders\target\classes started by hp in C:\Users\hp\Documents\!Work\pegasoft\SpringBootCode\orders)
+2024-11-06 11:40:36 - c.e.orders.OnlineOrdersApplication - The following 1 profile is active: "dev"
+2024-11-06 11:40:37 - o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-06 11:40:37 - o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces.
+2024-11-06 11:40:38 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-11-06 11:40:38 - o.a.catalina.core.StandardService - Starting service [Tomcat]
+2024-11-06 11:40:38 - o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-06 11:40:38 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-11-06 11:40:38 - o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2179 ms
+2024-11-06 11:40:38 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-11-06 11:40:39 - com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.p6spy.engine.wrapper.ConnectionWrapper@27da994b
+2024-11-06 11:40:39 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-11-06 11:40:39 - o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-06 11:40:39 - org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-06 11:40:39 - o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-11-06 11:40:40 - o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-06 11:40:40 - org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-11-06 11:40:40 - o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-06 11:40:40 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Warning Code: 0, SQLState: 25P01
+2024-11-06 11:40:40 - o.h.e.jdbc.spi.SqlExceptionHelper - non c'è alcuna transazione in corso
+2024-11-06 11:40:40 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-06 11:40:41 - o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-11-06 11:40:41 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-06 11:40:41 - o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2024-11-06 11:40:42 - o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-11-06 11:40:42 - c.e.orders.OnlineOrdersApplication - Started OnlineOrdersApplication in 6.868 seconds (process running for 7.375)
+2024-11-06 11:40:42 - c.e.orders.OnlineOrdersApplication - App is started!
+2024-11-06 11:40:48 - o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-06 11:40:50 - o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 465 ms
+2024-11-06 11:45:52 - o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 0, SQLState: 23503
+2024-11-06 11:45:52 - o.h.e.jdbc.spi.SqlExceptionHelper - ERRORE: l'istruzione UPDATE o DELETE sulla tabella "client" viola il vincolo di chiave esterna "fkpjxj2r7o8pqyi7ynhdv26ovgq" sulla tabella "ordine"
+  Dettaglio: La chiave (id)=(2) è ancora referenziata dalla tabella "ordine".
+2024-11-06 11:45:52 - c.e.o.e.GlobalExceptionHandler - org.springframework.dao.DataIntegrityViolationException: could not execute statement [ERRORE: l'istruzione UPDATE o DELETE sulla tabella "client" viola il vincolo di chiave esterna "fkpjxj2r7o8pqyi7ynhdv26ovgq" sulla tabella "ordine"
+  Dettaglio: La chiave (id)=(2) è ancora referenziata dalla tabella "ordine".] [delete from client where id=?]; SQL [delete from client where id=?]; constraint [null]
+2024-11-06 11:48:29 - o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-06 11:48:29 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-11-06 11:48:29 - com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
