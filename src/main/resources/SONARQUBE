@@ -1,7 +1,7 @@
 #Token authentication
 sqp_35ec13b3b7983d1ea3b823c82eda7236c0bb7997
 
-#Generar reports
+#Generar reports de owasp
 mvn -B org.owasp:dependency-check-maven:aggregate -DfailBuildOnCVSS=11 -Dformats=XML,JSON,HTML
 
 #Upload reports to sonarqube
